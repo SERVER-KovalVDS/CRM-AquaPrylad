@@ -1,0 +1,20 @@
+[23-Jul-2025 19:05:20 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 77.90.153.154
+---> User agent: Mozilla/5.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Germany
+--->>> Region: Bavaria
+--->>> City: Augsburg
+--->>> Post code: 86161
+--->>> Location: 48.3459, 10.9161
+--->>> Time zone: Europe/Berlin
+--->>> Provider: Railnet LLC
+--->>> Organization: Virtualine Technologies
+--->>> Operator: AS214943 Railnet LLC

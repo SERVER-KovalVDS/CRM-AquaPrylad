@@ -1,0 +1,20 @@
+[13-May-2025 23:52:56 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 196.251.81.69
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Seychelles
+--->>> Region: La Rivière Anglaise
+--->>> City: Victoria
+--->>> Post code: 
+--->>> Location: -4.62113, 55.4522
+--->>> Time zone: Indian/Mahe
+--->>> Provider: cheapy.host LLC
+--->>> Organization: Internet Secuirty Cheapyhost
+--->>> Operator: AS401120 cheapy.host LLC

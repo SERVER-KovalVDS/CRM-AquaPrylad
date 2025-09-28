@@ -1,0 +1,21 @@
+[13-Jul-2025 12:17:20 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 152.42.205.170
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4859.172 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Singapore
+--->>> Region: South West
+--->>> City: Singapore
+--->>> Post code: 627753
+--->>> Location: 1.32123, 103.695
+--->>> Time zone: Asia/Singapore
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+

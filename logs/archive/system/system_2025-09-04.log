@@ -1,0 +1,80 @@
+[04-Sep-2025 08:11:21 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 147.93.158.187
+---> User agent: Mozila/5.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Singapore
+--->>> Region: North West
+--->>> City: Singapore
+--->>> Post code: 858877
+--->>> Location: 1.35208, 103.82
+--->>> Time zone: Asia/Singapore
+--->>> Provider: Contabo Asia Private Limited
+--->>> Organization: Contabo GmbH
+--->>> Operator: AS141995 Contabo Asia Private Limited
+[04-Sep-2025 08:35:23 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 161.97.181.43
+---> User agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/120.0.6099.199 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: France
+--->>> Region: Grand Est
+--->>> City: Lauterbourg
+--->>> Post code: 67630
+--->>> Location: 48.9742, 8.1851
+--->>> Time zone: Europe/Paris
+--->>> Provider: Contabo GmbH
+--->>> Organization: Contabo GmbH
+--->>> Operator: AS51167 Contabo GmbH
+[04-Sep-2025 12:34:34 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 138.36.152.214
+---> User agent: nvdorz
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Mexico
+--->>> Region: Jalisco
+--->>> City: Guadalajara
+--->>> Post code: 44990
+--->>> Location: 20.6366, -103.4355
+--->>> Time zone: America/Mexico_City
+--->>> Provider: GK TELECOMUNICACIONES
+--->>> Organization: GK TELECOMUNICACIONES
+--->>> Operator: AS28453 GK TELECOMUNICACIONES
+[04-Sep-2025 23:43:30 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 164.92.142.215
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Germany
+--->>> Region: Hesse
+--->>> City: Frankfurt am Main
+--->>> Post code: 60313
+--->>> Location: 50.1169, 8.6837
+--->>> Time zone: Europe/Berlin
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC

@@ -1,0 +1,72 @@
+{
+    "system": {
+        "animation_time": 1000
+    },
+    "sumy": [],
+    "chernigiv": {
+        "phoneSufixArea": ["039", "050", "063", "066", "067", "068", "073", "091", "092", "093", "094", "095", "096", "097", "098", "099", "089", "070", "080", "090", "0462"],
+        "service_types": ["Холодний", "Гарячий"],
+        "locations": ["Ванна", "Кухня", "Коридор", "Колодязь"],
+        "balansers": ["КП \"ВДК\"", "АТ \"ОТКЕ\"", "КП \"ТКЕ\""],
+        "nonumber_meters_types": [
+            "nonumber_cold_kitchen",
+            "nonumber_hot_kitchen",
+            "nonumber_unknown_kitchen",
+            "nonumber_cold_bath",
+            "nonumber_hot_bath",
+            "nonumber_unknown_bath"
+        ],
+        "tasks_types": ["Повірка","Заміна"],
+        "workers": ["Богомаз", "Сірий", "Ващенко", "Шкуліпа", "Осипенко", "Собора", "Баранов", "ЗАПЛАНОВАНІ"],
+        "worker_stations": [
+                                {"name": "Богомаз", "station": "АС-П 389"},
+                                {"name": "Сірий", "station": "АС-П 428"},
+                                {"name": "Ващенко", "station": "АС-П 390"},
+                                {"name": "Шкуліпа", "station": "АС-П 444"},
+                                {"name": "Осипенко", "station": "АС-П 427"},
+                                {"name": "Собора", "station": "АС-П 439"},
+                                {"name": "Баранов", "station": "заміна"}
+                            ],
+        "pay_methods": ["Готівка","Термінал","Рахунок"],
+        "tasks_status": ["Нова заявка", "Призначено виконавця", "В маршруті"]
+    },
+    "logs": {
+        "log_colors":   [
+                            {"date": "#ACD1F2"},
+                            {"info": "#BDFAB0"},
+                            {"warn": "#F2C879"},
+                            {"error": "#F23D3D"},
+                            {"pages": "#F2EA7E"},
+                            {"logins": "#CDACF2"},
+                            {"separator": "gray"},
+                            {"arrow": "gray"}
+                        ],
+        "log_pageReplacements": [
+                                    {"[CHERNIGIV-ADDRESSES]": "ADDRESSES"},
+                                    {"[CHERNIGIV-METERS]": "METERS"},
+                                    {"[CHERNIGIV-TASKS]": "TASKS"},
+                                    {"[CHERNIGIV-ROUTE]": "ROUTE"},
+                                    {"[CHERNIGIV-REPORTS]": "REPORTS"}
+                                ],
+        "log_statusTypes":  [
+                                {"[INFO]": "info"},
+                                {"[WARN]": "warn"},
+                                {"[ERROR]": "error"}
+                            ],
+        "log_pages":    ["MAIN",
+                        "TASKS",
+                        "ROUTE",
+                        "ADDRESSES",
+                        "METERS",
+                        "REPORTS",
+                        "SETTINGS",
+                        "LOGS",
+                        "NewDATA",
+                        "EditDATA",
+                        "DellTASK",
+                        "ChangeTASK",
+                        "LoadOUT",
+                        "LoadIN",
+                        "AUTH"]
+    }
+}

@@ -1,0 +1,21 @@
+[21-Apr-2025 13:30:59 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 88.218.193.103
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: District of Columbia
+--->>> City: Washington
+--->>> Post code: 20068
+--->>> Location: 38.9072, -77.0369
+--->>> Time zone: America/New_York
+--->>> Provider: Owl Limited
+--->>> Organization: Owl Limited
+--->>> Operator: 
+

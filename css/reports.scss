@@ -1,0 +1,137 @@
+.main_block {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+
+    .balancer-container {
+        margin-bottom: 15px;
+
+        .button-block {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .inactive {
+            background-color: rgb(var(--color-middle1));
+            color: rgb(var(--color-light1));
+            border: transparent;
+
+            &:hover {
+                background-color: rgb(var(--color-dark1));
+                color: rgb(var(--color-light1));
+            }
+        }
+        .active {
+            background-color: rgb(var(--color-light1));
+            color: rgb(var(--color-dark1));
+            border: 2px solid rgb(var(--color-dark1));
+
+            &:hover {
+                background-color: rgb(var(--color-light1));
+                color: rgb(var(--color-dark1));
+            }
+        }
+    }
+
+    #progress-bar {
+        width: 100%;
+        background-color: rgb(var(--color-middle1));
+        display: none;
+    }
+
+    #progress-bar-fill {
+        width: 0;
+        height: 30px;
+        background-color: rgb(var(--color-info));
+        text-align: center;
+        line-height: 30px;
+        color: rgb(var(--color-light1));
+    }
+}
+
+#upload-countdown {
+    color: grey;
+}
+
+.message {
+    width: 100%;
+    text-align: center;
+    color: rgb(var(--color-light1));
+
+    #report-countdown {
+        color: grey;
+    }
+}
+
+.message_text {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.info_message {
+    background-color: rgb(var(--color-info));
+}
+
+.warning_message {
+    background-color: rgb(var(--color-warning));
+}
+
+.alarm_message {
+    background-color: rgb(var(--color-alert));
+}
+
+.report_buttons {
+    background-color: rgb(var(--color-dark1));
+    border: none;
+    color: rgb(var(--color-light1));
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: rgb(var(--color-middle1));
+    }
+  
+    &:active {
+      background-color: rgb(var(--color-light1));
+      color: rgb(var(--color-dark1));
+    }
+}
+
+.upload_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+
+        #file-name {
+            margin-bottom: 5px;
+        }
+    }
+}
+  
+.table_container {
+    font-weight: 100%;
+}
+
+  

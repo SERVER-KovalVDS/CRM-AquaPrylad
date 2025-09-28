@@ -1,0 +1,20 @@
+[20-Jul-2025 04:23:18 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 209.38.47.250
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1098
+--->>> Location: 52.352, 4.9392
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC

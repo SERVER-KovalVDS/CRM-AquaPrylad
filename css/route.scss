@@ -1,0 +1,177 @@
+@import "var.scss";
+
+.route-container {
+    display: grid;
+    grid-template-areas: 
+        "top-bar top-bar"
+        "personal-content date-bar"
+        "common-content date-bar";
+    grid-template-columns: calc(70% - 3px) calc(30% - 3px);
+    grid-template-rows: auto auto;
+    gap: 4px;
+    justify-content: center;
+    margin-top: 5px;
+
+    .route-top-bar {
+        grid-area: top-bar;
+        width: 100%;
+        border-bottom: 3px solid rgb(var(--color-dark1));
+        display: flex;
+        justify-content: space-around;
+        
+        .route-worker-button {
+            width: 100px;
+            background-color: rgb(var(--color-middle1));
+            color: rgb(var(--color-light2));
+            border: 2px solid rgb(var(--color-dark1));
+            border-bottom: none;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-top: 5px;
+            padding: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+
+            &.active {
+                background-color: rgb(var(--color-dark1));
+
+                &:hover {
+                    background-color: rgb(var(--color-dark1));
+                    color: rgb(var(--color-light2));
+                }
+            }
+
+            &:hover {
+                background-color: rgb(var(--color-light2));
+                color: rgb(var(--color-dark1));
+            }
+
+            &::selection {
+                background: none;
+            }
+        }
+    }
+
+    .route-content.route-personal {
+        display: none;
+        grid-area: personal-content;
+        background-color: rgba(var(--color-middle1), 0.5);
+    }
+
+    .route-content.route-common {
+        grid-area: common-content;
+        background-color: rgba(var(--color-middle1), 0.8);
+        
+    }
+
+    .route-content.route-personal,
+    .route-content.route-common {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid rgb(var(--color-dark1));
+        align-items: flex-start;
+
+        .no_data {
+            margin: 5px auto;
+            padding: 15px;
+            background-color: rgba(var(--color-warning), 0.8);
+            color: rgb(var(--color-light2));
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+    
+    .dragging-container {
+        background-color: rgba(var(--color-alert), 0.3) !important;
+        transition: background-color 0.5s;
+    }
+    
+    .target-container {
+        background-color: rgba(var(--color-info), 0.3) !important;
+        transition: background-color 0.5s;
+    }
+
+    .route-date-bar {
+        grid-area: date-bar;
+        background-color: rgba(var(--color-middle1), 0.8);
+        border: 2px solid rgb(var(--color-dark1));
+        align-content: flex-start;
+        align-items: flex-start;
+
+        .no-worker-selected {
+            margin: 5px auto;
+            padding: 15px;
+            background-color: rgba(var(--color-warning), 0.8);
+            color: rgb(var(--color-light2));
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .current-date-block,
+        .statistic-block {
+            width: 300px;
+            height: 30px;
+            margin: 5px auto;
+            padding: 4px;
+            background-color: rgb(var(--color-middle1));
+            color: rgb(var(--color-dark1));
+            border: 2px solid rgb(var(--color-dark1));
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 150%;
+
+            position: sticky;
+            top: 100px;
+        }
+
+        .current-date-block {
+            position: sticky;
+            top: 50px;
+        }
+
+        .statistic-block {
+            position: sticky;
+            top: 90px;
+        }
+
+        #route-calendar-hr-line {
+            border: none;
+            height: 2px;
+            background-color: rgb(var(--color-dark1));
+        }
+    }
+
+
+    .route-content.route-personal.hidden {
+        display: none;
+        & + .route-content.route-common {
+            grid-area: personal-content;
+        }
+    }
+}
+
+.no-small-screen {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(var(--color-alert));
+    color: rgb(var(--color-light2));
+}
+
+.dragging {
+    cursor: grabbing !important;
+}
+
+@media (max-width: 1200px) {
+    .route-container {
+        display: none;
+    }
+
+    .no-small-screen {
+        display: block;
+    }
+}

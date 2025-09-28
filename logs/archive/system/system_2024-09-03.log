@@ -1,0 +1,20 @@
+[03-Sep-2024 18:15:41 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 54.78.7.7
+---> User agent: Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-gb,en;q=0.5
+---> Accept Encoding: identity
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon Technologies Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.

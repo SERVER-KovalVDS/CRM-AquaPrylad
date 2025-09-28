@@ -1,0 +1,84 @@
+[2024-08-08T07:57:26.602] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-08-08T07:59:10.877] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-08-08T08:08:26.724] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 11m 0s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T08:25:15.052] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Сміян Альона]. Connection time: 0h 26m 4s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T08:54:18.848] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-TASKS] User [Сусло Тетяна].
+[2024-08-08T08:55:44.519] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T08:56:56.409] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T08:59:21.360] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Коваль Людмила]. Connection time: 0h 2m 24s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T09:42:49.096] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сагач Михайло Анатолійович].
+[2024-08-08T09:50:28.002] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T09:53:30.422] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 3m 2s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T09:58:35.674] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 1h 4m 16s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T10:00:21.708] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T10:01:49.689] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сусло Тетяна].
+[2024-08-08T10:02:13.828] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Коваль Людмила]. Connection time: 0h 1m 52s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T10:09:48.419] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сагач Михайло Анатолійович]. Connection time: 0h 26m 59s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T10:14:34.927] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T10:21:05.435] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-TASKS] User [Сагач Михайло Анатолійович].
+[2024-08-08T10:24:35.292] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 10m 0s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T10:30:23.169] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T10:35:09.064] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сагач Михайло Анатолійович]. Connection time: 0h 14m 3s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T10:44:13.077] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 13m 49s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T10:52:57.070] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T11:06:30.908] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 13m 33s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T11:10:16.358] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T11:18:47.818] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 8m 31s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T11:22:14.659] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сагач Михайло Анатолійович].
+[2024-08-08T11:24:14.404] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 1h 22m 24s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T11:24:49.807] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-08-08T11:28:13.346] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T11:33:14.775] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сагач Михайло Анатолійович]. Connection time: 0h 11m 0s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T11:47:31.620] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-METERS] User [Коваль Людмила]. Connection time: 0h 19m 18s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T11:49:34.803] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сагач Михайло Анатолійович].
+[2024-08-08T11:55:08.004] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Сагач Михайло Анатолійович]. Connection time: 0h 5m 33s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T12:29:08.625] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 3h 33m 24s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T12:37:58.860] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T12:53:26.965] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T13:08:55.344] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 15m 28s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T13:11:57.397] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 33m 58s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T13:15:27.462] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T13:17:37.643] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 1h 52m 47s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T13:17:56.382] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 2m 28s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T13:23:38.515] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T13:35:04.934] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T13:43:46.739] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-TASKS] User [Сусло Тетяна].
+[2024-08-08T14:10:24.437] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 26m 37s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T14:16:32.022] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-08-08T14:17:33.143] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Коваль Людмила]. Connection time: 0h 53m 54s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T14:22:03.794] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T14:24:39.666] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сагач Михайло Анатолійович].
+[2024-08-08T14:33:19.922] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сагач Михайло Анатолійович]. Connection time: 0h 8m 40s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T14:34:32.710] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 12m 28s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T14:34:52.722] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T14:38:14.585] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 1h 3m 9s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T14:45:09.035] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T15:09:24.404] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-METERS] User [Коваль Людмила]. Connection time: 0h 34m 31s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T15:09:45.918] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T15:12:27.563] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Сміян Альона]. Connection time: 0h 27m 18s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T15:12:28.586] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 2m 42s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T15:12:58.979] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T15:27:19.173] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T15:28:55.877] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 15m 56s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T15:41:59.918] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Сміян Альона]. Connection time: 0h 14m 40s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T15:43:34.547] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T15:43:43.908] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T15:54:39.338] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 11m 4s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T15:56:59.056] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T16:02:50.670] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 19m 6s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T16:19:29.660] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T16:23:07.064] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сагач Михайло Анатолійович].
+[2024-08-08T16:25:16.340] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Сагач Михайло Анатолійович]. Connection time: 0h 2m 9s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T16:30:40.922] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 2h 14m 8s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T16:31:06.332] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-08-08T16:34:04.723] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 37m 5s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T16:34:45.310] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 15m 15s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T16:35:16.967] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сміян Альона].
+[2024-08-08T16:36:30.966] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T16:40:33.540] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 4m 2s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T16:41:36.459] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T16:43:20.297] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 1m 43s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T16:46:38.294] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-08-08T16:48:50.313] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 2m 12s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-08-08T16:49:12.335] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-TASKS] User [Сміян Альона]. Connection time: 0h 13m 55s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-08-08T16:55:29.436] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 24m 23s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 

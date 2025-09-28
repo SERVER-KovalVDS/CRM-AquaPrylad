@@ -1,0 +1,2356 @@
+@import "var.scss";
+
+/* --- Загальні блоки --- */
+body {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin: 0px;
+    background-color: rgb(var(--color-light2));
+}
+
+.no-data {
+    color: gray;
+}
+
+.highlight {
+    color: var(--highlite_text);
+}
+
+.info-modal_field,
+.warning-modal_field,
+.alert-modal_field {
+    width:              100% - 20px;
+    margin:             10px auto;
+    padding:            10px 5px 0 5px;
+    border-radius:      10px;
+    text-align:         center;
+    font-weight:        bold;
+    color:              rgb(var(--color-light1));
+
+    hr {
+        margin-bottom: 0;
+    }
+
+    .countdown_modal_text {
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
+        color: rgb(var(--color-middle3));
+    }
+}
+
+.info-modal_field {
+    background-color:   rgba(var(--color-info), 0.5);
+}
+
+.warning-modal_field {
+    background-color:   rgba(var(--color-warning), 0.5);
+}
+
+.alert-modal_field {
+    background-color:   rgba(var(--color-alert), 0.5);
+}
+/* --- Кінець загальних блоків --- */
+
+/* --- Блок календаря --- */
+.calendar-container {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(var(--color-dark1));
+    background-color: rgb(var(--color-middle1));
+    padding: 10px;
+    width: 280px;
+    display: none;
+
+    .calendar-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        button {
+            background-color: rgb(var(--color-dark1));
+            color: rgb(var(--color-light1));
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+
+            &:active {
+                background-color: rgb(var(--color-light1));
+                color: rgb(var(--color-dark1));
+            }
+        }
+
+        .month-display {
+            color: rgb(var(--color-light1));
+        }
+    }
+
+    .days-of-week,
+    .days-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        grid-gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .days-of-week {
+        font-weight: bold;
+        background-color: rgb(var(--color-middle1));
+        color: rgb(var(--color-light1));
+        padding: 5px 0;
+
+        span {
+            padding: 5px 0;
+        }
+    }
+
+    .days-container {
+        button {
+            background-color: transparent;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+
+            &.hover,
+            &.calendar-day-green {
+                background-color: rgba(var(--color-info), 0.5);
+                color: rgb(var(--color-light1));
+            }
+
+            &.calendar-day-orange {
+                background-color: rgba(var(--color-warning), 0.5);
+                color: rgb(var(--color-light1));
+            }
+
+            &.calendar-day-red {
+                background-color: rgba(var(--color-alert), 0.5);
+                color: rgb(var(--color-light1));
+            }
+
+            &.calendar-day-grey {
+                background-color: rgba(var(--color-dark1), 0.5);
+                color: rgb(var(--color-light1));
+            }
+
+            &.inactive {
+                color: rgb(var(--color-light1));
+                cursor: not-allowed;
+
+                &:hover {
+                    background-color: transparent;
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+/* --- Кінець блоку календаря --- */
+
+/* --- Блок заголовку --- */
+.header_title {
+    background: linear-gradient(rgb(var(--color-dark1)) 90%, rgb(var(--color-middle1)));
+    color: rgb(var(--color-light2));
+    padding: 1px;
+}
+
+.header_div {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+
+    @media screen and (max-width: 640px) {
+        display: block;
+        font-size: 120%;
+    }
+}
+
+.left_block {
+    @media screen and (max-width: 640px) {
+        display: none;
+    }
+}
+
+.db_error_report {
+    font-size: 150%;
+    color: rgb(var(--color-alert));
+}
+/* --- Кінець блоку заголову --- */
+
+/* --- Блок іконок --- */
+.div_pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+
+    .icon-link {
+        text-decoration: none;
+        color: inherit;
+
+        .icon_pages {
+            margin: 20px;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(var(--color-middle1));
+            box-shadow: 0 4px 8px rgb(var(--color-dark1));
+            border-radius: 10px;
+            color: rgb(var(--color-light2));
+            font-weight: bold;
+            transition: all 0.5s ease;
+
+            &:hover {
+                box-shadow: inset 0 4px 8px rgb(var(--color-dark1));
+                background-color: rgb(var(--color-light2));
+                color: rgb(var(--color-dark1));
+        
+                svg {
+                    fill: rgb(var(--color-dark1));
+                }
+            }
+
+            svg {
+                fill: rgb(var(--color-light2));
+                width: 120px;
+                height: 120px;
+            }
+
+            p {
+                margin-top: 8px;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
+/* --- Кінець блоку іконок --- */
+
+/* --- Полоси віводу повідомлень --- */
+.alert,
+.warning,
+.info {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    align-items: center;
+
+    #alertMessage,
+    #warningMessage,
+    #infoMessage {
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        height: 20px;
+
+        div {
+            color: rgb(var(--color-light2));
+        }
+    }
+    
+    .closebtn {
+        margin-left: 15px;
+        color: rgb(var(--color-light2));
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(2) rotate(90deg);
+        }
+    }
+
+    .server_alert_title,
+    .server_alert_text {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        color: rgb(var(--color-light2));
+    }
+
+    .server_alert_title {
+        font-size: 150%;
+    }
+
+    .server_alert_text {
+        font-size: 110%;
+    }
+}
+
+.alert {
+    background-color: rgb(var(--color-alert));
+}
+
+.warning {
+    background-color: rgb(var(--color-warning));
+}
+
+.info {
+    background-color: rgb(var(--color-info));
+}
+/* --- Кінець полос виводу повідомлень --- */
+
+/* --- Блок прелоадеру --- */
+.animation {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+
+    .an-container {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .animation {
+        .an-container {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+/* --- Кінець блоку прелоадеру --- */
+
+/* --- Кнопка прокрутки сторінки вгору --- */
+#BtnOnTop {
+    display:                none;
+    position:               fixed;
+    bottom:                 80px;
+    right:                  30px;
+    z-index:                100;
+    font-size:              18px;
+    border:                 none;
+    outline:                none;
+    background-color:       rgb(var(--color-dark1));
+    color:                  rgb(var(--color-light1));
+    cursor:                 pointer;
+    padding:                15px;
+    border-radius:          4px;
+    opacity:                0.8;
+
+    &:hover {
+        background-color:        rgb(var(--color-light1));
+        color:                   rgb(var(--color-dark1));
+  }
+}
+/* --- Кінець кнопка прокрутки сторінки вгору --- */
+
+/* --- Блок елементів сторінки --- */
+    /* --- Плаваючі блоки --- */
+    .page_row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+
+        .alert {
+            width: 100%;
+        }
+
+        .page_column {
+            padding: 0;
+            display: flex;
+            flex: 1 0 20%;
+            min-width: 240px;
+            max-width: 20%;
+            box-sizing: border-box;
+
+            .page_card {
+                margin: 5px;
+                border: 2px solid rgb(var(--color-dark2));
+                background-color: rgb(var(--color-middle2));
+                -webkit-box-shadow: 2px 4px 4px 0px rgb(var(--color-dark2));
+                -moz-box-shadow: 2px 4px 4px 0px rgb(var(--color-dark2));
+                box-shadow: 2px 4px 4px 0px rgb(var(--color-dark2));
+                overflow: auto;
+                user-select: none;
+                pointer-events: auto;
+                padding-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-grow: 1;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    border: 4px solid rgb(var(--color-light2));
+                    border-radius: 10px;
+                    transform: scale(1.1);
+                }
+
+                &::selection {
+                    background: none;
+                }
+
+                .page_card_title {
+                    background-color:       rgb(var(--color-dark2));
+                    padding-top:            15px;
+                    padding-bottom:         8px;
+                    margin-bottom:          7px;
+                    color:                  rgb(var(--color-light1));
+                }
+            
+                .page_card_value,
+                .page_card_value_route {
+                    border-bottom:          1px solid rgb(var(--color-dark2));
+                    padding-left:           20px;
+                    padding-right:          20px;
+                }
+
+                .page_card_value {
+                    text-align:             right;
+
+                    &:before {
+                        content:            attr(data-label);
+                        float:              left;
+                        vertical-align:     middle;
+                    }
+
+                }
+
+                .page_card_value_route {
+                    text-align:             center;
+
+                }
+            }
+
+            .on-route {
+                border: 3px solid rgb(var(--color-warning));
+            }
+
+            .not-route {
+                border: 3px solid rgb(var(--color-info));
+            }
+        }
+
+        /* Зменшений розмір колонок - 4 у ряду - для зменшеного екрану */
+        @media screen and (max-width: 1200px) {
+            .page_column {
+                flex: 1 0 25%;
+                max-width: 25%;
+            }
+        }
+
+        /* Зменшений розмір колонок - 3 у ряду - для зменшеного екрану */
+        @media screen and (max-width: 960px) {
+            .page_column {
+                flex: 1 0 33.33%;
+                max-width: 33.33%;
+            }
+        }
+
+        /* Зменшений розмір колонок - 2 у ряду - для зменшеного екрану */
+        @media screen and (max-width: 720px) {
+            .page_column {
+                flex: 1 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Зменшений розмір колонок - 1 у ряду - для мобільного формату */
+        @media screen and (max-width: 480px) {
+            .page_column {
+                flex: 1 0 100%; 
+                max-width: 100%;
+            }
+        }
+    }
+/* --- Кінець блоку елементів сторінки --- */
+
+/* --- Блок сторінки звітів --- */
+.report_date_field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 290px;
+    text-align: center;
+    padding: 4px 0px;
+    border: 1px solid rgb(var(--color-middle1));
+    background-color: rgb(var(--color-light1));
+    color: rgb(var(--color-dark1));
+    font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+/* --- Кінець блоку сторінки звітів --- */
+
+/* --- Блок випадаючих вікон --- */
+.autocomplete-list {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 300px;
+    background-color: rgb(var(--color-middle1));
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    border:                 1px solid rgb(var(--color-dark1));
+    padding: 5px;
+    text-align: center;
+
+    div {
+        text-align: center;
+    }
+
+    .autocomplete-item {
+        padding: 5px 10px;
+        cursor: pointer;
+        color: rgb(var(--color-light1));
+
+        &:hover {
+            background-color: rgb(var(--color-light1));
+            color: rgb(var(--color-dark1));
+        }
+    }
+
+    .not-selectable {
+        pointer-events: none;
+        color: grey;
+        font-style: italic;
+    }
+}
+/* --- Кінець блоку випадаючих вікон --- */
+
+/* --- Блоки карток, Пошуку, Фільтрації та додавання нових обʼєктів --- */
+    /* --- Оформлення підкладки фону для всіх блоків --- */
+        .backgroundOverlay {
+            visibility:             hidden;
+            opacity:                0;
+            position:               fixed;
+            top:                    0px;
+            left:                   0px;
+            height:                 100%;
+            width:                  100%;
+            background-color:       rgba(0, 0, 0, 0.1);
+            backdrop-filter:        blur(3px);
+
+            &.show {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+    /* --- Блоки карток --- */
+        /* --- Фон --- */
+        .CardForm {
+            transform:                      rotate(-360deg) scale(0);
+            transition:                     opacity 0.5s ease-in-out,
+                                            transform 0.5s ease-in-out,
+                                            visibility 0.5s ease-in-out;
+            transform-origin:               top;
+            display:                        flex;
+            align-items:                    center;
+
+            &.show {
+                transform: rotate(0deg) scale(1);
+            }
+
+            /* --- Головний блок --- */
+            .CardFormDiv {
+                border-radius:              10px;
+                margin-left:                auto;
+                margin-right:               auto;
+                background-color:           rgb(var(--color-middle3));
+                border:                     10px solid rgb(var(--color-dark2));
+            
+                /* --- Вміст картки --- */
+                .CardFormTitle {
+                    background-color:           rgb(var(--color-dark2));
+                    color:                      rgb(var(--color-light1));
+                    text-align:                 center;
+                    font-size:                  160%;
+                    font-weight:                bold;
+                    padding:                    8px 10px;
+                }
+
+                .CardFormContent {
+                    padding: 10px;
+                
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                
+                        tr {
+                            border-bottom: 1px solid rgb(var(--color-dark2));
+
+                            td {
+                                padding: 8px;
+
+                                .value-container {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .edit-icon {
+                                        cursor: pointer;
+                                        margin-right: 15px;
+
+                                        svg {
+                                            height: 24px;
+                                            width: 24px;
+                                            fill: rgb(var(--color-warning));
+                                        }
+                                    }
+
+                                    .value-text {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-items: flex-end;
+
+                                        .address-meter-field {
+                                            cursor: pointer;
+                                            width: 150px;
+                                            margin: 2px 0px 2px 15px;
+                                            padding: 3px;
+                                            text-align: center;
+                                            font-weight: bold;
+                                            border-radius: 5px;
+                                            border: 1px solid rgb(var(--color-dark2));
+                                            box-shadow: 2px 2px 5px rgb(var(--color-swadow1)),
+                                                        -2px -2px 5px rgb(var(--color-swadow1));
+
+                                            &.cold {
+                                                color: rgb(var(--color-cancel));
+                                            }
+
+                                            &.hot {
+                                                color: rgb(var(--color-alert));
+                                            }
+
+                                            &.unknown {
+                                                color: rgb(var(--color-dark2));
+                                            }
+
+                                            &:hover {
+                                                background-color: rgb(var(--color-light2));
+                                                box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                                            inset -2px -2px 5px rgb(var(--color-dark2));
+                                            }
+
+                                            &.hiden {
+                                                display: none;
+                                            }
+                                        }
+
+                                        .tasks-identify_meters-block {
+                                            .tasks-identify_meters-input {
+                                                width: 150px;
+                                                padding: 2px;
+                                                border: 2px solid rgb(var(--color-dark2));
+                                                border-radius: 5px;
+                                                background-color: rgb(var(--color-middle3));
+                                                color: rgb(var(--color-dark2));
+                                                text-align: center;
+    
+                                                &::placeholder {
+                                                    text-align: center;
+                                                }
+                                            }
+    
+                                            .tasks-identify_meters-field {
+                                                max-height: 100px;
+                                                width: 150px;
+                                                padding: 2px;
+                                                border: 2px solid rgb(var(--color-dark2));
+                                                border-bottom-left-radius: 10px;
+                                                border-bottom-right-radius: 10px;
+                                                background-color: rgb(var(--color-light1));
+                                                color: rgb(var(--color-dark2));
+                                                text-align: center;
+                                                overflow-x: auto;
+    
+                                                div {
+                                                    cursor: pointer;
+    
+                                                    &:hover {
+                                                        background-color: rgb(var(--color-middle2));
+                                                        color: rgb(var(--color-light1));;
+                                                    }
+                                                }
+                                                
+                                                div[data-addresses-add-meter="NEW"],
+                                                div[data-meters-add-address="NEW"] {
+                                                    background-color: rgba(var(--color-warning), 0.5);
+                                                }
+                                                
+                                                div[data-addresses-add-meter="NEW"]:hover,
+                                                div[data-meters-add-address="NEW"]:hover {
+                                                    background-color: rgb(var(--color-warning));
+                                                    color: rgb(var(--color-light1));
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .edit-form {
+                                    display: none;
+                                    align-items: stretch;
+
+                                    .edit-fields {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+
+                                        .phone-edit-field {
+                                            display: flex;
+                                            justify-content: space-evenly;
+                                            margin-bottom: 6px;
+
+                                            select,
+                                            input {
+                                                background-color: rgb(var(--color-middle2));
+                                                color: rgb(var(--color-light1));
+                                                text-align: center;
+                                                border-radius: 3px;
+                                                border: 1px solid rgb(var(--color-dark2));
+                                                box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                                            inset -2px -2px 5px rgb(var(--color-dark2));
+
+                                                &::placeholder {
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+
+                                        .address-meter-field {
+                                            cursor: pointer;
+                                            margin: 2px 0px 2px 20px;
+                                            padding: 0 5px 0 20px;
+                                            width: 130px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            font-weight: bold;
+                                            border: 1px solid rgb(var(--color-dark2));
+                                            border-radius: 10px;
+
+                                            &.cold {
+                                                color: rgb(var(--color-cancel));
+                                            }
+
+                                            &.hot {
+                                                color: rgb(var(--color-alert));
+                                            }
+
+                                            &.unknown {
+                                                color: rgb(var(--color-dark2));
+                                            }
+
+                                            .dell_btn {
+                                                svg {
+                                                    margin-left: 25px;
+                                                    margin-top: 5px;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    fill: rgba(var(--color-alert), 0.5);
+                                                }
+                                            }
+
+                                            &:hover {
+                                                background-color: rgb(var(--color-light2));
+                                                svg {
+                                                    fill: rgb(var(--color-alert));
+                                                }
+                                            }
+                                        }
+
+                                        .address-new-meter,
+                                        .meters-new-address {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            #address-new-meter-input,
+                                            #meters-new-adress-input {
+                                                padding: 2px;
+                                                border: 2px solid rgb(var(--color-dark2));
+                                                border-radius: 5px;
+                                                background-color: rgb(var(--color-middle3));
+                                                color: rgb(var(--color-dark2));
+                                                text-align: center;
+
+                                                &::placeholder {
+                                                    text-align: center;
+                                                }
+                                            }
+
+                                            #address-new-meter-field,
+                                            #meters-new-adress-field {
+                                                padding: 2px;
+                                                border: 2px solid rgb(var(--color-dark2));
+                                                border-bottom-left-radius: 10px;
+                                                border-bottom-right-radius: 10px;
+                                                background-color: rgb(var(--color-light1));
+                                                color: rgb(var(--color-dark2));
+                                                text-align: center;
+                                                overflow-x: auto;
+
+                                                div {
+                                                    cursor: pointer;
+
+                                                    &:hover {
+                                                        background-color: rgb(var(--color-middle2));
+                                                        color: rgb(var(--color-light1));;
+                                                    }
+                                                }
+                                                
+                                                div[data-addresses-add-meter="NEW"],
+                                                div[data-meters-add-address="NEW"] {
+                                                    background-color: rgba(var(--color-warning), 0.5);
+                                                }
+                                                
+                                                div[data-addresses-add-meter="NEW"]:hover,
+                                                div[data-meters-add-address="NEW"]:hover {
+                                                    background-color: rgb(var(--color-warning));
+                                                    color: rgb(var(--color-light1));
+                                                }
+                                            }
+
+                                            #address-new-meter-input {
+                                                width: 150px;
+                                            }
+
+                                            #address-new-meter-field {
+                                                max-height: 100px;
+                                                width: 150px;
+                                            }
+
+                                            #meters-new-adress-input {
+                                                width: 160px;
+                                                height: 50px;
+                                            }
+
+                                            #meters-new-adress-field {
+                                                max-height: 200px;
+                                                width: 160px;
+                                            }
+
+                                            svg {
+                                                width: 20px;
+                                                height: 20px;
+                                                fill: rgba(var(--color-info), 0.5);
+
+                                                &:hover {
+                                                    fill: rgb(var(--color-info));
+                                                }
+                                            }
+                                        }
+
+                                        .address-new-meter {
+                                            margin: 10px 0 0 20px;
+                                        }
+
+                                        .meters-servisetype-field,
+                                        .meters-location-field,
+                                        .meters-balanser-field,
+                                        .tasks-brigade-field,
+                                        .tasks-pay_methods-field {
+                                            .meters-servisetype-value,
+                                            .meters-location-value,
+                                            .meters-balanser-value,
+                                            .tasks-brigade-value,
+                                            .tasks-pay_methods-value {
+                                                margin: 2px 0px 2px 20px;
+                                                width: 100px;
+                                                padding: 2px;
+                                                border-radius: 5px;
+                                                text-align: center;
+                                                cursor: pointer;
+                                                border: none;
+                                                background-color: rgb(var(--color-middle3));
+                                                color: rgb(var(--color-dark2));
+                                            
+                                                &.active {
+                                                    background-color: rgb(var(--color-middle2));
+                                                    color: rgb(var(--color-middle3));
+                                                }
+                                            }
+                                        }
+
+                                        .button-container {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            
+                                            .add-button {
+                                                svg {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    margin: 5px;
+                                                    fill: rgba(var(--color-info), 0.5);
+
+                                                    &:hover {
+                                                        fill: rgb(var(--color-info));
+                                                    }
+                                                }
+                                            }
+                    
+                                            .remove-button {
+                                                svg {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    margin: 5px;
+                                                    fill: rgba(var(--color-alert), 0.5);
+
+                                                    &:hover {
+                                                        fill: rgb(var(--color-alert));
+                                                    }
+                                                }
+                                            }
+                                            
+                                            #removePhoneButton {
+                                                display: inline-block;
+                                            }
+                                        }
+
+                                        textarea,
+                                        #meters_edit_value,
+                                        #tasks_edit_cost {
+                                            width: calc(100% - 26px);
+                                            padding: 8px;
+                                            background-color: rgb(var(--color-middle2));
+                                            color: rgb(var(--color-light1));
+                                            text-align: center;
+                                            border-radius: 10px;
+                                            border: 1px solid rgb(var(--color-dark2));
+                                            box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                                        inset -2px -2px 5px rgb(var(--color-dark2));
+                                            
+
+                                            &::placeholder {
+                                                text-align: center;
+                                            }
+                                        }
+
+
+                                    }
+
+                                    .edit-buttons {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-evenly;
+                                        margin-right: 15px;
+                                        
+                                        div {
+                                            cursor: pointer;
+                                        }
+                                        
+                                        div[class = 'save'] {
+                                            svg {
+                                                height: 24px;
+                                                width: 24px;
+                                                fill: rgba(var(--color-info), 0.5);
+
+                                                &:hover {
+                                                    fill: rgb(var(--color-info));
+                                                }
+                                            }
+                                        }
+
+                                        div[class = 'cancel'] {
+                                            svg {
+                                                height: 24px;
+                                                width: 24px;
+                                                fill: rgba(var(--color-alert), 0.5);
+
+                                                &:hover {
+                                                    fill: rgb(var(--color-alert));
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .address-task-container,
+                                .meters-address-container,
+                                .meters-task-container,
+                                .tasks-meters-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    .address-task-field,
+                                    .meters-address-field,
+                                    .meters-task-field,
+                                    .tasks-meter-field {
+                                        cursor: pointer;
+                                        width: 140px;
+                                        margin: 2px 0px 2px 5px;
+                                        padding: 3px;
+                                        text-align: center;
+                                        border-radius: 5px;
+                                        border: 1px solid rgb(var(--color-dark2));
+                                        box-shadow: 2px 2px 5px rgb(var(--color-swadow1)),
+                                                    -2px -2px 5px rgb(var(--color-swadow1));
+                                    }
+
+                                    .address-task-field,
+                                    .meters-address-field,
+                                    .meters-task-field {
+                                        &:hover {
+                                            cursor: pointer;
+                                            background-color: rgb(var(--color-middle2));
+                                            color: rgb(var(--color-light1));
+                                            box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                                        inset -2px -2px 5px rgb(var(--color-dark2));
+                                        }
+                                    }
+
+                                    .tasks-meter-field {
+                                        font-weight: bold;
+                                        &.cold {
+                                            color: rgb(var(--color-cancel));
+                                        }
+
+                                        &.hot {
+                                            color: rgb(var(--color-alert));
+                                        }
+
+                                        &.unknown {
+                                            color: rgb(var(--color-dark2));
+                                        }
+
+                                        &:hover {
+                                            background-color: rgb(var(--color-light2));
+                                            box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                                        inset -2px -2px 5px rgb(var(--color-dark2));
+                                        }
+
+                                        &.hiden {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                    .tabs {
+                        display: flex;
+                        justify-content: space-around;
+                        overflow: hidden;
+                        background-color: rgb(var(--color-middle2));
+                        border-radius: 5px;
+                
+                        .tablinks {
+                            background-color: inherit;
+                            border: none;
+                            cursor: pointer;
+                            padding: 4px 6px;
+                            transition: 0.3s;
+                            flex-grow: 1;
+                            text-align: center;
+                            color: rgb(var(--color-light1));
+                            font-weight: bold;
+                        }
+                
+                        .tablinks:hover {
+                            background-color: rgb(var(--color-light1));
+                            color: rgb(var(--color-dark2));
+                        }
+                
+                        .tablinks.active {
+                            background-color: rgb(var(--color-middle3));
+                            color: rgb(var(--color-dark2));
+                        }
+                    }
+                
+                    .tabs_blocks {
+                        display: flex;
+                        justify-content: center;
+
+                        .tabcontent {
+                            width: 350px;
+                            display: none;
+                            padding: 6px 12px;
+                            border-top: none;
+                            border-left: 1px solid rgb(var(--color-dark2));
+                            border-right: 1px solid rgb(var(--color-dark2));
+    
+                            .object_history_container {
+                                max-height: 500px;
+                                padding: 15px 10px;
+                                overflow-y: auto;
+                                user-select: none;
+                                pointer-events: auto;
+                                background-color: rgb(var(--color-dark2));
+                                color: rgb(var(--color-light1));
+                                border: 2px solid rgb(var(--color-middle2));
+                                border-radius: 10px;
+                                box-shadow: inset 2px 2px 5px rgb(var(--color-middle2)),
+                                            inset -2px -2px 5px rgb(var(--color-middle2));
+    
+                                &::selection {
+                                    background: none;
+                                }
+    
+                                .object_history_title {
+                                    text-align: center;
+                                    font-weight: bold;
+                                    font-size: 120%;
+                                }
+    
+                                .object_history_value {
+                                    font-size: 90%;
+                                    font-family: "Courier New", Courier, monospace;
+                                }
+                            }
+                        }
+                    
+                        .tabcontent.active {
+                            display: block;
+                        }
+                    }
+                }
+
+                /* --- Кнопка закриття форми --- */
+                .adrCRD_btn_close,
+                .Meters_btn_close,
+                .Tasks_btn_close {
+                    margin: 5px auto;
+                    border-radius: 4px;
+                    background-color: rgb(var(--color-middle2));
+                    border: 2px solid rgb(var(--color-dark2));
+                    color: rgb(var(--color-light1));
+                    text-align: center;
+                    width: 200px;
+                    transition: transform 0.3s ease;
+                
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        background-color: rgb(var(--color-dark2));
+                        border: 2px solid rgb(var(--color-light1));
+                    }
+                }
+
+                .TasksApplyCancelContainer {
+                    display: flex;
+                    width: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+
+                    .Tasks_btn_apply,
+                    .Tasks_btn_cancel,
+                    .Tasks_btn_back {
+                        margin: 5px auto;
+                        border-radius: 4px;
+                        border: none;
+                        color: rgb(var(--color-light1));
+                        text-align: center;
+                        width: 90px;
+                        transition: transform 0.3s ease;
+                    
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    .Tasks_btn_apply {
+                        background-color: rgba(var(--color-info), 0.5);
+                        border: 2px solid rgb(var(--color-info));
+
+                        &:hover {
+                            background-color: rgb(var(--color-info));
+                            border-color: rgb(var(--color-light1));
+                        }
+                    }
+
+                    .Tasks_btn_cancel {
+                        background-color: rgba(var(--color-alert), 0.5);
+                        border: 2px solid rgb(var(--color-alert));
+
+                        &:hover {
+                            background-color: rgb(var(--color-alert));
+                            border-color: rgb(var(--color-light1));
+                        }
+                    }
+
+                    .Tasks_btn_back {
+                        background-color: rgba(var(--color-warning), 0.5);
+                        border: 2px solid rgb(var(--color-warning));
+
+                        &:hover {
+                            background-color: rgb(var(--color-warning));
+                            border-color: rgb(var(--color-light1));
+                        }
+                    }
+                }
+
+
+            }
+
+            #TasksApplyCancelDiv {
+                width: 350px;
+
+                #TasksApplyCancelContent {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .tasks-apply_cancel-text {
+                        margin-bottom: 10px;
+                        text-align: center;
+    
+                        .title {
+                            margin-top: 0;
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                            font-size: 120%;
+                            color: rgb(var(--color-alert));
+                        }
+                        
+                        .text {
+                            margin: 5px 0;
+                        }
+                    }
+    
+                    .tasks-switch-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        margin-bottom: 10px;
+    
+                        .tasks-switch-button {
+                            border: none;
+                            border-radius: 5px;
+                            background-color: rgb(var(--color-middle2));
+                            color: rgb(var(--color-light1));
+                            cursor: pointer;
+                            padding: 4px 6px;
+                            transition: 0.3s;
+                            font-weight: bold;
+    
+                            &:hover {
+                                background-color: rgb(var(--color-light1));
+                                color: rgb(var(--color-dark2));
+                            }
+                        }
+    
+                        .active {
+                            background-color: rgb(var(--color-middle3));
+                            color: rgb(var(--color-dark2));
+    
+                            &:hover {
+                                background-color: rgb(var(--color-middle3));
+                                color: rgb(var(--color-dark2));
+                            }
+                        }
+                    }
+    
+                    .tasks-separate-block {
+                        margin-bottom: 10px;
+                        max-height: 280px;
+                        overflow-y: auto;
+                        background-color: rgb(var(--color-middle2));
+                        border-radius: 5px;
+    
+                        .task-meter-separate {
+                            margin: 5px;
+                            padding: 5px;
+                            background-color: rgb(var(--color-middle3));
+                            border: 2px solid rgb(var(--color-middle2));
+                            border-radius: 5px;
+    
+                            .meter-number {
+                                margin-bottom: 5px;
+                                color: rgb(var(--color-dark2));
+                                text-align: center;
+                                font-weight: bold;
+                                font-size: 120%;
+                                font-family: "Courier New", Courier, monospace;
+                            }
+    
+                            .meter-actions {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-evenly;
+                                align-items: center;
+    
+                                .action-item {
+                                    margin: 3px;
+                                    width: 120px;
+                                    padding: 2px;
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    border: none;
+                                    background-color: rgb(var(--color-middle3));
+                                    color: rgb(var(--color-dark2));
+                                
+                                    &.active {
+                                        background-color: rgb(var(--color-middle2));
+                                        color: rgb(var(--color-middle3));
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    textarea {
+                        width: 100%;
+                        background-color: rgb(var(--color-middle2));
+                        color: rgb(var(--color-light1));
+                        text-align: center;
+                        border-radius: 10px;
+                        border: 1px solid rgb(var(--color-dark2));
+                        box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                    inset -2px -2px 5px rgb(var(--color-dark2));
+    
+                        &::placeholder {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    /* --- Кінець блоків карток --- */
+
+    /* --- Оформлення блоку пошуку --- */
+        /* --- Затемнений фон --- */
+        .SearchForm {
+            transform: scale(0);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.5s ease-in-out;
+            transform-origin: top left;
+            z-index: 20;
+        
+            &.show {
+                transform: scale(1);
+            }
+        
+            /* --- Головний блок --- */
+            .search_div {
+                width:                  350px;
+                border-radius:          3px;
+                margin-left:            auto;
+                margin-right:           auto;
+                margin-top:             10%;
+                padding:                5px;
+                background-color:       rgb(var(--color-middle1));
+                border:                 2px solid rgb(var(--color-swadow1));
+
+                .search_div_discr {
+                    text-align:             center;
+                    font-weight:            900;
+                    font-size:              120%;
+                    color:                  rgb(var(--color-swadow1));
+                    text-shadow:            4px 4px 10px rgb(var(--color-swadow1));
+                }
+
+                .search_btn_close {
+                    margin: 5px auto;
+                    border-radius: 4px;
+                    background-color: rgba(var(--color-dark1), 0.5);
+                    border: 2px solid rgb(var(--color-dark1));
+                    color: rgb(var(--color-light1));
+                    text-align: center;
+                    width: 200px;
+                    transition: transform 0.3s ease;
+                
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        background-color: rgb(var(--color-dark1));
+                        border: 2px solid rgb(var(--color-light1));
+                    }
+                }
+
+                .search_block {
+                    display:                block;
+                    margin:                 15px auto;
+                    width:                  320px;
+                    background-color:       rgb(var(--color-light1));
+                    outline-color:          rgb(var(--color-dark1));
+                    outline-width:          1px;
+                    border:                 none;
+                    border-radius:          5px;
+                    text-align:             center;
+                }
+                
+                .result_div {
+                    padding:                1px 20px;
+                    overflow:               scroll;
+                    max-height:             400px;
+                    text-align:             center;
+                    border:                 2px solid rgb(var(--color-dark1));
+                    border-radius:          10px;
+    
+                    .result_val {
+                        padding:                0px 10px;
+                        transition:             0.5s;
+                        color:                  rgb(var(--color-light1));
+                    }
+        
+                    .result_val:hover {
+                        background-color:       rgb(var(--color-light1));
+                        color:                  rgb(var(--color-dark1));
+                        cursor:                 pointer;
+                    }
+                }
+        
+                .result_val_no {
+                    background-color:       rgb(var(--color-alert));
+                    color:                  rgb(var(--color-light1));
+                    cursor:                 pointer;
+                    padding:                15px 10px;
+                    text-align:             center;
+                }
+
+                .search_div {
+                    .tabcontent {
+                        .search_block {
+                        @extend .search_block;
+                        }
+                    }
+                }
+
+                .search_div {
+                    .result_div {
+                        @extend .result_div;
+                    }
+                }
+                .search_div {
+                    .tabcontent {
+                        .result_div {
+                        @extend .result_div;
+                        }
+                    }
+                }
+
+                .search_div {
+                    .result_val_no {
+                        @extend .result_val_no;
+                    }
+                }
+                .search_div {
+                    .tabcontent {
+                        .result_val_no {
+                            @extend .result_val_no;
+                        }
+                    }
+                }
+
+                .tabs {
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 15px;
+
+                    .tablinks {
+                        background-color: rgba(var(--color-dark1), 0.5);
+                        color: rgb(var(--color-light1));
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        padding: 4px 6px;
+                        transition: 0.3s;
+                        font-weight: bold;
+                    }
+                    
+                    .tablinks:hover {
+                        background-color: rgb(var(--color-light1));
+                        color: rgb(var(--color-dark1));
+                    }
+                    
+                    .tablinks:focus, .tablinks.active {
+                        background-color: rgb(var(--color-middle1));
+                        color: rgb(var(--color-dark1));
+                    }
+                }
+
+                .tabs_blocks {
+                    display: flex;
+                    justify-content: center;
+
+                    .tabcontent {
+                        width: 350px;
+                        display: none;
+                        padding: 6px 12px;
+                        border-top: none;
+                        border-left: 1px solid rgb(var(--color-dark2));
+                        border-right: 1px solid rgb(var(--color-dark2));
+                    }
+                
+                    .tabcontent.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    /* --- Кінець оформлення блоку пошуку --- */
+
+    /* --- Оформлення блоку фільтру --- */
+        /* --- Затемнений фон --- */
+        .FilterForm {
+            transform: scale(0);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.5s ease-in-out;
+            transform-origin: top left;
+            z-index: 20;
+        
+            &.show {
+                transform: scale(1);
+            }
+
+            /* --- Головний блок --- */
+            .filter_div {
+                width:                  350px;
+                border-radius:          3px;
+                margin-left:            auto;
+                margin-right:           auto;
+                margin-top:             10%;
+                padding:                5px;
+                background-color:       rgb(var(--color-middle1));
+                border:                 2px solid rgb(var(--color-swadow1));
+
+                .filter_div_discr {
+                    text-align:             center;
+                    font-weight:            900;
+                    font-size:              120%;
+                    color:                  rgb(var(--color-swadow1));
+                    text-shadow:            4px 4px 10px rgb(var(--color-swadow1));
+                }
+        
+                .filter_btn_close,
+                .filter_btn {
+                    margin: 5px auto;
+                    border-radius: 4px;
+                    background-color: rgba(var(--color-dark1), 0.5);
+                    border: 2px solid rgb(var(--color-dark1));
+                    color: rgb(var(--color-light1));
+                    text-align: center;
+                    width: 200px;
+                    transition: transform 0.3s ease;
+                
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        background-color: rgb(var(--color-dark1));
+                        border: 2px solid rgb(var(--color-light1));
+                    }
+                }
+
+                #FilterBlock {
+                    #filterForm {
+                        .autocomplete,
+                        .TaskTypeAutocomplete {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            margin-top: 10px;
+
+                            textarea,
+                            input {
+                                width: 300px;
+                                text-align: center;
+                                background-color: rgb(var(--color-light1));
+                                border: none;
+                                border-radius: 5px;
+
+                                &::placeholder {
+                                    color: rgb(var(--color-middle1));
+                                }
+
+                                &:not(:placeholder-shown) {
+                                    background-color: rgba(var(--color-info), var(--filter-bg-opacity));
+                                    color: rgb(var(--color-dark1));
+                                }
+                            }
+                        
+                            .autocomplete-list {
+                                border-radius: 10px;
+                            }
+
+                            .filterButtons {
+                                display: flex;
+                                flex-direction: row;
+                                margin: 5px 0;
+
+                                .filterBtn {
+                                    width: 60px;
+                                    margin: 5px;
+                                    padding: 0px 5px;
+                                    background-color: rgba(var(--color-dark1), 0.5);
+                                    border-radius: 5px;
+                                    color: rgb(var(--color-light1));
+                                    text-align: center;
+                                    font-weight: bold;
+                                    transition: 0.3s;
+
+                                    &.active {
+                                        background-color: rgb(var(--color-middle1));
+                                        color: rgb(var(--color-dark1));
+
+                                        &:hover {
+                                            background-color: rgb(var(--color-middle1));
+                                            color: rgb(var(--color-dark1));
+                                        }
+                                    }
+
+                                    &:hover {
+                                        cursor: pointer;
+                                        background-color: rgb(var(--color-light1));
+                                        color: rgb(var(--color-dark1));
+                                    }
+
+                                }
+                            }
+
+                            .filterCriteria {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                                .filterCriteriaArray {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    textarea {
+                                        margin-top: 5px;
+                                    }
+                                }
+
+                                .filterCriteriaRange {
+                                    width: 300px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-evenly;
+                                    align-items: flex-start;
+
+                                    div {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+
+                                        input {
+                                            width: 100px;
+                                        }
+
+                                        .spFilterRangeStartList,
+                                        .spFilterRangeEndList {
+                                            width: 100px;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .controlButtons {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+
+                            .add-button {
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin: 5px;
+                                    fill: rgba(var(--color-info), 0.5);
+                                }
+                                
+                                svg:hover {
+                                    fill: rgb(var(--color-info));
+                                }
+                            }
+    
+                            .remove-button {
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin: 5px;
+                                    fill: rgba(var(--color-alert), 0.5);
+                                }
+    
+                                svg:hover {
+                                    fill: rgb(var(--color-alert));
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .filter_btn {
+                        margin-top: 15px;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                            background-color: rgb(var(--color-dark1));
+                            border: 2px solid rgb(var(--color-light1));
+                        }
+                    }
+
+                    .tabs {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 15px;
+    
+                        .tablinks {
+                            background-color: rgba(var(--color-dark1), 0.5);
+                            color: rgb(var(--color-light1));
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            padding: 4px 6px;
+                            transition: 0.3s;
+                            font-weight: bold;
+                        }
+                        
+                        .tablinks:hover {
+                            background-color: rgb(var(--color-light1));
+                            color: rgb(var(--color-dark1));
+                        }
+                        
+                        .tablinks:focus, .tablinks.active {
+                            background-color: rgb(var(--color-middle1));
+                            color: rgb(var(--color-dark1));
+                        }
+                    }
+    
+                    .tabs_blocks {
+                        display: flex;
+                        justify-content: center;
+    
+                        .tabcontent {
+                            width: 350px;
+                            display: none;
+                            padding: 6px 12px;
+                            border-top: none;
+                            border-left: 1px solid rgb(var(--color-dark2));
+                            border-right: 1px solid rgb(var(--color-dark2));
+                        }
+                    
+                        .tabcontent.active {
+                            display: block;
+                        }
+                    }
+
+                    .tasks_filter_button_container {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    /* --- Кінець оформлення блоку фільтру --- */
+
+    /* --- Оформлення вікна додавання нового елементу --- */
+        /* --- Затемнений фон --- */
+        .AddNewForm {
+            transform: scale(0);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.5s ease-in-out;
+            transform-origin: top left;
+        
+            &.show {
+                transform: scale(1);
+            }
+
+            /* --- Головний блок --- */
+            .add_new_div {
+                width:              350px;
+                border-radius:      10px;
+                margin-left:        auto;
+                margin-right:       auto;
+                margin-top:         10%;
+                padding:            5px;
+                background-color:   rgb(var(--color-middle3));
+                border:             10px solid #556273;
+
+                /* --- Вміст картки --- */
+                .add_new_title {
+                    text-align:         center;
+                    font-size:          130%;
+                    font-weight:        bold;
+                    color:              rgb(var(--color-dark2));
+                    text-shadow:        4px 4px 10px rgb(var(--color-dark2));
+                    margin-top:         10px;
+                    margin-bottom:      10px;
+                }
+
+                /* --- Таблиця вмісту полів додавання нового лічильника --- */
+                #meterFormTable,
+                #addressFormTable,
+                #tasksFormTableRequired,
+                #tasksFormTableOptional {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    tr {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    td {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        
+                        .optional {
+                            background-color: rgba(var(--color-warning), var(--newdata-bg-opacity));
+                        }
+                        .required {
+                            background-color: rgba(var(--color-alert), var(--newdata-bg-opacity));
+                        }
+
+                        .newADRnoflat_block {
+                            width: 90%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            margin-top: 5px;
+
+                            input[type="checkbox"] {
+                                width: auto;
+                                appearance: none;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                background-color: rgb(var(--color-middle3));
+                                border: 2px solid rgb(var(--color-dark2));
+                                border-radius: 6px;
+                                width: 20px;
+                                height: 20px;
+                                cursor: pointer;
+                                position: relative;
+                            }
+
+                            input[type="checkbox"]::before,
+                            input[type="checkbox"]:checked::before {
+                                position: absolute;
+                                width: 12px;
+                                height: 12px;
+                                top: 2px;
+                                left: 2px;
+                                border-radius: 4px;
+                            }
+
+                            input[type="checkbox"]::before {
+                                content: '\2716';
+                                color: rgba(var(--color-alert), 0.6);
+                            }
+
+                            input[type="checkbox"]:checked::before {
+                                content: '\2714';
+                                color: rgba(var(--color-info), 0.8);
+                            }
+
+
+                            label {
+                                color: rgb(var(--color-dark2));
+                            }
+                        }
+
+                        input {
+                            width: 90%;
+                            text-align: center;
+                            border-radius: 5px;
+
+                            &:not(:placeholder-shown) {
+                                background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+                                color: rgb(var(--color-dark2));
+                            }
+                        }
+
+                        .phone-field-container {
+                            .phoneField {
+                                .optional {
+                                    background-color: rgba(var(--color-warning), var(--newdata-bg-opacity));
+                                }
+                                .required {
+                                    background-color: rgba(var(--color-alert), var(--newdata-bg-opacity));
+                                }
+                                
+                                select {
+                                    border: 1px solid transparent;
+                                    background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+                                }
+
+                                input,
+                                select {
+                                    &:not(:placeholder-shown) {
+                                        background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+                                        color: rgb(var(--color-dark1));
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #tasksFormTableRequired,
+                #tasksFormTableOptional {
+                    td {
+                        .meters-selection {
+                            width: calc(100% - 30px);
+                            min-height: 40px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            padding: 10px 0;
+                            text-align: center;
+                            border: 2px solid rgb(var(--color-dark2));
+                            border-radius: 10px;
+                        
+                            .meter-block {
+                                display: inline-block;
+                                padding: 10px;
+                                margin: 5px;
+                                border: 2px solid rgb(var(--color-middle2));
+                                border-radius: 5px;
+                                cursor: pointer;
+                                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                                transition: all 0.2s ease;
+
+                                &.selected {
+                                    border: 2px solid rgb(var(--color-info));
+                                    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+                                }
+                                
+                                &.neutral {
+                                    border: 2px solid rgb(var(--color-alert));
+                                    cursor: not-allowed;
+                                    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+                                }
+
+                                &.cold {
+                                    color: rgb(var(--color-cancel));
+                                }
+
+                                &.hot {
+                                    color: rgb(var(--color-alert));
+                                }
+
+                                &.unknown {
+                                    color: rgb(var(--color-dark2));
+                                }
+                            }
+                            
+
+                        }
+
+                        .phones-selection {
+                            width: calc(100% - 30px);
+                            min-height: 40px;
+                            padding: 10px 0;
+                            text-align: center;
+                            border: 2px solid rgb(var(--color-dark2));
+                            border-radius: 10px;
+                        }
+
+                        #note {
+                            width: calc(100% - 26px);
+                            height: 150px;
+                            padding: 10px;
+                            resize: vertical;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+
+                            &:not(:placeholder-shown) {
+                                background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+                                color: rgb(var(--color-dark1));
+                            }
+                        }
+
+                        #note::placeholder {
+                            text-align: center;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                #NewMeteraddNewAddressBtn,
+                #NewTaskaddNewAddressBtn,
+                #NewTaskaddNewMeterBtn {
+                    width: 160px;
+                    border: 1px solid rgb(var(--color-dark2));
+                    border-radius: 5px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                        fill: rgb(var(--color-dark2));
+                    }
+                    span {
+                        margin: 10px;
+                        color: rgb(var(--color-dark2));
+                    }
+                }
+
+                #NewMeteraddNewAddressBtn:hover,
+                #NewTaskaddNewAddressBtn:hover,
+                #NewTaskaddNewMeterBtn:hover {
+                    border: 1px solid rgb(var(--color-middle2));
+
+                    svg {
+                        fill: rgb(var(--color-middle2));
+                    }
+                    span {
+                        color: rgb(var(--color-middle2));
+                    }
+                }
+
+                #phoneFields {
+                    width: 100%;
+                    
+                    .phone-field-container {
+                        width: 100%;
+                
+                        .phoneField {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            margin-bottom: 10px;
+                
+                            select {
+                                width: 20%;
+                                margin-right: 10px;
+                            }
+                
+                            input {
+                                width: 60%;
+                            }
+                        }
+                    }
+                
+                    .button-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        .add-button {
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                margin: 5px;
+                                fill: rgba(var(--color-info), 0.5);
+                            }
+                            
+                            svg:hover {
+                                fill: rgb(var(--color-info));
+                            }
+                        }
+
+                        .remove-button {
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                margin: 5px;
+                                fill: rgba(var(--color-alert), 0.5);
+                            }
+
+                            svg:hover {
+                                fill: rgb(var(--color-alert));
+                            }
+                        }
+                        
+                        #removePhoneButton {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                /* --- Кнопки збереження та закриття форми --- */
+                .add_new_btn_save,
+                .add_new_btn_close {
+                    margin: 5px auto;
+                    border-radius: 4px;
+                    background-color: rgb(var(--color-middle2));
+                    border: 2px solid rgb(var(--color-dark2));
+                    color: rgb(var(--color-light1));
+                    text-align: center;
+                    width: 200px;
+                    transition: transform 0.3s ease;
+                
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        background-color: rgb(var(--color-dark2));
+                        border: 2px solid rgb(var(--color-light1));
+                    }
+                }
+
+                .autocomplete-container {
+                    position: relative;
+                }
+
+                #add_task_content {
+                    .tabs {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 15px;
+    
+                        .tablinks {
+                            background-color: rgba(var(--color-dark2), 0.5);
+                            color: rgb(var(--color-light2));
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            padding: 4px 6px;
+                            transition: 0.3s;
+                            font-weight: bold;
+                        }
+                        
+                        .tablinks:hover {
+                            background-color: rgb(var(--color-light2));
+                            color: rgb(var(--color-dark2));
+                        }
+                        
+                        .tablinks:focus, .tablinks.active {
+                            background-color: rgb(var(--color-middle3));
+                            color: rgb(var(--color-dark2));
+                        }
+                    }
+    
+                    .tabs_blocks {
+                        display: flex;
+                        justify-content: center;
+    
+                        .tabcontent {
+                            width: 350px;
+                            display: none;
+                            padding: 6px 12px;
+                            border-top: none;
+                            border-left: 1px solid rgb(var(--color-dark2));
+                            border-right: 1px solid rgb(var(--color-dark2));
+
+                            table {
+                                tr {
+                                    td{
+                                        .phones-selection {
+                                            .phone-edit-field {
+                                                display: flex;
+                                                justify-content: space-evenly;
+                                                margin-bottom: 6px;
+    
+                                                select,
+                                                input {
+                                                    background-color: rgb(var(--color-middle3));
+                                                    color: rgb(var(--color-dark2));
+                                                    text-align: center;
+                                                    border-radius: 3px;
+                                                    border: 1px solid rgb(var(--color-middle2));
+                                                    box-shadow: inset 2px 2px 5px rgb(var(--color-middle2)),
+                                                                inset -2px -2px 5px rgb(var(--color-middle2));
+    
+                                                    &::placeholder {
+                                                        text-align: center;
+                                                    }
+                                                }
+
+                                                select {
+                                                    width: 20%;
+                                                }
+
+                                                input {
+                                                    width: 50%;
+                                                }
+                                            }
+
+                                            .button-container {
+                                                display: flex;
+                                                justify-content: space-evenly;
+
+                                                .add-button {
+                                                    width: 30px;
+                                                    svg {
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        margin: 5px;
+                                                        fill: rgba(var(--color-info), 0.5);
+                                                    }
+                                                    
+                                                    svg:hover {
+                                                        fill: rgb(var(--color-info));
+                                                    }
+                                                }
+                        
+                                                .remove-button {
+                                                    width: 30px;
+                                                    svg {
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        margin: 5px;
+                                                        fill: rgba(var(--color-alert), 0.5);
+                                                    }
+                        
+                                                    svg:hover {
+                                                        fill: rgb(var(--color-alert));
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    
+                        .tabcontent.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* --- Інше форматування --- */
+        .street-autocomplete-item {
+            margin-bottom:      5px;
+            cursor:             pointer;
+        
+            &:hover {
+                background-color: #d0d0d0;
+                color:          #000;
+            }
+        }
+        
+        .old-street-name {
+            font-style:         italic;
+        }
+
+        .normal-field {
+            border:             1px solid transparent;
+        }
+
+        .error-field {
+            border:             2px solid rgb(var(--color-alert));
+        }
+        
+        .error-message {
+            color:              rgb(var(--color-alert));
+            margin-top:         5px;
+            font-size:          0.8em;
+        }
+
+        .new_task_add_meter-popup {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(var(--color-middle2));
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(var(--color-swadow1), 0.1);
+            border: 2px solid rgb(var(--color-dark2));
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            hr {
+                width: 100%;
+                border: 1px solid rgb(var(--color-dark2));
+            }
+
+            .new_meter-kitchen_title {
+                margin-bottom: 5px;
+                color: rgb(var(--color-dark2));
+                font-weight: bold;
+                font-size: 150%;
+            }
+
+            .new_meter-kitchen_elements {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .new_meter-bath_title {
+                margin-bottom: 5px;
+                color: rgb(var(--color-dark2));
+                font-weight: bold;
+                font-size: 150%;
+            }
+
+            .new_meter-bath_elements {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .new_meter-kitchen_cold,
+            .new_meter-bath_cold {
+                svg {
+                    fill: rgb(var(--color-cancel));
+                }
+            }
+
+            .new_meter-kitchen_hot,
+            .new_meter-bath_hot {
+                svg {
+                    fill: rgb(var(--color-alert));
+                }
+            }
+
+            .new_meter-kitchen_unknown,
+            .new_meter-bath_unknown {
+                svg {
+                    fill: rgb(var(--color-dark2));
+                }
+            }
+
+            .new_meter-kitchen_cold,
+            .new_meter-kitchen_hot,
+            .new_meter-kitchen_unknown,
+            .new_meter-bath_cold,
+            .new_meter-bath_hot,
+            .new_meter-bath_unknown {
+                cursor: copy;
+
+                svg {
+                    width: 48px;
+                    height: 48px;
+                                            
+                    &:hover {
+                        filter: drop-shadow(2px 2px 2px rgb(var(--color-light1)));
+                    }
+                }
+            }
+        }
+    /* --- Кінець оформлення вікна додавання нового елемнту --- */  
+/* --- Кінець блоків карток, Пошуку, Фільтрації та додавання нових обʼєктів --- */

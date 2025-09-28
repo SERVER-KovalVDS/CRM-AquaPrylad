@@ -1,0 +1,21 @@
+[27-Feb-2025 01:18:05 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 212.180.203.4
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 03-752
+--->>> Location: 52.2579, 21.0593
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: SUPERMEDIA Sp.z.o.o.
+--->>> Organization: SUPERMEDIA Sp. z o.o.
+--->>> Operator: AS9085 SUPERMEDIA Sp.z.o.o.
+

@@ -1,0 +1,60 @@
+[10-Sep-2024 18:22:00 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 206.168.34.210
+---> User agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Illinois
+--->>> City: Chicago
+--->>> Post code: 60666
+--->>> Location: 41.8781, -87.6298
+--->>> Time zone: America/Chicago
+--->>> Provider: Censys, Inc.
+--->>> Organization: Censys, Inc.
+--->>> Operator: AS398324 Censys, Inc.
+[10-Sep-2024 19:43:49 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 199.45.155.68
+---> User agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Hong Kong
+--->>> Region: Sai Kung District
+--->>> City: Tseung Kwan O
+--->>> Post code: 
+--->>> Location: 22.3119, 114.257
+--->>> Time zone: Asia/Hong_Kong
+--->>> Provider: Censys, Inc.
+--->>> Organization: Censys, Inc.
+--->>> Operator: AS398722 Censys, Inc.
+[10-Sep-2024 20:36:42 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 198.235.24.244
+---> User agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: California
+--->>> City: Santa Clara
+--->>> Post code: 95054
+--->>> Location: 37.3833, -121.983
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: Google LLC
+--->>> Organization: Palo Alto Networks, Inc
+--->>> Operator: AS396982 Google LLC

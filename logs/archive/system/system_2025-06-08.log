@@ -1,0 +1,20 @@
+[08-Jun-2025 05:09:43 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 165.22.65.137
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Germany
+--->>> Region: Hesse
+--->>> City: Frankfurt am Main
+--->>> Post code: 60313
+--->>> Location: 50.1169, 8.6837
+--->>> Time zone: Europe/Berlin
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC

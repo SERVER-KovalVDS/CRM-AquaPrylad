@@ -1,0 +1,2 @@
+[2024-08-11T00:11:56.355] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сагач Михайло Анатолійович].
+[2024-08-11T00:13:09.365] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-REPORTS] User [Сагач Михайло Анатолійович]. Connection time: 0h 1m 13s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 

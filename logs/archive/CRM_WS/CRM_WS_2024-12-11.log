@@ -1,0 +1,95 @@
+[2024-12-11T08:11:30.558] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T08:14:51.341] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T08:22:30.674] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 11m 0s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T08:26:03.983] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ADDRESSES] User [Сусло Тетяна]. Connection time: 0h 11m 12s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T08:28:04.651] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T08:40:36.277] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T08:44:06.218] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 16m 1s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T08:58:22.857] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-12-11T09:22:32.113] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ADDRESSES] User [Коваль Людмила]. Connection time: 0h 24m 9s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T09:23:36.085] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T09:30:07.637] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 49m 31s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T09:31:47.674] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T09:36:16.721] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 12m 40s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T10:11:04.507] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ADDRESSES] User [Сусло Тетяна]. Connection time: 0h 39m 16s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T10:11:18.901] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T10:12:33.551] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T10:23:06.955] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 11m 48s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T10:24:46.324] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T10:31:31.636] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 18m 58s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T10:35:47.684] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 11m 1s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T10:37:26.057] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T10:49:42.315] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 12m 16s. ||| Code: 1006 - Abnormal Closure => Зарезервовано. Використовується для позначення того, що з'єднання було аварійно закрито, наприклад, без відправлення або отримання керуючого кадру закриття. | Reason: 
+[2024-12-11T11:19:57.037] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T11:30:58.601] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 11m 1s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T11:31:22.336] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:25.144] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:27.540] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:29.405] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:33.751] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:39.036] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:48.066] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:49.652] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:31:57.674] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:06.551] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:12.682] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:14.470] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:18.448] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:21.134] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:22.366] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:25.497] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:28.220] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:32:34.397] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Сусло Тетяна].
+[2024-12-11T11:34:07.548] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:35:24.709] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:36:31.541] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: ea9c48fc43c56001773b194cdd95fe63
+[2024-12-11T11:38:24.538] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:38:27.782] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:38:30.463] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:38:33.820] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:40:14.478] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:40:18.149] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:41:28.713] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:42:21.308] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:45:57.972] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:47:17.717] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:47:20.263] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:52:46.222] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T11:52:49.984] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T12:12:57.552] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T12:33:17.522] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 1h 0m 43s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T12:37:02.058] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T12:37:08.995] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T12:37:12.300] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T12:46:12.189] [ERROR] CRM WebSoket - Connection attempt with invalid or missing token: f889bf136324156dead43fd8e6e8e5d3
+[2024-12-11T12:56:25.131] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Коваль Людмила].
+[2024-12-11T13:07:55.173] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 11m 30s. ||| Code: 1006 - Abnormal Closure => Зарезервовано. Використовується для позначення того, що з'єднання було аварійно закрито, наприклад, без відправлення або отримання керуючого кадру закриття. | Reason: 
+[2024-12-11T13:32:37.002] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T13:38:40.499] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-TASKS] User [Коваль Людмила].
+[2024-12-11T13:44:10.285] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 11m 33s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T13:47:34.920] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 8m 54s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-12-11T13:48:50.990] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-METERS] User [Коваль Людмила].
+[2024-12-11T13:48:56.319] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T14:05:42.897] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T14:05:59.405] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 17m 8s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-12-11T14:07:40.155] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 18m 43s. ||| Code: 1001 - Going Away => Кінцева точка закривається, або через збій сервера, або через те, що браузер переходить від сторінки, яка відкрила з'єднання. | Reason: 
+[2024-12-11T14:08:24.718] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 2m 41s. ||| Code: 1006 - Abnormal Closure => Зарезервовано. Використовується для позначення того, що з'єднання було аварійно закрито, наприклад, без відправлення або отримання керуючого кадру закриття. | Reason: 
+[2024-12-11T14:09:18.004] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T14:20:30.336] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 11m 12s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T14:26:03.574] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T14:35:45.013] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-TASKS] User [Коваль Людмила].
+[2024-12-11T14:36:03.049] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ADDRESSES] User [Сусло Тетяна].
+[2024-12-11T14:37:14.588] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 11m 11s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T14:38:53.208] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T14:49:12.726] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 13m 27s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T14:50:36.515] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 11m 43s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T15:03:44.049] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 27m 41s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T15:11:33.062] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сміян Альона].
+[2024-12-11T15:15:13.739] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T15:32:18.144] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сміян Альона]. Connection time: 0h 20m 45s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T15:40:00.742] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 24m 47s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T16:10:17.424] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-ROUTE] User [Сусло Тетяна].
+[2024-12-11T16:21:38.872] [INFO] CRM WebSoket - NEW CONNECTION! [CHERNIGIV-TASKS] User [Коваль Людмила].
+[2024-12-11T16:31:14.080] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Сусло Тетяна]. Connection time: 0h 20m 56s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+[2024-12-11T16:33:12.687] [INFO] CRM WebSoket - CONNECTION CLOSED! [CHERNIGIV-ROUTE] User [Коваль Людмила]. Connection time: 0h 11m 33s. ||| Code: 4000 - Server timeout => Сервер завершив зїєднання через неактивність користувача. | Reason: Server timeout.
+

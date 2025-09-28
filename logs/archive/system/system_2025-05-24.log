@@ -1,0 +1,60 @@
+[24-May-2025 08:37:24 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 45.90.63.110
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Russia
+--->>> Region: Moscow
+--->>> City: Moscow
+--->>> Post code: 109950
+--->>> Location: 55.7487, 37.6187
+--->>> Time zone: Europe/Moscow
+--->>> Provider: HostRoyale Technologies Pvt Ltd
+--->>> Organization: HostRoyale Technologies
+--->>> Operator: AS203020 HostRoyale Technologies Pvt Ltd
+[24-May-2025 12:10:03 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 167.172.27.25
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: New Jersey
+--->>> City: Clifton
+--->>> Post code: 07014
+--->>> Location: 40.8364, -74.1403
+--->>> Time zone: America/New_York
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[24-May-2025 18:00:29 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 13.217.104.33
+---> User agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/24.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Virginia
+--->>> City: Ashburn
+--->>> Post code: 20149
+--->>> Location: 39.0438, -77.4874
+--->>> Time zone: America/New_York
+--->>> Provider: Amazon.com, Inc.
+--->>> Organization: AWS EC2 (us-east-1)
+--->>> Operator: AS14618 Amazon.com, Inc.

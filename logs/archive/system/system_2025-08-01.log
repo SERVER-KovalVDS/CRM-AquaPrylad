@@ -1,0 +1,21 @@
+[01-Aug-2025 05:07:41 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.91.213.89
+---> User agent: Scrapy/2.12.0 (+https://scrapy.org)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Netherlands
+--->>> Region: Groningen
+--->>> City: Groningen
+--->>> Post code: 
+--->>> Location: 53.2193, 6.5665
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (europe-west4)
+--->>> Operator: AS396982 Google LLC
+

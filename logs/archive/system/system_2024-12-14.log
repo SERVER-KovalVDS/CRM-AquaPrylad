@@ -1,0 +1,41 @@
+[14-Dec-2024 17:06:00 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 94.136.185.246
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: India
+--->>> Region: Maharashtra
+--->>> City: Mumbai
+--->>> Post code: 400710
+--->>> Location: 19.0748, 72.8856
+--->>> Time zone: Asia/Kolkata
+--->>> Provider: Contabo Asia Private Limited
+--->>> Organization: Contabo GmbH
+--->>> Operator: AS141995 Contabo Asia Private Limited
+[14-Dec-2024 21:17:23 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.59.126.25
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.9
+---> Accept Encoding: gzip, br, zstd, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Iowa
+--->>> City: Council Bluffs
+--->>> Post code: 
+--->>> Location: 41.2619, -95.8608
+--->>> Time zone: America/Chicago
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-central1)
+--->>> Operator: AS396982 Google LLC
+

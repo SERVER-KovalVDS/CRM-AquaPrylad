@@ -1,0 +1,44 @@
+[31-Aug-2024 00:40:27 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+[31-Aug-2024 00:40:27 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+[31-Aug-2024 00:40:27 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+[31-Aug-2024 00:40:27 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+[31-Aug-2024 17:23:23 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 199.45.155.73
+---> User agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Hong Kong
+--->>> Region: Sai Kung District
+--->>> City: Tseung Kwan O
+--->>> Post code: 
+--->>> Location: 22.3119, 114.257
+--->>> Time zone: Asia/Hong_Kong
+--->>> Provider: Censys, Inc.
+--->>> Organization: Censys, Inc.
+--->>> Operator: AS398722 Censys, Inc.
+[31-Aug-2024 17:45:38 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 167.94.145.107
+---> User agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Michigan
+--->>> City: Ann Arbor
+--->>> Post code: 48104
+--->>> Location: 42.2809, -83.7489
+--->>> Time zone: America/Detroit
+--->>> Provider: Censys, Inc.
+--->>> Organization: Censys, Inc.
+--->>> Operator: AS398705 Censys, Inc.

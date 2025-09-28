@@ -1,0 +1,81 @@
+[02-Oct-2024 08:12:24 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[02-Oct-2024 08:12:24 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[02-Oct-2024 08:22:54 Europe/Kiev] ROUTE [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/route.php
+---> Referer: https://crm.aquaprylad.in.ua/meters.php?token=28dcd033bc497c5653f48f1d51902560
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[02-Oct-2024 08:22:54 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 149.154.161.232
+---> User agent: TelegramBot (like TwitterBot)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: deflate, gzip, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: London
+--->>> Post code: EC1N
+--->>> Location: 51.5074, -0.1196
+--->>> Time zone: Europe/London
+--->>> Provider: Telegram Messenger San Francisco Network
+--->>> Organization: 
+--->>> Operator: AS62041 Telegram Messenger Inc
+

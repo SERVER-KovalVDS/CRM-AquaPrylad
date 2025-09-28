@@ -1,0 +1,21 @@
+[18-Nov-2024 09:16:10 Europe/Helsinki] AUTH [INFO] User [Сусло Тетяна] entered system with flag REMEMBER.
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/authorization.php
+---> Referer: https://crm.aquaprylad.in.ua/auth.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+

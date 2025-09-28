@@ -1,0 +1,60 @@
+[24-Sep-2024 07:54:51 Europe/Kiev] ROUTE [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/route.php
+---> Referer: https://crm.aquaprylad.in.ua/tasks.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[24-Sep-2024 07:54:51 Europe/Kiev] TASKS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 149.154.161.212
+---> User agent: TelegramBot (like TwitterBot)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/tasks.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: deflate, gzip, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: London
+--->>> Post code: EC1N
+--->>> Location: 51.5074, -0.1196
+--->>> Time zone: Europe/London
+--->>> Provider: Telegram Messenger San Francisco Network
+--->>> Organization: 
+--->>> Operator: AS62041 Telegram Messenger Inc
+[24-Sep-2024 08:44:57 Europe/Kiev] MAIN [WARN] Unauthorized access attempt with token provided, but the token is not found in the database.
+---> User IP: 212.180.203.4
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 03-821
+--->>> Location: 52.2509, 21.0709
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: SUPERMEDIA Sp.z.o.o.
+--->>> Organization: SUPERMEDIA Sp. z o.o.
+--->>> Operator: AS9085 SUPERMEDIA Sp.z.o.o.

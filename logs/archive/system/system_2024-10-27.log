@@ -1,0 +1,42 @@
+[27-Oct-2024 01:17:17 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 188.163.20.154
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Lvivska Oblast
+--->>> City: Lviv
+--->>> Post code: 
+--->>> Location: 49.8396, 24.0297
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Kyivstar UA
+--->>> Organization: Kyivstar LLC
+--->>> Operator: AS15895 "Kyivstar" PJSC
+
+[27-Oct-2024 05:22:19 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 64.225.19.57
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.9
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: New Jersey
+--->>> City: Clifton
+--->>> Post code: 07014
+--->>> Location: 40.8364, -74.1403
+--->>> Time zone: America/New_York
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+

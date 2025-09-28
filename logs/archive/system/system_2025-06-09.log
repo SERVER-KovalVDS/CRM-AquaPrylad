@@ -1,0 +1,21 @@
+[09-Jun-2025 21:28:28 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 188.165.54.175
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: https://www.google.it
+---> Accept Language: en-US,en;q=0.9
+---> Accept Encoding: gzip, zstd, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: France
+--->>> Region: Hauts-de-France
+--->>> City: Roubaix
+--->>> Post code: 59100
+--->>> Location: 50.6918, 3.2021
+--->>> Time zone: Europe/Paris
+--->>> Provider: OVH SAS
+--->>> Organization: OVH ISP
+--->>> Operator: AS16276 OVH SAS
+

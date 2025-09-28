@@ -1,0 +1,137 @@
+[20-Aug-2025 23:18:17 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 167.71.175.236
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: New Jersey
+--->>> City: Clifton
+--->>> Post code: 07014
+--->>> Location: 40.8364, -74.1403
+--->>> Time zone: America/New_York
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[20-Aug-2025 23:18:31 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.195.232.153
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.9,de;q=0.8,fr;q=0.7,nl;q=0.6,lb;q=0.5,es;q=0.4,pt;q=0.3
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: Stepney
+--->>> Post code: E1
+--->>> Location: 51.518, -0.0459
+--->>> Time zone: Europe/London
+--->>> Provider: 31173 Services AB
+--->>> Organization: 31173 Services United Kingdom
+--->>> Operator: AS39351 31173 Services AB
+[20-Aug-2025 23:19:46 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 128.192.12.106
+---> User agent: Mozilla/5.0 (compatible; UGAResearchAgent/1.0; Please visit: NISLabUGA.github.io)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Georgia
+--->>> City: Athens
+--->>> Post code: 30606
+--->>> Location: 33.9461, -83.418
+--->>> Time zone: America/New_York
+--->>> Provider: University of Georgia
+--->>> Organization: University of Georgia
+--->>> Operator: AS36441 University of Georgia
+[20-Aug-2025 23:22:32 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 79.184.30.25
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 02-717
+--->>> Location: 52.1804, 21.0383
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: Orange Polska Spolka Akcyjna
+--->>> Organization: Orange Polska S.A.
+--->>> Operator: AS5617 Orange Polska Spolka Akcyjna
+---> User IP: 146.70.59.159
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Portugal
+--->>> Region: Lisbon
+--->>> City: Prior Velho
+--->>> Post code: 2685-310
+--->>> Location: 38.7863, -9.12377
+--->>> Time zone: Europe/Lisbon
+--->>> Provider: M247 Europe
+--->>> Organization: M247 Ltd Lisbon
+--->>> Operator: AS9009 M247 Europe SRL
+---> User IP: 104.197.69.115
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.60 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Iowa
+--->>> City: Council Bluffs
+--->>> Post code: 
+--->>> Location: 41.2619, -95.8608
+--->>> Time zone: America/Chicago
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-central1)
+--->>> Operator: AS396982 Google LLC
+---> User IP: 172.233.62.72
+---> User agent: Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 GLS/100.10.9939.127
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1012
+--->>> Location: 52.3759, 4.8975
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: Akamai Technologies, Inc.
+--->>> Organization: Akamai Technologies, Inc.
+--->>> Operator: AS63949 Akamai Connected Cloud

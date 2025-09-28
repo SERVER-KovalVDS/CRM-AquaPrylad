@@ -1,0 +1,20 @@
+[18-Sep-2024 03:16:14 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 94.141.120.17
+---> User agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: United States
+--->>> Region: New Jersey
+--->>> City: Edison
+--->>> Post code: 08837
+--->>> Location: 40.5269, -74.3374
+--->>> Time zone: America/New_York
+--->>> Provider: Pfcloud UG
+--->>> Organization: Pfcloud UG
+--->>> Operator: AS51396 Pfcloud UG

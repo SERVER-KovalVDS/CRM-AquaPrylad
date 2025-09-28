@@ -1,0 +1,40 @@
+[22-Sep-2024 09:38:07 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 87.236.176.96
+---> User agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: Manchester
+--->>> Post code: M15 6SH
+--->>> Location: 53.4641, -2.23661
+--->>> Time zone: Europe/London
+--->>> Provider: Constantine Cybersecurity Ltd.
+--->>> Organization: Internetmeasurement C
+--->>> Operator: AS211298 INTERNET MEASUREMENT
+[22-Sep-2024 13:11:37 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 87.236.176.192
+---> User agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: Leeds
+--->>> Post code: LS1
+--->>> Location: 53.8008, -1.54908
+--->>> Time zone: Europe/London
+--->>> Provider: Constantine Cybersecurity Ltd.
+--->>> Organization: Internetmeasurement D
+--->>> Operator: AS211298 INTERNET MEASUREMENT

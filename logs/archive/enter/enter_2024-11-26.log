@@ -1,0 +1,41 @@
+[26-Nov-2024 16:49:19 Europe/Helsinki] AUTH [INFO] User [Сусло Тетяна] entered system with flag REMEMBER.
+---> User IP: 88.155.60.186
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/authorization.php
+---> Referer: https://crm.aquaprylad.in.ua/auth.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Ukraine
+--->>> Region: Kyiv City
+--->>> City: Kyiv
+--->>> Post code: 01010
+--->>> Location: 50.4501, 30.5234
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Lifecell UA
+--->>> Organization: Turkcell LLC
+--->>> Operator: AS34058 Limited Liability Company "lifecell"
+[26-Nov-2024 16:52:03 Europe/Helsinki] AUTH [INFO] User [Сусло Тетяна] entered system with flag REMEMBER.
+---> User IP: 88.155.60.186
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/authorization.php
+---> Referer: https://crm.aquaprylad.in.ua/auth.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Ukraine
+--->>> Region: Kyiv City
+--->>> City: Kyiv
+--->>> Post code: 01010
+--->>> Location: 50.4501, 30.5234
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Lifecell UA
+--->>> Organization: Turkcell LLC
+--->>> Operator: AS34058 Limited Liability Company "lifecell"
+

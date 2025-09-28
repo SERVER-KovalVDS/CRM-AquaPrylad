@@ -1,0 +1,81 @@
+[06-Mar-2025 09:08:41 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 47.82.11.188
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Singapore
+--->>> Region: North West
+--->>> City: Singapore
+--->>> Post code: 858877
+--->>> Location: 1.35208, 103.82
+--->>> Time zone: Asia/Singapore
+--->>> Provider: Alibaba (US) Technology Co., Ltd.
+--->>> Organization: Alibaba.com LLC
+--->>> Operator: AS45102 Alibaba (US) Technology Co., Ltd.
+[06-Mar-2025 09:51:16 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 180.163.220.60
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Shanghai
+--->>> City: Shanghai
+--->>> Post code: 200000
+--->>> Location: 31.2304, 121.474
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Telecom (Group)
+--->>> Organization: Chinanet SH
+--->>> Operator: AS4812 China Telecom (Group)
+[06-Mar-2025 15:24:39 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 83.229.84.192
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Germany
+--->>> Region: Hesse
+--->>> City: Frankfurt
+--->>> Post code: 60388
+--->>> Location: 50.1109, 8.6821
+--->>> Time zone: Europe/Berlin
+--->>> Provider: Kamatera Inc
+--->>> Organization: Cloudwebmanage EU FR
+--->>> Operator: AS204548 Kamatera Inc
+[06-Mar-2025 15:31:10 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.247.213.37
+---> User agent: Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon Technologies Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.
+

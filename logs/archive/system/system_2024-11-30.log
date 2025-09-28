@@ -1,0 +1,21 @@
+[30-Nov-2024 05:09:01 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 45.207.52.18
+---> User agent: Chrome/69.0.3497.81 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: zh-CN,zh;q=0.9
+---> Accept Encoding: gzip,deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Hong Kong
+--->>> Region: Eastern
+--->>> City: Chai Wan
+--->>> Post code: 
+--->>> Location: 22.2661, 114.247
+--->>> Time zone: Asia/Hong_Kong
+--->>> Provider: SonderCloud Limited
+--->>> Organization: SonderCloud Limited
+--->>> Operator: AS133199 SonderCloud Limited
+

@@ -1,0 +1,21 @@
+[31-Oct-2024 20:34:45 Europe/Helsinki] AUTH [INFO] User [Сагач Михайло Анатолійович] entered system with flag REMEMBER.
+---> User IP: 188.163.20.154
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/authorization.php
+---> Referer: https://crm.aquaprylad.in.ua/auth.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Ukraine
+--->>> Region: Lvivska Oblast
+--->>> City: Lviv
+--->>> Post code: 
+--->>> Location: 49.8396, 24.0297
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Kyivstar UA
+--->>> Organization: Kyivstar LLC
+--->>> Operator: AS15895 "Kyivstar" PJSC
+

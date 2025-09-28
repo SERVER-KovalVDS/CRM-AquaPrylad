@@ -1,0 +1,80 @@
+[25-May-2025 03:23:17 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 104.152.52.137
+---> User agent: curl/7.61.1
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Illinois
+--->>> City: Chicago
+--->>> Post code: 60611
+--->>> Location: 41.8911, -87.6246
+--->>> Time zone: America/Chicago
+--->>> Provider: Rethem Hosting LLC
+--->>> Organization: Rethem Hosting LLC
+--->>> Operator: AS14987 Rethem Hosting LLC
+[25-May-2025 05:55:35 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 176.53.218.116
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Russia
+--->>> Region: Moscow
+--->>> City: Moscow
+--->>> Post code: 109950
+--->>> Location: 55.7487, 37.6187
+--->>> Time zone: Europe/Moscow
+--->>> Provider: HostRoyale Technologies Pvt Ltd
+--->>> Organization: HostRoyale Technologies
+--->>> Operator: AS203020 HostRoyale Technologies Pvt Ltd
+[25-May-2025 14:13:29 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 161.35.6.116
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: New Jersey
+--->>> City: North Bergen
+--->>> Post code: 07047
+--->>> Location: 40.7964, -74.0203
+--->>> Time zone: America/New_York
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[25-May-2025 19:52:15 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 170.39.217.201
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: France
+--->>> Region: Île-de-France
+--->>> City: Paris
+--->>> Post code: 75008
+--->>> Location: 48.8558, 2.3494
+--->>> Time zone: Europe/Paris
+--->>> Provider: FBW Reseaux Fibres inc
+--->>> Organization: 
+--->>> Operator: AS34534 FBW NETWORKS SAS

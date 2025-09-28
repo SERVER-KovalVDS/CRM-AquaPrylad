@@ -1,0 +1,120 @@
+[22-Aug-2025 09:42:10 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.178.110.68
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Andorra
+--->>> Region: Andorra la Vella
+--->>> City: Andorra la Vella
+--->>> Post code: AD500
+--->>> Location: 42.5063, 1.52184
+--->>> Time zone: Europe/Andorra
+--->>> Provider: Techoff SRV Limited
+--->>> Organization: Techoff SRV Limited
+--->>> Operator: AS48090 TECHOFF SRV LIMITED
+[22-Aug-2025 09:55:42 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 146.190.30.183
+---> User agent: Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1098
+--->>> Location: 52.352, 4.9392
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[22-Aug-2025 12:12:18 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.85.190.68
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Washington, D.C.
+--->>> City: Washington
+--->>> Post code: 
+--->>> Location: 38.9071, -77.0368
+--->>> Time zone: America/New_York
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-east4)
+--->>> Operator: AS396982 Google LLC
+[22-Aug-2025 16:32:12 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.138.57.79
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: South Carolina
+--->>> City: North Charleston
+--->>> Post code: 
+--->>> Location: 32.8771, -80.013
+--->>> Time zone: America/New_York
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-east1)
+--->>> Operator: AS396982 Google LLC
+[22-Aug-2025 19:16:24 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 35.203.165.111
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Oregon
+--->>> City: The Dalles
+--->>> Post code: 97058
+--->>> Location: 45.5945, -121.1786
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-west1)
+--->>> Operator: AS396982 Google LLC
+[22-Aug-2025 19:40:19 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 35.197.49.249
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Oregon
+--->>> City: The Dalles
+--->>> Post code: 97058
+--->>> Location: 45.5945, -121.1786
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-west1)
+--->>> Operator: AS396982 Google LLC

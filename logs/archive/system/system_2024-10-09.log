@@ -1,0 +1,40 @@
+[09-Oct-2024 08:39:52 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[09-Oct-2024 22:34:47 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 192.200.113.156
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Utah
+--->>> City: Salt Lake City
+--->>> Post code: 84136
+--->>> Location: 40.7687, -111.886
+--->>> Time zone: America/Denver
+--->>> Provider: GorillaServers, Inc.
+--->>> Organization: Webnx Inc
+--->>> Operator: AS53850 GorillaServers, Inc.

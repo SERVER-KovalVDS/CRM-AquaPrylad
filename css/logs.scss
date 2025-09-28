@@ -1,0 +1,121 @@
+.main_block {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(var(--color-light2));
+    color: rgb(var(--color-light1));
+    display: flex;
+    flex-direction: column;
+
+    .log-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(var(--color-dark1));
+
+        div {
+            padding: 10px 20px;
+            border: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(var(--color-middle1));
+            color: rgb(var(--color-light1));
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: rgb(var(--color-dark1));
+            }
+        }
+
+        .active,
+        .active:hover {
+            background-color: rgb(var(--color-light1));
+            color: rgb(var(--color-dark1));
+            font-weight: bold;
+            border-top: 1px solid rgb(var(--color-dark1));
+            border-left: 1px solid rgb(var(--color-dark1));
+            border-right: 1px solid rgb(var(--color-dark1));
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .log-buttons {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+
+            div {
+                width: 100px;
+                margin: 5px;
+                padding: 5px 10px; 
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .log-container {
+        flex: 1;
+        max-height: 600px;
+        padding: 10px;
+        background-color: darkslategrey;
+        border: 2px solid rgb(var(--color-dark1));
+        overflow-y: auto;
+        white-space: pre-wrap;
+        font-family: "Courier New", Courier, monospace;
+
+        .log-entry {
+            padding: 4px 0 10px 0;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            border-bottom: 1px solid rgb(var(--color-light1));
+
+            .log-date {
+                width: 100px;
+                flex-shrink: 0;
+            }
+
+            .log-page{
+                width: 100px;
+                flex-shrink: 0;
+                text-align: center;
+            }
+
+            .log-status {
+                width: 70px;
+                flex-shrink: 0;
+                text-align: center;
+            }
+
+            .log-text {
+                flex-grow: 1;
+                word-break: break-all;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .log-entry {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .log-entry {
+                .log-date,
+                .log-page,
+                .log-status,
+                .log-text {
+                    width: 100%;
+                }
+
+                .log-date {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

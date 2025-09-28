@@ -1,0 +1,20 @@
+[12-Sep-2025 10:38:51 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 45.80.158.235
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 00-039
+--->>> Location: 52.2363, 21.0131
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: 1337 Services GmbH
+--->>> Organization: 1337 Services GmbH
+--->>> Operator: AS210558 1337 Services GmbH

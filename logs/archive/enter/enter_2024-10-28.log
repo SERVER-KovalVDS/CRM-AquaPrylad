@@ -1,0 +1,21 @@
+[28-Oct-2024 08:05:04 Europe/Helsinki] AUTH [INFO] User [Сміян Альона] entered system with flag REMEMBER.
+---> User IP: 37.73.28.18
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/authorization.php
+---> Referer: https://crm.aquaprylad.in.ua/auth.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Ukraine
+--->>> Region: Kyiv City
+--->>> City: Kyiv
+--->>> Post code: 
+--->>> Location: 50.4414, 30.4179
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Limited Liability Company "lifecell"
+--->>> Organization: Mobile Clients Internet Access, Limited
+--->>> Operator: AS34058 Limited Liability Company "lifecell"
+

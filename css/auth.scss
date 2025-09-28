@@ -1,0 +1,111 @@
+/* --- Встановлення фонової картинки та шрифту --- */
+body {
+    background-image:           url('../img/auth_background.png');
+    background-repeat:          no-repeat;
+    background-attachment:      fixed; 
+    background-size:            cover;
+    font-family:                'Rubik Burned', cursive;
+}
+
+h2 {
+    margin-bottom:              0px;
+}
+
+/* --- Права полоска під блок вторизації --- */
+.errmsg_div {
+  padding:                      15px;
+  font-family:                  Arial, Helvetica, sans-serif;
+  background-color:             #ccc;
+  color:                        crimson;
+  text-align:                   center;
+  font-weight:                  900;
+}
+
+.auth_field {
+    background-color:           rgba(0,0,0,0.7);
+    position:                   fixed;
+    right:                      0;
+    top:                        0;
+    width:                      500px;
+    height:                     100%;
+}
+
+.auth_div {
+    width:                      300px;
+    margin:                     30% auto 5px auto;
+    font-weight:                100;
+}
+
+.auth_title,
+.auth_values,
+.auth_values input {
+    text-align:                 center;
+}
+
+.auth_values input,
+.auth_submit input,
+.auth_title,
+.auth_values label,
+.auth_values span {
+    color:                      white;
+    opacity:                    0,2;
+}
+
+.auth_values input,
+.auth_submit input {
+    width:                      200px;
+    margin:                     10px 50px;
+    background-color:           rgba(255,255,255,0.2);
+    border-radius:              5px;
+}
+
+.auth_values input {
+    height:                     30px;
+    border:                     none;
+    font-family:                'Sofia Sans Semi Condensed', sans-serif;
+    font-size:                  130%;
+}
+
+.auth_submit input{
+    height:                     50px;
+    font-family:                'Rubik Burned', cursive;
+    font-size:                  150%;
+}
+
+.auth_submit{
+    padding-top:                15px;
+}
+
+.chkbx,
+.chkbx_val {
+    float:                      left;
+}
+
+.chkbx {
+    text-align:                 right;
+    width:                      38%;
+    padding-right:              5px;
+}
+
+.chkbx_val {
+    color:                      white;
+    width:                      58%;
+    padding-left:               5px;
+}
+
+.chkbx::after,
+.chkbx_val::after {
+    float:                      none;
+    display:                    block;
+}
+
+/* Мобільний формат) */
+@media screen and (max-width: 500px) {
+    .auth_field {
+        width:                  100%;
+    }
+    
+    .auth_div {
+        margin:                 15% auto 5px auto;
+    }
+}

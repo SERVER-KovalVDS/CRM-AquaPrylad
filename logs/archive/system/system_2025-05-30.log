@@ -1,0 +1,41 @@
+[30-May-2025 00:02:20 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 196.251.88.26
+---> User agent: SAMSUNG-SGH-A867/A867UCHJ3 SHP/VPP/R5 NetFront/35 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1 UP.Link/6.3.0.0.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1106
+--->>> Location: 52.2986, 4.9728
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: cheapy.host LLC
+--->>> Organization: Internet Secuirty Cheapyhost
+--->>> Operator: AS401120 cheapy.host LLC
+
+[30-May-2025 09:49:08 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 64.227.73.192
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1098
+--->>> Location: 52.352, 4.9392
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC

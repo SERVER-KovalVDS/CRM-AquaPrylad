@@ -1,0 +1,40 @@
+[27-May-2025 03:29:49 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 134.122.160.214
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Japan
+--->>> Region: Tokyo
+--->>> City: Chiyoda
+--->>> Post code: 100-0001
+--->>> Location: 35.694, 139.754
+--->>> Time zone: Asia/Tokyo
+--->>> Provider: Rackip Consultancy Pte. LTD
+--->>> Organization: BGP Network Limited Co., Ltd
+--->>> Operator: AS152194 CTG Server Limited
+[27-May-2025 06:05:35 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 123.6.49.6
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua/
+---> Accept Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Henan
+--->>> City: Zhengzhou
+--->>> Post code: 450000
+--->>> Location: 34.7472, 113.625
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: CNC Group CHINA169 Henan Province Network
+--->>> Organization: 
+--->>> Operator: AS4837 CHINA UNICOM China169 Backbone

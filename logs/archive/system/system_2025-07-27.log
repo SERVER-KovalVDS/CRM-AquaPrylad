@@ -1,0 +1,20 @@
+[27-Jul-2025 13:56:11 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.247.137.34
+---> User agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: London
+--->>> Post code: WC2N
+--->>> Location: 51.5081, -0.1278
+--->>> Time zone: Europe/London
+--->>> Provider: Driftnet Ltd
+--->>> Organization: Constantine Cybersecurity LTD
+--->>> Operator: AS211298 Driftnet Ltd

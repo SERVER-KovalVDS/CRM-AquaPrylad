@@ -1,0 +1,40 @@
+[11-May-2025 09:31:31 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 64.227.151.9
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: India
+--->>> Region: Karnataka
+--->>> City: Bengaluru
+--->>> Post code: 560100
+--->>> Location: 12.9753, 77.591
+--->>> Time zone: Asia/Kolkata
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[11-May-2025 10:37:12 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 54.229.20.165
+---> User agent: Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon.com, Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.

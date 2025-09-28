@@ -1,0 +1,41 @@
+[24-Jul-2025 04:12:42 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 18.224.192.118
+---> User agent: Mozilla/5.0 zgrab/0.x
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Ohio
+--->>> City: Dublin
+--->>> Post code: 43017
+--->>> Location: 40.0992, -83.1141
+--->>> Time zone: America/New_York
+--->>> Provider: Amazon.com, Inc.
+--->>> Organization: AWS EC2 (us-east-2)
+--->>> Operator: AS16509 Amazon.com, Inc.
+[24-Jul-2025 20:53:08 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 47.82.11.12
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Singapore
+--->>> Region: North West
+--->>> City: Singapore
+--->>> Post code: 858877
+--->>> Location: 1.35208, 103.82
+--->>> Time zone: Asia/Singapore
+--->>> Provider: Alibaba (US) Technology Co., Ltd.
+--->>> Organization: Alibaba.com LLC
+--->>> Operator: AS45102 Alibaba (US) Technology Co., Ltd.
+

@@ -1,0 +1,96 @@
+[30-Aug-2024 23:49:43 Europe/Kiev] MAIN [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 34.243.67.75
+---> User agent: Mozilla/4.0 (compatible; Netcraft Web Server Survey)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: https://www.netcraft.com/survey/
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: HEAD
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon Technologies Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.
+---> User IP: 194.169.175.144
+---> User agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Lithuania
+--->>> Region: Kaunas
+--->>> City: Kaunas
+--->>> Post code: 44001
+--->>> Location: 54.8985, 23.9036
+--->>> Time zone: Europe/Vilnius
+--->>> Provider: UAB Host Baltic
+--->>> Organization: Emanuel Hosting Ltd
+--->>> Operator: AS209605 UAB Host Baltic
+---> User IP: 194.169.175.144
+---> User agent: python-requests/2.31.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Lithuania
+--->>> Region: Kaunas
+--->>> City: Kaunas
+--->>> Post code: 44001
+--->>> Location: 54.8985, 23.9036
+--->>> Time zone: Europe/Vilnius
+--->>> Provider: UAB Host Baltic
+--->>> Organization: Emanuel Hosting Ltd
+--->>> Operator: AS209605 UAB Host Baltic
+---> User IP: 194.169.175.144
+---> User agent: python-requests/2.31.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Lithuania
+--->>> Region: Kaunas
+--->>> City: Kaunas
+--->>> Post code: 44001
+--->>> Location: 54.8985, 23.9036
+--->>> Time zone: Europe/Vilnius
+--->>> Provider: UAB Host Baltic
+--->>> Organization: Emanuel Hosting Ltd
+--->>> Operator: AS209605 UAB Host Baltic
+---> User IP: 194.169.175.144
+---> User agent: python-requests/2.31.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Lithuania
+--->>> Region: Kaunas
+--->>> City: Kaunas
+--->>> Post code: 44001
+--->>> Location: 54.8985, 23.9036
+--->>> Time zone: Europe/Vilnius
+--->>> Provider: UAB Host Baltic
+--->>> Organization: Emanuel Hosting Ltd
+--->>> Operator: AS209605 UAB Host Baltic

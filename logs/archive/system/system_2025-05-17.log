@@ -1,0 +1,21 @@
+[17-May-2025 11:32:51 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.247.137.124
+---> User agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Türkiye
+--->>> Region: Bursa Province
+--->>> City: Bursa
+--->>> Post code: 16000
+--->>> Location: 40.1925, 29.0587
+--->>> Time zone: Europe/Istanbul
+--->>> Provider: Driftnet Ltd
+--->>> Organization: Constantine Cybersecurity LTD
+--->>> Operator: AS211298 Driftnet Ltd
+

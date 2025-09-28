@@ -1,0 +1,61 @@
+[07-Aug-2025 17:51:14 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 47.82.11.109
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Singapore
+--->>> Region: North West
+--->>> City: Singapore
+--->>> Post code: 858877
+--->>> Location: 1.35208, 103.82
+--->>> Time zone: Asia/Singapore
+--->>> Provider: Alibaba (US) Technology Co., Ltd.
+--->>> Organization: Alibaba.com LLC
+--->>> Operator: AS45102 Alibaba (US) Technology Co., Ltd.
+[07-Aug-2025 19:42:42 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 198.144.177.237
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Illinois
+--->>> City: Elk Grove Village
+--->>> Post code: 60009
+--->>> Location: 42.0026, -87.9644
+--->>> Time zone: America/Chicago
+--->>> Provider: HostPapa
+--->>> Organization: 
+--->>> Operator: AS36352 HostPapa
+[07-Aug-2025 23:09:44 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.240.168.84
+---> User agent: Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-gb,en;q=0.5
+---> Accept Encoding: identity
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon Technologies Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.
+

@@ -1,0 +1,80 @@
+[22-May-2025 20:25:08 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 142.93.129.190
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1098
+--->>> Location: 52.352, 4.9392
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[22-May-2025 20:25:41 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 188.146.164.30
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 03-768
+--->>> Location: 52.2579, 21.0593
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: T-Mobile Polska S.A.
+--->>> Organization: T-Mobile Polska S.A.
+--->>> Operator: AS12912 T-Mobile Polska S.A.
+[22-May-2025 20:26:50 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 205.169.39.29
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Texas
+--->>> City: Dallas
+--->>> Post code: 75270
+--->>> Location: 32.7767, -96.797
+--->>> Time zone: America/Chicago
+--->>> Provider: Level 3 Communications, Inc.
+--->>> Organization: CenturyLink Communications, LLC
+--->>> Operator: AS3356 Level 3 Parent, LLC
+[22-May-2025 20:26:54 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 205.169.39.151
+---> User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Texas
+--->>> City: Dallas
+--->>> Post code: 75270
+--->>> Location: 32.7767, -96.797
+--->>> Time zone: America/Chicago
+--->>> Provider: Level 3 Communications, Inc.
+--->>> Organization: CenturyLink Communications, LLC
+--->>> Operator: AS3356 Level 3 Parent, LLC

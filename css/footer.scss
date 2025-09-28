@@ -1,0 +1,264 @@
+/* --- Блоки карток --- */
+    /* --- Затемнений фон --- */
+    .adrCRDform,
+    .MetersForm,
+    .TasksForm {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100vh);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color:   rgba(0, 0, 0, 0.1);
+        backdrop-filter:    blur(3px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+          }
+    }
+    
+    /* --- Головний блок --- */
+    .adrCRDdiv,
+    .MetersDiv,
+    .TasksDiv {
+        width:                      400px;
+        border-radius:              10px;
+        margin-left:                auto;
+        margin-right:               auto;
+        margin-top:                 10%;
+        background-color:           rgb(var(--color-middle3));
+        border:                     10px solid rgb(var(--color-dark2));
+    
+        /* --- Вміст картки --- */
+        .adrCRDtitle,
+        .MetersTitle,
+        .TasksTitle {
+            background-color:           rgb(var(--color-dark2));
+            color:                      rgb(var(--color-light1));
+            text-align:                 center;
+            font-size:                  160%;
+            font-weight:                bold;
+            padding:                    8px 10px;
+        }
+
+        .adrCRDContent,
+        .MetersContent,
+        .TasksContent {
+            padding: 10px;
+        
+            table {
+                width: 100%;
+                border-collapse: collapse;
+        
+                tr {
+                    border-bottom: 1px solid rgb(var(--color-dark2));
+                }
+        
+                td {
+                    padding: 8px;
+
+                    .value-container {
+                        display: flex;
+                        align-items: center;
+
+                        .edit-icon {
+                            cursor: pointer;
+                            margin-right: 15px;
+
+                            svg {
+                                height: 24px;
+                                width: 24px;
+                                fill: rgb(var(--color-warning));
+                            }
+                        }
+                    }
+
+                    .edit-form {
+                        display: none;
+
+                        .edit-fields {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+
+                            textarea {
+                                width: 100%;
+                                padding: 8px;
+                                background-color: rgb(var(--color-middle2));
+                                color: rgb(var(--color-light1));;
+                                border-radius: 10px;
+                                border: 1px solid rgb(var(--color-dark2));
+                                box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                            inset -2px -2px 5px rgb(var(--color-dark2));
+                                
+
+                                &::placeholder {
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        .edit-buttons {
+                            display: flex;
+                            justify-content: space-around;
+                            
+                            div {
+                                cursor: pointer;
+                            }
+                            
+                            div[class = 'save'] {
+                                svg {
+                                    fill: rgb(var(--color-info));
+                                }
+                            }
+
+                            div[class = 'cancel'] {
+                                svg {
+                                    fill: rgb(var(--color-alert));
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        
+            .tabs {
+                overflow: hidden;
+                background-color: rgb(var(--color-middle2));
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-around;
+        
+                .tablinks {
+                    background-color: inherit;
+                    border: none;
+                    cursor: pointer;
+                    padding: 4px 6px;
+                    transition: 0.3s;
+                    flex-grow: 1;
+                    text-align: center;
+                    color: rgb(var(--color-light1));
+                    font-weight: bold;
+                }
+        
+                .tablinks:hover {
+                    background-color: rgb(var(--color-light1));
+                    color: rgb(var(--color-dark2));
+                }
+        
+                .tablinks.active {
+                    background-color: rgb(var(--color-middle3));
+                    color: rgb(var(--color-dark2));
+                }
+            }
+        
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border-top: none;
+
+                .object_history_container {
+                    padding: 15px 10px;
+                    max-height: 300px;
+                    overflow-y: auto;
+                    user-select: none;
+                    pointer-events: auto;
+                    background-color: rgb(var(--color-middle2));
+                    color: rgb(var(--color-light1));
+                    border: 2px solid rgb(var(--color-dark2));
+                    border-radius: 10px;
+                    box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)),
+                                inset -2px -2px 5px rgb(var(--color-dark2));
+
+                    &::selection {
+                        background: none;
+                        }
+
+                    .object_history_title {
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 120%;
+                    }
+
+                    .object_history_value {
+                        font-style: italic;
+                        font-size: 80%;
+                    }
+                }
+            }
+        
+            .tabcontent.active {
+                display: block;
+            }
+        }
+    }
+
+    /* --- Кнопка закриття форми --- */
+    .adrCRD_btn_close,
+    .Meters_btn_close,
+    .Tasks_btn_close {
+        display:                    block;
+        margin:                     5px auto;
+        border-radius:              4px;
+        background-color:           #8A99A6;
+        border:                     none;
+        color:                      #F2F2F2;
+        text-align:                 center;
+        width:                      200px;
+
+        span {
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        
+            &:after {
+              content: '|X|';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+          }
+        
+          &:hover span {
+            padding-right: 25px;
+            letter-spacing: 6px;
+        
+            &:after {
+              opacity: 1;
+            }
+          }
+    }
+/* --- Кінець блоків карток --- */
+
+/* --- Блок підвалу --- */
+    /* Блок устоти, яка перекриваэться пыдвалом */
+    .footer_div_before{
+        height:                     65px;
+    }
+    /* Блок підвалу */
+    .footer_div {
+        position:                   fixed;
+        bottom:                     0;
+        width:                      100%;
+        z-index:                    10;
+        background:                 linear-gradient(rgba(0, 0, 0, 0), rgb(var(--color-dark1)) 15%, rgb(var(--color-dark1)));
+        text-align:                 center;
+        padding-top:                10px;
+        padding-bottom:             10px;
+    }
+
+    /* Текст підвалу */
+    .footer_text {
+        color:                      rgb(var(--color-light1));
+        padding:                    1px;
+        margin:                     5px;
+    }
+/* --- Кінець блоку підвалу --- */

@@ -1,0 +1,21 @@
+[22-Dec-2024 13:25:15 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 178.128.239.130
+---> User agent: Mozilla/5.0 (compatible)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.9
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Canada
+--->>> Region: Ontario
+--->>> City: Toronto
+--->>> Post code: M5A
+--->>> Location: 43.6547, -79.3623
+--->>> Time zone: America/Toronto
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: Digitalocean
+--->>> Operator: AS14061 DigitalOcean, LLC
+

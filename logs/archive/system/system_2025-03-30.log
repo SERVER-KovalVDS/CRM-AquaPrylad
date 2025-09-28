@@ -1,0 +1,40 @@
+[30-Mar-2025 09:13:13 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 159.65.95.38
+---> User agent: Mozilla/5.0 (compatible)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.9
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: Slough
+--->>> Post code: SL1
+--->>> Location: 51.5368, -0.6718
+--->>> Time zone: Europe/London
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[30-Mar-2025 16:53:17 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 60.13.138.131
+---> User agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Xinjiang
+--->>> City: Ürümqi
+--->>> Post code: 830000
+--->>> Location: 43.8266, 87.6169
+--->>> Time zone: Asia/Urumqi
+--->>> Provider: CNC Group CHINA169 Xinjiang Province Network
+--->>> Organization: 
+--->>> Operator: AS4837 CHINA UNICOM China169 Backbone

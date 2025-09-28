@@ -1,0 +1,21 @@
+[11-Aug-2025 07:38:43 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.178.110.161
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: Andorra
+--->>> Region: Andorra la Vella
+--->>> City: Andorra la Vella
+--->>> Post code: AD500
+--->>> Location: 42.5063, 1.52184
+--->>> Time zone: Europe/Andorra
+--->>> Provider: Techoff SRV Limited
+--->>> Organization: Techoff SRV Limited
+--->>> Operator: AS48090 TECHOFF SRV LIMITED
+

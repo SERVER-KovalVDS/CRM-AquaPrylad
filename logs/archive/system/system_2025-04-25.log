@@ -1,0 +1,41 @@
+[25-Apr-2025 07:57:41 Europe/Kiev] ROUTE [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/route.php
+---> Referer: https://crm.aquaprylad.in.ua/route.php
+---> Accept Language: uk,ru;q=0.9,en-US;q=0.8,en;q=0.7
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[25-Apr-2025 11:51:33 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 45.148.10.235
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/121.0.0.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1012
+--->>> Location: 52.3759, 4.8975
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: Techoff SRV Limited
+--->>> Organization: Techoff SRV Limited
+--->>> Operator: AS48090 TECHOFF SRV LIMITED
+

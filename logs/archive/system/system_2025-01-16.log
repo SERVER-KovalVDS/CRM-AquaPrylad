@@ -1,0 +1,21 @@
+[16-Jan-2025 11:57:20 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 79.184.6.226
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 02-904
+--->>> Location: 52.1956, 21.0598
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: Orange Polska Spolka Akcyjna
+--->>> Organization: Orange Polska S.A.
+--->>> Operator: AS5617 Orange Polska Spolka Akcyjna
+

@@ -1,0 +1,101 @@
+[01-Feb-2025 02:11:41 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 143.198.84.195
+---> User agent: curl/7.88.1
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: HEAD
+--->>> Country: Singapore
+--->>> Region: South West
+--->>> City: Singapore
+--->>> Post code: 627753
+--->>> Location: 1.32123, 103.695
+--->>> Time zone: Asia/Singapore
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[01-Feb-2025 18:04:32 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.147.16.58
+---> User agent: Scrapy/2.11.2 (+https://scrapy.org)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Netherlands
+--->>> Region: Groningen
+--->>> City: Groningen
+--->>> Post code: 
+--->>> Location: 53.2193, 6.5665
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (europe-west4)
+--->>> Operator: AS15169 Google LLC
+[01-Feb-2025 22:25:13 Europe/Kiev] MAIN [WARN] Unauthorized access attempt with token provided, but the token is not found in the database.
+---> User IP: 212.180.203.4
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 03-821
+--->>> Location: 52.2509, 21.0709
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: SUPERMEDIA Sp.z.o.o.
+--->>> Organization: SUPERMEDIA Sp. z o.o.
+--->>> Operator: AS9085 SUPERMEDIA Sp.z.o.o.
+[01-Feb-2025 22:25:58 Europe/Kiev] MAIN [WARN] Unauthorized access attempt with token provided, but the token is not found in the database.
+---> User IP: 212.180.203.4
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 03-821
+--->>> Location: 52.2509, 21.0709
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: SUPERMEDIA Sp.z.o.o.
+--->>> Organization: SUPERMEDIA Sp. z o.o.
+--->>> Operator: AS9085 SUPERMEDIA Sp.z.o.o.
+[01-Feb-2025 22:40:26 Europe/Kiev] MAIN [WARN] Unauthorized access attempt with token provided, but the token is not found in the database.
+---> User IP: 212.180.203.4
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 03-821
+--->>> Location: 52.2509, 21.0709
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: SUPERMEDIA Sp.z.o.o.
+--->>> Organization: SUPERMEDIA Sp. z o.o.
+--->>> Operator: AS9085 SUPERMEDIA Sp.z.o.o.
+

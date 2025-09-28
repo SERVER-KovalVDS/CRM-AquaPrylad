@@ -1,0 +1,21 @@
+[23-Jun-2025 23:24:51 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 54.193.124.202
+---> User agent: python-requests/2.32.3
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: California
+--->>> City: San Jose
+--->>> Post code: 95141
+--->>> Location: 37.3394, -121.895
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: Amazon.com, Inc.
+--->>> Organization: AWS EC2 (us-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.
+

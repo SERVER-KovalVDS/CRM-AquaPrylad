@@ -1,0 +1,21 @@
+[21-Jul-2025 23:57:10 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.34.132.221
+---> User agent: python-requests/2.32.4
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Belgium
+--->>> Region: Brussels Capital
+--->>> City: Brussels
+--->>> Post code: 1930
+--->>> Location: 50.9009, 4.4855
+--->>> Time zone: Europe/Brussels
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (europe-west1)
+--->>> Operator: AS396982 Google LLC
+

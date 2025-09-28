@@ -1,0 +1,59 @@
+[10-Sep-2025 05:06:59 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.177.72.38
+---> User agent: python-httpx/0.28.1
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: France
+--->>> Region: Île-de-France
+--->>> City: Vélizy-Villacoublay
+--->>> Post code: 78140
+--->>> Location: 48.7837, 2.20806
+--->>> Time zone: Europe/Paris
+--->>> Provider: Bucklog SARL
+--->>> Organization: FBW NETWORKS
+--->>> Operator: AS211590 Bucklog SARL
+[10-Sep-2025 07:16:17 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 172.104.241.92
+---> User agent: UNDERFINED
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Germany
+--->>> Region: Hesse
+--->>> City: Frankfurt am Main
+--->>> Post code: 60313
+--->>> Location: 50.1169, 8.6837
+--->>> Time zone: Europe/Berlin
+--->>> Provider: Akamai Technologies
+--->>> Organization: Linode
+--->>> Operator: AS63949 Akamai Connected Cloud
+---> User IP: 107.150.0.91
+---> User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: POST
+--->>> Country: United States
+--->>> Region: California
+--->>> City: Los Angeles
+--->>> Post code: 90060
+--->>> Location: 34.0544, -118.244
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: HostPapa
+--->>> Organization: Virtualine Technologies
+--->>> Operator: AS214943 Railnet LLC

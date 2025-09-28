@@ -1,0 +1,42 @@
+[27-Jun-2025 00:59:52 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[27-Jun-2025 06:05:37 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.241.208.229
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 13_6_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 00-510
+--->>> Location: 52.2299, 21.0093
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: 1337 Services GmbH
+--->>> Organization: 1337 Services GmbH
+--->>> Operator: AS210558 1337 Services GmbH
+[27-Jun-2025 18:45:12 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 160.22.122.134
+---> User agent: Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: https://www.google.ca
+---> Accept Language: ko-KR,ko;q=0.9
+---> Accept Encoding: gzip, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Vietnam
+--->>> Region: Da Nang
+--->>> City: Liên Chiểu
+--->>> Post code: 
+--->>> Location: 16.0762, 108.173
+--->>> Time zone: Asia/Ho_Chi_Minh
+--->>> Provider: Viet Digital Technology Liability Company
+--->>> Organization: Ionsite Software ONE Member Company Limited
+--->>> Operator: AS135918 VIET DIGITAL TECHNOLOGY LIABILITY COMPANY
+

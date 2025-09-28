@@ -1,0 +1,21 @@
+[25-Jan-2025 03:15:45 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 217.142.184.125
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Singapore
+--->>> Region: South West
+--->>> City: Singapore
+--->>> Post code: 609934
+--->>> Location: 1.32773, 103.746
+--->>> Time zone: Asia/Singapore
+--->>> Provider: Oracle Corporation
+--->>> Organization: Oracle Corporation
+--->>> Operator: AS31898 Oracle Corporation
+

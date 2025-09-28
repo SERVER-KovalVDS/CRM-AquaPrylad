@@ -1,0 +1,20 @@
+[16-Jul-2025 15:26:30 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 112.175.138.214
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: South Korea
+--->>> Region: Gyeonggi-do
+--->>> City: Yongin-si
+--->>> Post code: 16940
+--->>> Location: 37.298, 127.0777
+--->>> Time zone: Asia/Seoul
+--->>> Provider: Korea Telecom
+--->>> Organization: Kornet
+--->>> Operator: AS4766 Korea Telecom

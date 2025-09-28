@@ -1,0 +1,20 @@
+[06-Aug-2025 08:43:45 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 3.138.185.30
+---> User agent: Mozilla/5.0 zgrab/0.x
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua/
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Ohio
+--->>> City: Dublin
+--->>> Post code: 43017
+--->>> Location: 40.0992, -83.1141
+--->>> Time zone: America/New_York
+--->>> Provider: Amazon.com, Inc.
+--->>> Organization: AWS EC2 (us-east-2)
+--->>> Operator: AS16509 Amazon.com, Inc.

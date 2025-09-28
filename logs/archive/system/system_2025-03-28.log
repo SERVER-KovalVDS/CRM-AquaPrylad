@@ -1,0 +1,21 @@
+[28-Mar-2025 18:20:33 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 82.102.18.124
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: France
+--->>> Region: Île-de-France
+--->>> City: Paris
+--->>> Post code: 75001
+--->>> Location: 48.8534, 2.3488
+--->>> Time zone: Europe/Paris
+--->>> Provider: M247 Europe SRL
+--->>> Organization: M247 Ltd Paris
+--->>> Operator: AS9009 M247 Europe SRL
+

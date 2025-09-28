@@ -1,0 +1,21 @@
+[18-Feb-2025 09:41:02 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.171.31.40
+---> User agent: Twitterbot
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Germany
+--->>> Region: Hesse
+--->>> City: Frankfurt am Main
+--->>> Post code: 65931
+--->>> Location: 50.0933, 8.5095
+--->>> Time zone: Europe/Berlin
+--->>> Provider: Eancenter Telecom LLC
+--->>> Organization: Eancenter Telecom LLC
+--->>> Operator: AS206943 EANCENTER TELECOM LLC
+

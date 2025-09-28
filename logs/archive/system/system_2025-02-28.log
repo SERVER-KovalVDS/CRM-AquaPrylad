@@ -1,0 +1,21 @@
+[28-Feb-2025 06:22:04 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 193.41.206.50
+---> User agent: Mozilla/5.0 (Linux; Android 9; Redmi Note 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.80 Mobile Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: France
+--->>> Region: Île-de-France
+--->>> City: Paris
+--->>> Post code: 75008
+--->>> Location: 48.8558, 2.3494
+--->>> Time zone: Europe/Paris
+--->>> Provider: Alexandrion Romania
+--->>> Organization: Alexandrion Saber Distilleries 1789 S.R.L
+--->>> Operator: AS52053 REDHEBERG Association declaree
+

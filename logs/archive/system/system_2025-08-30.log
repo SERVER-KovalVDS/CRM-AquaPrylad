@@ -1,0 +1,22 @@
+[30-Aug-2025 00:19:43 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[30-Aug-2025 01:08:52 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[30-Aug-2025 16:10:43 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.93.89.60
+---> User agent: Go-http-client/2.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: London
+--->>> Post code: W1B
+--->>> Location: 51.5072, -0.127586
+--->>> Time zone: Europe/London
+--->>> Provider: Limited Network LTD
+--->>> Organization: Limited Network LTD
+--->>> Operator: AS213790 Limited Network LTD

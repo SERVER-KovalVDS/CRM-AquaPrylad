@@ -1,0 +1,123 @@
+[21-Aug-2025 00:25:51 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[21-Aug-2025 00:27:49 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[21-Aug-2025 01:37:50 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[21-Aug-2025 03:22:40 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 205.169.39.53
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Texas
+--->>> City: Dallas
+--->>> Post code: 75270
+--->>> Location: 32.7767, -96.797
+--->>> Time zone: America/Chicago
+--->>> Provider: Level 3 Communications, Inc.
+--->>> Organization: CenturyLink Communications, LLC
+--->>> Operator: AS3356 Level 3 Parent, LLC
+[21-Aug-2025 08:40:19 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 205.169.39.174
+---> User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Texas
+--->>> City: Dallas
+--->>> Post code: 75270
+--->>> Location: 32.7767, -96.797
+--->>> Time zone: America/Chicago
+--->>> Provider: Level 3 Communications, Inc.
+--->>> Organization: CenturyLink Communications, LLC
+--->>> Operator: AS3356 Level 3 Parent, LLC
+[21-Aug-2025 11:39:22 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 35.190.154.135
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: South Carolina
+--->>> City: North Charleston
+--->>> Post code: 
+--->>> Location: 32.8771, -80.013
+--->>> Time zone: America/New_York
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-east1)
+--->>> Operator: AS396982 Google LLC
+[21-Aug-2025 17:06:33 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.173.76.66
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Iowa
+--->>> City: Council Bluffs
+--->>> Post code: 
+--->>> Location: 41.2619, -95.8608
+--->>> Time zone: America/Chicago
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-central1)
+--->>> Operator: AS396982 Google LLC
+[21-Aug-2025 20:18:02 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 5.161.204.20
+---> User agent: Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 GLS/100.10.9939.127
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Virginia
+--->>> City: Ashburn
+--->>> Post code: 20149
+--->>> Location: 39.0469, -77.4903
+--->>> Time zone: America/New_York
+--->>> Provider: Hetzner Online GmbH
+--->>> Organization: Hetzner Online GmbH
+--->>> Operator: AS213230 Hetzner Online GmbH
+[21-Aug-2025 20:21:52 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 34.72.245.245
+---> User agent: Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: http://crm.aquaprylad.in.ua
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Iowa
+--->>> City: Council Bluffs
+--->>> Post code: 
+--->>> Location: 41.2619, -95.8608
+--->>> Time zone: America/Chicago
+--->>> Provider: Google LLC
+--->>> Organization: Google Cloud (us-central1)
+--->>> Operator: AS396982 Google LLC

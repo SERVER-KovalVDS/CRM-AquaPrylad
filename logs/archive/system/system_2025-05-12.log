@@ -1,0 +1,20 @@
+[12-May-2025 22:28:03 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 140.206.194.143
+---> User agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Shanghai
+--->>> City: Shanghai
+--->>> Post code: 
+--->>> Location: 31.2222, 121.4581
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Unicom Shanghai network
+--->>> Organization: Unicom SH
+--->>> Operator: AS17621 China Unicom Shanghai network

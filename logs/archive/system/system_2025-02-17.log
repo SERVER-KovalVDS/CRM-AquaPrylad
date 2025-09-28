@@ -1,0 +1,61 @@
+[17-Feb-2025 09:12:18 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 194.9.14.203
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: NEOCOM Ltd.
+--->>> Organization: NEOCOM Ltd
+--->>> Operator: AS41360 NEOCOM Ltd.
+[17-Feb-2025 09:12:18 Europe/Kiev] METERS [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 194.9.14.203
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: NEOCOM Ltd.
+--->>> Organization: NEOCOM Ltd
+--->>> Operator: AS41360 NEOCOM Ltd.
+[17-Feb-2025 12:19:58 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 27.98.228.199
+---> User agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Tibet
+--->>> City: Nagqu Prefecture
+--->>> Post code: 852000
+--->>> Location: 31.4762, 92.0512
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Unicom Xizang Province Network
+--->>> Organization: 
+--->>> Operator: AS4837 CHINA UNICOM China169 Backbone
+

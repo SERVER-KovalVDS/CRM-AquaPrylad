@@ -1,0 +1,21 @@
+[06-May-2025 01:50:01 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[06-May-2025 08:00:00 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 103.45.246.43
+---> User agent: Python/3.12 aiohttp/3.11.18
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Sweden
+--->>> Region: Stockholm
+--->>> City: Stockholm
+--->>> Post code: 16494
+--->>> Location: 59.3293, 18.0685
+--->>> Time zone: Europe/Stockholm
+--->>> Provider: Kamatera, Inc.
+--->>> Organization: Cloudwebmanage EU ST
+--->>> Operator: AS36007 Kamatera, Inc.

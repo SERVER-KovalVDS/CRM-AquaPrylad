@@ -1,0 +1,41 @@
+[27-Jan-2025 00:25:31 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 185.247.137.78
+---> User agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Türkiye
+--->>> Region: Bursa Province
+--->>> City: Bursa
+--->>> Post code: 16000
+--->>> Location: 40.1925, 29.0587
+--->>> Time zone: Europe/Istanbul
+--->>> Provider: Driftnet Ltd
+--->>> Organization: Constantine Cybersecurity LTD
+--->>> Operator: AS211298 Driftnet Ltd
+[27-Jan-2025 22:58:14 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 3.253.159.90
+---> User agent: Mozilla/4.0 (compatible; Netcraft Web Server Survey)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: https://www.netcraft.com/survey/
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: HEAD
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon Technologies Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.
+

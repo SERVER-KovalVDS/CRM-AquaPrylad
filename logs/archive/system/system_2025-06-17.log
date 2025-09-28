@@ -1,0 +1,25 @@
+[17-Jun-2025 03:43:31 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 175.30.48.194
+---> User agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Jilin
+--->>> City: Jilin City
+--->>> Post code: 132000
+--->>> Location: 43.8378, 126.549
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: Chinanet
+--->>> Organization: Chinanet JL
+--->>> Operator: AS4134 CHINANET-BACKBONE
+[17-Jun-2025 15:35:54 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16

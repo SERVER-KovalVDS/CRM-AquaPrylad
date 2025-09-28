@@ -1,0 +1,21 @@
+[14-Feb-2025 19:39:36 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 123.160.223.72
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en;q=0.9
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Henan
+--->>> City: Zhengzhou
+--->>> Post code: 450000
+--->>> Location: 34.7657, 113.753
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Telecom
+--->>> Organization: Chinanet HA
+--->>> Operator: AS137687 Luoyang, Henan Province, P.R.China.
+

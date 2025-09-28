@@ -1,0 +1,41 @@
+[11-Feb-2025 14:30:31 Europe/Kiev] MAIN [WARN] Unauthorized access attempt with token provided, but the token is not found in the database.
+---> User IP: 79.184.19.102
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 02-757
+--->>> Location: 52.1829, 21.0348
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: Orange Polska Spolka Akcyjna
+--->>> Organization: Orange Polska S.A.
+--->>> Operator: AS5617 Orange Polska Spolka Akcyjna
+[11-Feb-2025 21:10:09 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 101.199.254.232
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Beijing
+--->>> City: Jinrongjie
+--->>> Post code: 
+--->>> Location: 39.9319, 116.345
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Unicom Beijing Province Network
+--->>> Organization: Beijing Qihu Technology Company Limited
+--->>> Operator: AS4808 China Unicom Beijing Province Network
+

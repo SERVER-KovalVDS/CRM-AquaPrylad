@@ -1,0 +1,60 @@
+[13-Oct-2024 02:54:52 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 109.248.17.30
+---> User agent: python-requests/2.32.3
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: HEAD
+--->>> Country: Philippines
+--->>> Region: Metro Manila
+--->>> City: Makati City
+--->>> Post code: 1298
+--->>> Location: 14.5562, 121.0298
+--->>> Time zone: Asia/Manila
+--->>> Provider: HONG KONG Megalayer Technology Co., Limited
+--->>> Organization: HongKong MEGALAYER Technology
+--->>> Operator: AS139646 HONG KONG Megalayer Technology Co.,Limited
+[13-Oct-2024 16:02:45 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 209.38.97.38
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.9
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1012
+--->>> Location: 52.3759, 4.8975
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: DigitalOcean, LLC
+--->>> Organization: DigitalOcean, LLC
+--->>> Operator: AS14061 DigitalOcean, LLC
+[13-Oct-2024 20:37:52 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 103.161.35.64
+---> User agent: python-requests/2.32.3
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1012
+--->>> Location: 52.3676, 4.90414
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: GSJZ(CHINA)TECHNOLOGY CO
+--->>> Organization: Guosheng IDC lease
+--->>> Operator: AS198584 PIO-Hosting GmbH

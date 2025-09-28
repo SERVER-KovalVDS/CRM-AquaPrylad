@@ -1,0 +1,36 @@
+{
+    "log4js":{
+        "appenders": { 
+                "console":      { "type": "console" },
+                "crm_ws":       { "type": "file", "filename": "logs/CRM_WS.log" },
+                "database":     { "type": "file", "filename": "logs/database.log" },
+                "system":       { "type": "file", "filename": "logs/system.log" }
+            },
+            "categories": {
+                "default":      { "appenders": ["console"],             "level": "trace" },
+                "CRM WebSoket": { "appenders": ["console", "crm_ws"],   "level": "info" },
+                "DataBase":     { "appenders": ["database"],            "level": "info" },
+                "System":       { "appenders": ["system"],              "level": "trace" }
+            }
+    },
+    "MySQL": {
+        "R145j7_aqua_crm": {
+            "host":     "localhost",
+            "user":     "R145j7_R145j7",
+            "password": "Go4s90ol99RB$4#toR",
+            "database": "R145j7_aqua_crm"
+        },
+        "R145j7_bases": {
+            "host":     "localhost",
+            "user":     "R145j7_R145j7",
+            "password": "Go4s90ol99RB$4#toR",
+            "database": "R145j7_bases"
+        },
+        "R145j7_aqua_crm_chernigiv": {
+            "host":     "localhost",
+            "user":     "R145j7_R145j7",
+            "password": "Go4s90ol99RB$4#toR",
+            "database": "R145j7_aqua_crm_chernigiv"
+        }
+    }
+}

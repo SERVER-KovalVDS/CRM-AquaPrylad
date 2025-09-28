@@ -1,0 +1,40 @@
+[04-May-2025 12:09:50 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 188.146.162.83
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Poland
+--->>> Region: Mazovia
+--->>> City: Warsaw
+--->>> Post code: 04-382
+--->>> Location: 52.2567, 21.082
+--->>> Time zone: Europe/Warsaw
+--->>> Provider: T-Mobile Polska S.A.
+--->>> Organization: T-Mobile Polska S.A.
+--->>> Operator: AS12912 T-Mobile Polska S.A.
+[04-May-2025 12:10:07 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 103.45.246.43
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,pl;q=0.5
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Sweden
+--->>> Region: Stockholm
+--->>> City: Stockholm
+--->>> Post code: 16494
+--->>> Location: 59.3293, 18.0685
+--->>> Time zone: Europe/Stockholm
+--->>> Provider: Kamatera, Inc.
+--->>> Organization: Cloudwebmanage EU ST
+--->>> Operator: AS36007 Kamatera, Inc.

@@ -1,0 +1,41 @@
+[24-Feb-2025 17:42:08 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 180.163.220.42
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Shanghai
+--->>> City: Shanghai
+--->>> Post code: 200000
+--->>> Location: 31.2304, 121.474
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Telecom (Group)
+--->>> Organization: Chinanet SH
+--->>> Operator: AS4812 China Telecom (Group)
+[24-Feb-2025 17:51:27 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 139.84.135.226
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: India
+--->>> Region: Karnataka
+--->>> City: Bengaluru
+--->>> Post code: 560066
+--->>> Location: 12.9753, 77.591
+--->>> Time zone: Asia/Kolkata
+--->>> Provider: The Constant Company
+--->>> Organization: Vultr Holdings, LLC
+--->>> Operator: AS20473 The Constant Company, LLC
+

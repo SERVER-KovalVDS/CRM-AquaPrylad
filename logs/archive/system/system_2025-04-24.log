@@ -1,0 +1,60 @@
+[24-Apr-2025 19:14:09 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 64.15.129.124
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Canada
+--->>> Region: Quebec
+--->>> City: Montreal
+--->>> Post code: H4G
+--->>> Location: 45.4681, -73.5387
+--->>> Time zone: America/Toronto
+--->>> Provider: Leaseweb Canada Inc.
+--->>> Organization: iWeb Technologies Inc.
+--->>> Operator: AS32613 Leaseweb Canada Inc.
+[24-Apr-2025 19:14:10 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 192.175.111.248
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Canada
+--->>> Region: Quebec
+--->>> City: Montreal
+--->>> Post code: H4G
+--->>> Location: 45.4681, -73.5387
+--->>> Time zone: America/Toronto
+--->>> Provider: Leaseweb Canada Inc.
+--->>> Organization: iWeb Technologies Inc.
+--->>> Operator: AS32613 Leaseweb Canada Inc.
+[24-Apr-2025 19:14:11 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 64.15.129.105
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Canada
+--->>> Region: Quebec
+--->>> City: Montreal
+--->>> Post code: H4G
+--->>> Location: 45.4681, -73.5387
+--->>> Time zone: America/Toronto
+--->>> Provider: Leaseweb Canada Inc.
+--->>> Organization: iWeb Technologies Inc.
+--->>> Operator: AS32613 Leaseweb Canada Inc.

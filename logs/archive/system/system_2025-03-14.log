@@ -1,0 +1,46 @@
+[14-Mar-2025 07:59:39 Europe/Kiev] ROUTE [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/route.php
+---> Referer: https://crm.aquaprylad.in.ua/adresses.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[14-Mar-2025 09:24:08 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 114.250.51.110
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip, deflate
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: China
+--->>> Region: Beijing
+--->>> City: Beijing
+--->>> Post code: 
+--->>> Location: 39.911, 116.395
+--->>> Time zone: Asia/Shanghai
+--->>> Provider: China Unicom Beijing Province Network
+--->>> Organization: 
+--->>> Operator: AS4808 China Unicom Beijing Province Network
+[14-Mar-2025 10:21:29 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+

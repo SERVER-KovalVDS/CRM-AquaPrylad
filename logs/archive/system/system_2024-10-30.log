@@ -1,0 +1,41 @@
+[30-Oct-2024 07:44:23 Europe/Kiev] ROUTE [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 195.60.174.62
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/route.php
+---> Referer: https://crm.aquaprylad.in.ua/adresses.php
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Chernihiv
+--->>> City: Chernihiv
+--->>> Post code: 14000
+--->>> Location: 51.5055, 31.2933
+--->>> Time zone: Europe/Kyiv
+--->>> Provider: Osnova-Internet LLC
+--->>> Organization: Osnova-Internet LLC
+--->>> Operator: AS34814 Osnova-Internet LLC
+[30-Oct-2024 08:09:42 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+[30-Oct-2024 08:09:57 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+[30-Oct-2024 08:10:06 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+[30-Oct-2024 09:11:47 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+

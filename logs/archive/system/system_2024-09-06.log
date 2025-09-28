@@ -1,0 +1,80 @@
+[06-Sep-2024 02:15:56 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 147.185.132.60
+---> User agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: California
+--->>> City: Santa Clara
+--->>> Post code: 95054
+--->>> Location: 37.3833, -121.983
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: Google LLC
+--->>> Organization: Palo Alto Networks, Inc
+--->>> Operator: AS396982 Google LLC
+[06-Sep-2024 05:14:49 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 193.160.245.179
+---> User agent: Go-http-client/1.1
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: London
+--->>> Post code: EC1N
+--->>> Location: 51.5074, -0.1196
+--->>> Time zone: Europe/London
+--->>> Provider: Tefincom S.A.
+--->>> Organization: Packethub S.A
+--->>> Operator: AS136787 TEFINCOM S.A.
+[06-Sep-2024 05:14:49 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 193.160.245.179
+---> User agent: Go-http-client/1.1
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United Kingdom
+--->>> Region: England
+--->>> City: London
+--->>> Post code: EC1N
+--->>> Location: 51.5074, -0.1196
+--->>> Time zone: Europe/London
+--->>> Provider: Tefincom S.A.
+--->>> Organization: Packethub S.A
+--->>> Operator: AS136787 TEFINCOM S.A.
+[06-Sep-2024 06:16:24 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 18.203.137.235
+---> User agent: Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ireland
+--->>> Region: Leinster
+--->>> City: Dublin
+--->>> Post code: D02
+--->>> Location: 53.3498, -6.26031
+--->>> Time zone: Europe/Dublin
+--->>> Provider: Amazon Technologies Inc.
+--->>> Organization: AWS EC2 (eu-west-1)
+--->>> Operator: AS16509 Amazon.com, Inc.

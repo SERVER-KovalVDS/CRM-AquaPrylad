@@ -1,0 +1,62 @@
+[29-Aug-2024 08:44:13 Europe/Kiev] METERS [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 46.211.119.32
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Kyiv City
+--->>> City: Kyiv
+--->>> Post code: 01000
+--->>> Location: 50.4501, 30.5234
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Kyivstar UA
+--->>> Organization: Kyivstar LLC
+--->>> Operator: AS15895 "Kyivstar" PJSC
+[29-Aug-2024 08:54:08 Europe/Kiev] METERS [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 46.211.119.32
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Kyiv City
+--->>> City: Kyiv
+--->>> Post code: 01000
+--->>> Location: 50.4501, 30.5234
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Kyivstar UA
+--->>> Organization: Kyivstar LLC
+--->>> Operator: AS15895 "Kyivstar" PJSC
+[29-Aug-2024 08:54:43 Europe/Kiev] METERS [WARN] Unauthorized access. Token provided, but not found in DB.
+---> User IP: 46.211.119.32
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/meters.php
+---> Referer: UNDERFINED
+---> Accept Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+---> Accept Encoding: gzip, deflate, br, zstd
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: Ukraine
+--->>> Region: Kyiv City
+--->>> City: Kyiv
+--->>> Post code: 01000
+--->>> Location: 50.4501, 30.5234
+--->>> Time zone: Europe/Kiev
+--->>> Provider: Kyivstar UA
+--->>> Organization: Kyivstar LLC
+--->>> Operator: AS15895 "Kyivstar" PJSC
+[29-Aug-2024 15:27:32 Europe/Helsinki] PHP Warning:  Trying to access array offset on value of type null in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/editdata/task_meters_chernigiv.php on line 69
+[29-Aug-2024 15:27:32 Europe/Helsinki] PHP Warning:  Trying to access array offset on value of type null in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/editdata/task_meters_chernigiv.php on line 70

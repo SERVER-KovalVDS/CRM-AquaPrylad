@@ -1,0 +1,11 @@
+[16-Oct-2024 08:28:40 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+[16-Oct-2024 08:28:40 Europe/Helsinki] PHP Fatal error:  Uncaught Exception: Заявка не знайдена. in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php:16
+Stack trace:
+#0 /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata.php(42): include()
+#1 {main}
+  thrown in /home/R145j7/web/crm.aquaprylad.in.ua/public_html/php_server_data/addnewdata/dell_task_chernigiv.php on line 16
+

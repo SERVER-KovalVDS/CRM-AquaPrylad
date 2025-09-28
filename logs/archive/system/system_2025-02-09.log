@@ -1,0 +1,21 @@
+[09-Feb-2025 00:02:02 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 45.148.10.238
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1012
+--->>> Location: 52.3759, 4.8975
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: Techoff SRV Limited
+--->>> Organization: Techoff SRV Limited
+--->>> Operator: AS48090 TECHOFF SRV LIMITED
+

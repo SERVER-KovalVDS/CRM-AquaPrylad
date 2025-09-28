@@ -1,0 +1,41 @@
+[11-Sep-2025 00:27:05 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+[11-Sep-2025 07:05:18 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 169.150.203.200
+---> User agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en-US,en;q=0.5
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: California
+--->>> City: Los Angeles
+--->>> Post code: 90060
+--->>> Location: 34.0544, -118.244
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: Datacamp Limited
+--->>> Organization: Cdnext LAX
+--->>> Operator: AS212238 Datacamp Limited
+[11-Sep-2025 10:30:18 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 95.168.175.164
+---> User agent: Mozilla/5.0 (CentOS; Linux i686; rv:123.0) Gecko/20100101 Firefox/123.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: UNDERFINED
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: HEAD
+--->>> Country: The Netherlands
+--->>> Region: North Holland
+--->>> City: Amsterdam
+--->>> Post code: 1012
+--->>> Location: 52.3667, 4.89454
+--->>> Time zone: Europe/Amsterdam
+--->>> Provider: LeaseWeb Netherlands B.V.
+--->>> Organization: LeaseWeb Netherlands B.V
+--->>> Operator: AS60781 LeaseWeb Netherlands B.V.

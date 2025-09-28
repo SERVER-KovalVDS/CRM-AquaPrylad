@@ -1,0 +1,21 @@
+[15-Feb-2025 15:14:39 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 45.92.19.136
+---> User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: en;q=0.9
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: OFF
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: Florida
+--->>> City: Miami
+--->>> Post code: 33132
+--->>> Location: 25.7838, -80.1823
+--->>> Time zone: America/New_York
+--->>> Provider: Netrouting B.V.
+--->>> Organization: Netrouting, Inc.
+--->>> Operator: AS6206 Netrouting B.V.
+

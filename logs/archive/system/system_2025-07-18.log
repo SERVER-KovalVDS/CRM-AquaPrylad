@@ -1,0 +1,21 @@
+[18-Jul-2025 09:23:28 Europe/Kiev] MAIN [WARN] Unauthorized access attempt without a token provided (missing cookie).
+---> User IP: 172.96.160.216
+---> User agent: Mozilla/5.0 (Fedora; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0
+---> Script filename: /home/R145j7/web/crm.aquaprylad.in.ua/public_html/index.php
+---> Referer: UNDERFINED
+---> Accept Language: UNDERFINED
+---> Accept Encoding: gzip
+---> Connection: close
+---> HTTPS: ON
+---> Server protocol: HTTP/1.0
+---> Request method: GET
+--->>> Country: United States
+--->>> Region: California
+--->>> City: Los Angeles
+--->>> Post code: 90012
+--->>> Location: 34.0609, -118.2414
+--->>> Time zone: America/Los_Angeles
+--->>> Provider: ReliableSite.Net LLC
+--->>> Organization: ReliableSite.Net LLC
+--->>> Operator: AS23470 ReliableSite.Net LLC
+
