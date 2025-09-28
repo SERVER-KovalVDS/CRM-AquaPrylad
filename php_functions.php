@@ -3,6 +3,42 @@
 // =====================================================================================================================================================================
 define('ROOT_PATH', '/home/R145j7/web/crm.aquaprylad.in.ua/public_html');
 
+// === SCSS автокомпилятор ===============================================
+require_once ROOT_PATH . '/vendor/autoload.php';
+
+use ScssPhp\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\OutputStyle;
+
+function scss_autobuild(string $baseDir)
+{
+    if (!is_dir($baseDir)) return;
+
+    $it = new RecursiveIteratorIterator(
+        new RecursiveDirectoryIterator($baseDir, FilesystemIterator::SKIP_DOTS)
+    );
+
+    $scss = new Compiler();
+    $scss->setOutputStyle(OutputStyle::COMPRESSED);
+    $scss->setImportPaths($baseDir);
+
+    foreach ($it as $file) {
+        if ($file->getExtension() !== 'scss') continue;
+
+        $src = $file->getPathname();
+        $dest = preg_replace('/\.scss$/i', '.css', $src);
+
+        // Компилируем только если нужно
+        if (!file_exists($dest) || filemtime($src) > filemtime($dest)) {
+            $css = $scss->compileString(file_get_contents($src))->getCss();
+            file_put_contents($dest, $css);
+        }
+    }
+}
+
+// Запускаем автосборку для папки с css (подставь свою, если другая)
+scss_autobuild(ROOT_PATH . '/css');
+// =======================================================================
+
 $configPath = ROOT_PATH . '/config/default.json';
 $configJson = file_get_contents($configPath);
 $config = json_decode($configJson, true);
