@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* --- Блок верхньої панелі навігації --- */
+/*  Залипання зверху при прокрутці сторінки */
+.stc {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+/*  Блок панелі навігації */
+.topnav {
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background: linear-gradient(rgb(var(--color-middle1)) 80%, rgba(191, 176, 163, 0) 100%);
+}
+/*  Блоки кнопок з лівим та правим вирівнюванням */
+.navi, .navi_r {
+  height: 38px;
+  display: block;
+  text-align: center;
+  padding: 0px 15px;
+  transform: none;
+  color: rgb(var(--color-dark1));
+  font-weight: 900;
+  cursor: pointer;
+}
+.navi a[href], .navi_r a[href] {
+  text-decoration: none;
+  color: rgb(var(--color-dark1));
+}
+.navi .icon_navi, .navi_r .icon_navi {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.navi .icon_navi:hover, .navi .icon_navi.active, .navi_r .icon_navi:hover, .navi_r .icon_navi.active {
+  color: rgb(var(--color-light1));
+}
+.navi .icon_navi:hover svg, .navi .icon_navi.active svg, .navi_r .icon_navi:hover svg, .navi_r .icon_navi.active svg {
+  fill: rgb(var(--color-light1));
+}
+.navi .icon_navi svg, .navi_r .icon_navi svg {
+  fill: rgb(var(--color-dark1));
+  width: 30px;
+  height: 30px;
+}
+.navi {
+  float: left;
+}
+.navi_r {
+  float: right;
+}
+/* Мобільна версія */
+@media screen and (max-width: 640px) {
+  .navi, .navi_r {
+    float: none;
+    height: auto;
+  }
+  .navi_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 3px;
+    align-items: center;
+    justify-items: center;
+  }
+  .navi_grid1, .navi_grid5 {
+    grid-row: 1 / span 2;
+  }
+  .navi_grid1 .icon_navi, .navi_grid5 .icon_navi {
+    width: 45px;
+    height: 45px;
+  }
+  .navi_grid1 .icon_navi svg, .navi_grid5 .icon_navi svg {
+    fill: rgb(var(--color-dark1));
+    width: 40px;
+    height: 40px;
+  }
+  .navi_grid6 {
+    grid-row: 2;
+    grid-column: 2 / span 3;
+    padding-top: 5px;
+    font-size: 70%;
+  }
+  .navi_grid2, .navi_grid3, .navi_grid4 {
+    grid-row: 1;
+  }
+  .navi_grid2 .icon_navi, .navi_grid3 .icon_navi, .navi_grid4 .icon_navi {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+  }
+  .navi_grid2 .icon_navi svg, .navi_grid3 .icon_navi svg, .navi_grid4 .icon_navi svg {
+    fill: rgb(var(--color-dark1));
+    width: 25px;
+    height: 25px;
+  }
+}
+/* --- Кінець блоку верхньої панелі навігації --- */
+/* --- Блок бічної панелі навігації --- */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgb(var(--color-dark1)) 95%, rgba(0, 0, 0, 0) 100%);
+  overflow-x: hidden;
+  padding-top: 60px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0s linear 0.5s;
+}
+.sidebar.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  width: 300px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0s linear 0s;
+}
+.sidebar.hide {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.8s ease-in-out;
+  visibility: hidden;
+}
+.sidebar hr {
+  width: 90%;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 45px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: rgb(var(--color-light2));
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: rgb(var(--color-dark1));
+  background-color: rgb(var(--color-light2));
+}
+.sidebar .pages_btn_container a {
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(var(--color-light2));
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .pages_btn_container a:hover {
+  color: rgb(var(--color-dark1));
+  background: linear-gradient(90deg, rgb(var(--color-light2)) 95%, rgba(0, 0, 0, 0) 100%);
+}
+/* На невеликих екранах, з висотою меньше 450px, змінюється стиль sidenav (меньше відступів і меньший розмір шрифту) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+}
+.city_btn_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.city_btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px 10px;
+  border: 2px solid rgb(var(--color-light2));
+  border-radius: 3px;
+  text-align: center;
+  color: rgb(var(--color-light2));
+  cursor: pointer;
+  width: 160px;
+  font-size: 25px;
+}
+.city_btn.active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(var(--color-light2));
+  color: rgb(var(--color-dark1));
+}
+.city_btn.inactive {
+  background-color: transparent;
+}
+/* --- Кінець блоку бічної панелі навігації --- */

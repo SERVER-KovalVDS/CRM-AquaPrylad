@@ -1,6 +1,6 @@
 <?php
   $title = "Налаштування";
-  $styles = " <link rel='stylesheet' href='css/settings.scss'>
+  $styles = " <link rel='stylesheet' href='css/settings.css'>
               <link href='https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap' rel='stylesheet'>
               <script type='module' src='scripts/settings_common.js'></script>
 ";

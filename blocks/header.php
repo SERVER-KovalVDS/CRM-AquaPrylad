@@ -95,9 +95,9 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                     <title><?php echo $title; ?></title>
                     <link rel="shortcut icon" href="../icons/favicon.png" type="image/png">
-                    <link rel='stylesheet' href='css/general.scss'>
-                    <link rel='stylesheet' href='css/navpanel.scss'>
-                    <link rel='stylesheet' href='css/footer.scss'>
+                    <link rel='stylesheet' href='css/general.css'>
+                    <link rel='stylesheet' href='css/navpanel.css'>
+                    <link rel='stylesheet' href='css/footer.css'>
                     <?php echo $styles; ?>
                     <link rel="preconnect" href="https://fonts.googleapis.com">
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

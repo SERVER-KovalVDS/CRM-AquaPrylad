@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* --- Блоки карток --- */
+/* --- Затемнений фон --- */
+.adrCRDform, .MetersForm, .TasksForm {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.adrCRDform.show, .MetersForm.show, .TasksForm.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+/* --- Головний блок --- */
+.adrCRDdiv, .MetersDiv, .TasksDiv {
+  width: 400px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: rgb(var(--color-middle3));
+  border: 10px solid rgb(var(--color-dark2));
+  /* --- Вміст картки --- */
+}
+.adrCRDdiv .adrCRDtitle, .adrCRDdiv .MetersTitle, .adrCRDdiv .TasksTitle, .MetersDiv .adrCRDtitle, .MetersDiv .MetersTitle, .MetersDiv .TasksTitle, .TasksDiv .adrCRDtitle, .TasksDiv .MetersTitle, .TasksDiv .TasksTitle {
+  background-color: rgb(var(--color-dark2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  font-size: 160%;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+.adrCRDdiv .adrCRDContent, .adrCRDdiv .MetersContent, .adrCRDdiv .TasksContent, .MetersDiv .adrCRDContent, .MetersDiv .MetersContent, .MetersDiv .TasksContent, .TasksDiv .adrCRDContent, .TasksDiv .MetersContent, .TasksDiv .TasksContent {
+  padding: 10px;
+}
+.adrCRDdiv .adrCRDContent table, .adrCRDdiv .MetersContent table, .adrCRDdiv .TasksContent table, .MetersDiv .adrCRDContent table, .MetersDiv .MetersContent table, .MetersDiv .TasksContent table, .TasksDiv .adrCRDContent table, .TasksDiv .MetersContent table, .TasksDiv .TasksContent table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.adrCRDdiv .adrCRDContent table tr, .adrCRDdiv .MetersContent table tr, .adrCRDdiv .TasksContent table tr, .MetersDiv .adrCRDContent table tr, .MetersDiv .MetersContent table tr, .MetersDiv .TasksContent table tr, .TasksDiv .adrCRDContent table tr, .TasksDiv .MetersContent table tr, .TasksDiv .TasksContent table tr {
+  border-bottom: 1px solid rgb(var(--color-dark2));
+}
+.adrCRDdiv .adrCRDContent table td, .adrCRDdiv .MetersContent table td, .adrCRDdiv .TasksContent table td, .MetersDiv .adrCRDContent table td, .MetersDiv .MetersContent table td, .MetersDiv .TasksContent table td, .TasksDiv .adrCRDContent table td, .TasksDiv .MetersContent table td, .TasksDiv .TasksContent table td {
+  padding: 8px;
+}
+.adrCRDdiv .adrCRDContent table td .value-container, .adrCRDdiv .MetersContent table td .value-container, .adrCRDdiv .TasksContent table td .value-container, .MetersDiv .adrCRDContent table td .value-container, .MetersDiv .MetersContent table td .value-container, .MetersDiv .TasksContent table td .value-container, .TasksDiv .adrCRDContent table td .value-container, .TasksDiv .MetersContent table td .value-container, .TasksDiv .TasksContent table td .value-container {
+  display: flex;
+  align-items: center;
+}
+.adrCRDdiv .adrCRDContent table td .value-container .edit-icon, .adrCRDdiv .MetersContent table td .value-container .edit-icon, .adrCRDdiv .TasksContent table td .value-container .edit-icon, .MetersDiv .adrCRDContent table td .value-container .edit-icon, .MetersDiv .MetersContent table td .value-container .edit-icon, .MetersDiv .TasksContent table td .value-container .edit-icon, .TasksDiv .adrCRDContent table td .value-container .edit-icon, .TasksDiv .MetersContent table td .value-container .edit-icon, .TasksDiv .TasksContent table td .value-container .edit-icon {
+  cursor: pointer;
+  margin-right: 15px;
+}
+.adrCRDdiv .adrCRDContent table td .value-container .edit-icon svg, .adrCRDdiv .MetersContent table td .value-container .edit-icon svg, .adrCRDdiv .TasksContent table td .value-container .edit-icon svg, .MetersDiv .adrCRDContent table td .value-container .edit-icon svg, .MetersDiv .MetersContent table td .value-container .edit-icon svg, .MetersDiv .TasksContent table td .value-container .edit-icon svg, .TasksDiv .adrCRDContent table td .value-container .edit-icon svg, .TasksDiv .MetersContent table td .value-container .edit-icon svg, .TasksDiv .TasksContent table td .value-container .edit-icon svg {
+  height: 24px;
+  width: 24px;
+  fill: rgb(var(--color-warning));
+}
+.adrCRDdiv .adrCRDContent table td .edit-form, .adrCRDdiv .MetersContent table td .edit-form, .adrCRDdiv .TasksContent table td .edit-form, .MetersDiv .adrCRDContent table td .edit-form, .MetersDiv .MetersContent table td .edit-form, .MetersDiv .TasksContent table td .edit-form, .TasksDiv .adrCRDContent table td .edit-form, .TasksDiv .MetersContent table td .edit-form, .TasksDiv .TasksContent table td .edit-form {
+  display: none;
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-fields, .adrCRDdiv .MetersContent table td .edit-form .edit-fields, .adrCRDdiv .TasksContent table td .edit-form .edit-fields, .MetersDiv .adrCRDContent table td .edit-form .edit-fields, .MetersDiv .MetersContent table td .edit-form .edit-fields, .MetersDiv .TasksContent table td .edit-form .edit-fields, .TasksDiv .adrCRDContent table td .edit-form .edit-fields, .TasksDiv .MetersContent table td .edit-form .edit-fields, .TasksDiv .TasksContent table td .edit-form .edit-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-fields textarea, .adrCRDdiv .MetersContent table td .edit-form .edit-fields textarea, .adrCRDdiv .TasksContent table td .edit-form .edit-fields textarea, .MetersDiv .adrCRDContent table td .edit-form .edit-fields textarea, .MetersDiv .MetersContent table td .edit-form .edit-fields textarea, .MetersDiv .TasksContent table td .edit-form .edit-fields textarea, .TasksDiv .adrCRDContent table td .edit-form .edit-fields textarea, .TasksDiv .MetersContent table td .edit-form .edit-fields textarea, .TasksDiv .TasksContent table td .edit-form .edit-fields textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  border-radius: 10px;
+  border: 1px solid rgb(var(--color-dark2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-fields textarea::placeholder, .adrCRDdiv .MetersContent table td .edit-form .edit-fields textarea::placeholder, .adrCRDdiv .TasksContent table td .edit-form .edit-fields textarea::placeholder, .MetersDiv .adrCRDContent table td .edit-form .edit-fields textarea::placeholder, .MetersDiv .MetersContent table td .edit-form .edit-fields textarea::placeholder, .MetersDiv .TasksContent table td .edit-form .edit-fields textarea::placeholder, .TasksDiv .adrCRDContent table td .edit-form .edit-fields textarea::placeholder, .TasksDiv .MetersContent table td .edit-form .edit-fields textarea::placeholder, .TasksDiv .TasksContent table td .edit-form .edit-fields textarea::placeholder {
+  text-align: center;
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-buttons, .adrCRDdiv .MetersContent table td .edit-form .edit-buttons, .adrCRDdiv .TasksContent table td .edit-form .edit-buttons, .MetersDiv .adrCRDContent table td .edit-form .edit-buttons, .MetersDiv .MetersContent table td .edit-form .edit-buttons, .MetersDiv .TasksContent table td .edit-form .edit-buttons, .TasksDiv .adrCRDContent table td .edit-form .edit-buttons, .TasksDiv .MetersContent table td .edit-form .edit-buttons, .TasksDiv .TasksContent table td .edit-form .edit-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-buttons div, .adrCRDdiv .MetersContent table td .edit-form .edit-buttons div, .adrCRDdiv .TasksContent table td .edit-form .edit-buttons div, .MetersDiv .adrCRDContent table td .edit-form .edit-buttons div, .MetersDiv .MetersContent table td .edit-form .edit-buttons div, .MetersDiv .TasksContent table td .edit-form .edit-buttons div, .TasksDiv .adrCRDContent table td .edit-form .edit-buttons div, .TasksDiv .MetersContent table td .edit-form .edit-buttons div, .TasksDiv .TasksContent table td .edit-form .edit-buttons div {
+  cursor: pointer;
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-buttons div[class = "save"] svg, .adrCRDdiv .MetersContent table td .edit-form .edit-buttons div[class = "save"] svg, .adrCRDdiv .TasksContent table td .edit-form .edit-buttons div[class = "save"] svg, .MetersDiv .adrCRDContent table td .edit-form .edit-buttons div[class = "save"] svg, .MetersDiv .MetersContent table td .edit-form .edit-buttons div[class = "save"] svg, .MetersDiv .TasksContent table td .edit-form .edit-buttons div[class = "save"] svg, .TasksDiv .adrCRDContent table td .edit-form .edit-buttons div[class = "save"] svg, .TasksDiv .MetersContent table td .edit-form .edit-buttons div[class = "save"] svg, .TasksDiv .TasksContent table td .edit-form .edit-buttons div[class = "save"] svg {
+  fill: rgb(var(--color-info));
+}
+.adrCRDdiv .adrCRDContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .adrCRDdiv .MetersContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .adrCRDdiv .TasksContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .MetersDiv .adrCRDContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .MetersDiv .MetersContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .MetersDiv .TasksContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .TasksDiv .adrCRDContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .TasksDiv .MetersContent table td .edit-form .edit-buttons div[class = "cancel"] svg, .TasksDiv .TasksContent table td .edit-form .edit-buttons div[class = "cancel"] svg {
+  fill: rgb(var(--color-alert));
+}
+.adrCRDdiv .adrCRDContent .tabs, .adrCRDdiv .MetersContent .tabs, .adrCRDdiv .TasksContent .tabs, .MetersDiv .adrCRDContent .tabs, .MetersDiv .MetersContent .tabs, .MetersDiv .TasksContent .tabs, .TasksDiv .adrCRDContent .tabs, .TasksDiv .MetersContent .tabs, .TasksDiv .TasksContent .tabs {
+  overflow: hidden;
+  background-color: rgb(var(--color-middle2));
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.adrCRDdiv .adrCRDContent .tabs .tablinks, .adrCRDdiv .MetersContent .tabs .tablinks, .adrCRDdiv .TasksContent .tabs .tablinks, .MetersDiv .adrCRDContent .tabs .tablinks, .MetersDiv .MetersContent .tabs .tablinks, .MetersDiv .TasksContent .tabs .tablinks, .TasksDiv .adrCRDContent .tabs .tablinks, .TasksDiv .MetersContent .tabs .tablinks, .TasksDiv .TasksContent .tabs .tablinks {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  flex-grow: 1;
+  text-align: center;
+  color: rgb(var(--color-light1));
+  font-weight: bold;
+}
+.adrCRDdiv .adrCRDContent .tabs .tablinks:hover, .adrCRDdiv .MetersContent .tabs .tablinks:hover, .adrCRDdiv .TasksContent .tabs .tablinks:hover, .MetersDiv .adrCRDContent .tabs .tablinks:hover, .MetersDiv .MetersContent .tabs .tablinks:hover, .MetersDiv .TasksContent .tabs .tablinks:hover, .TasksDiv .adrCRDContent .tabs .tablinks:hover, .TasksDiv .MetersContent .tabs .tablinks:hover, .TasksDiv .TasksContent .tabs .tablinks:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark2));
+}
+.adrCRDdiv .adrCRDContent .tabs .tablinks.active, .adrCRDdiv .MetersContent .tabs .tablinks.active, .adrCRDdiv .TasksContent .tabs .tablinks.active, .MetersDiv .adrCRDContent .tabs .tablinks.active, .MetersDiv .MetersContent .tabs .tablinks.active, .MetersDiv .TasksContent .tabs .tablinks.active, .TasksDiv .adrCRDContent .tabs .tablinks.active, .TasksDiv .MetersContent .tabs .tablinks.active, .TasksDiv .TasksContent .tabs .tablinks.active {
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.adrCRDdiv .adrCRDContent .tabcontent, .adrCRDdiv .MetersContent .tabcontent, .adrCRDdiv .TasksContent .tabcontent, .MetersDiv .adrCRDContent .tabcontent, .MetersDiv .MetersContent .tabcontent, .MetersDiv .TasksContent .tabcontent, .TasksDiv .adrCRDContent .tabcontent, .TasksDiv .MetersContent .tabcontent, .TasksDiv .TasksContent .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.adrCRDdiv .adrCRDContent .tabcontent .object_history_container, .adrCRDdiv .MetersContent .tabcontent .object_history_container, .adrCRDdiv .TasksContent .tabcontent .object_history_container, .MetersDiv .adrCRDContent .tabcontent .object_history_container, .MetersDiv .MetersContent .tabcontent .object_history_container, .MetersDiv .TasksContent .tabcontent .object_history_container, .TasksDiv .adrCRDContent .tabcontent .object_history_container, .TasksDiv .MetersContent .tabcontent .object_history_container, .TasksDiv .TasksContent .tabcontent .object_history_container {
+  padding: 15px 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  user-select: none;
+  pointer-events: auto;
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  border: 2px solid rgb(var(--color-dark2));
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.adrCRDdiv .adrCRDContent .tabcontent .object_history_container::selection, .adrCRDdiv .MetersContent .tabcontent .object_history_container::selection, .adrCRDdiv .TasksContent .tabcontent .object_history_container::selection, .MetersDiv .adrCRDContent .tabcontent .object_history_container::selection, .MetersDiv .MetersContent .tabcontent .object_history_container::selection, .MetersDiv .TasksContent .tabcontent .object_history_container::selection, .TasksDiv .adrCRDContent .tabcontent .object_history_container::selection, .TasksDiv .MetersContent .tabcontent .object_history_container::selection, .TasksDiv .TasksContent .tabcontent .object_history_container::selection {
+  background: none;
+}
+.adrCRDdiv .adrCRDContent .tabcontent .object_history_container .object_history_title, .adrCRDdiv .MetersContent .tabcontent .object_history_container .object_history_title, .adrCRDdiv .TasksContent .tabcontent .object_history_container .object_history_title, .MetersDiv .adrCRDContent .tabcontent .object_history_container .object_history_title, .MetersDiv .MetersContent .tabcontent .object_history_container .object_history_title, .MetersDiv .TasksContent .tabcontent .object_history_container .object_history_title, .TasksDiv .adrCRDContent .tabcontent .object_history_container .object_history_title, .TasksDiv .MetersContent .tabcontent .object_history_container .object_history_title, .TasksDiv .TasksContent .tabcontent .object_history_container .object_history_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+}
+.adrCRDdiv .adrCRDContent .tabcontent .object_history_container .object_history_value, .adrCRDdiv .MetersContent .tabcontent .object_history_container .object_history_value, .adrCRDdiv .TasksContent .tabcontent .object_history_container .object_history_value, .MetersDiv .adrCRDContent .tabcontent .object_history_container .object_history_value, .MetersDiv .MetersContent .tabcontent .object_history_container .object_history_value, .MetersDiv .TasksContent .tabcontent .object_history_container .object_history_value, .TasksDiv .adrCRDContent .tabcontent .object_history_container .object_history_value, .TasksDiv .MetersContent .tabcontent .object_history_container .object_history_value, .TasksDiv .TasksContent .tabcontent .object_history_container .object_history_value {
+  font-style: italic;
+  font-size: 80%;
+}
+.adrCRDdiv .adrCRDContent .tabcontent.active, .adrCRDdiv .MetersContent .tabcontent.active, .adrCRDdiv .TasksContent .tabcontent.active, .MetersDiv .adrCRDContent .tabcontent.active, .MetersDiv .MetersContent .tabcontent.active, .MetersDiv .TasksContent .tabcontent.active, .TasksDiv .adrCRDContent .tabcontent.active, .TasksDiv .MetersContent .tabcontent.active, .TasksDiv .TasksContent .tabcontent.active {
+  display: block;
+}
+/* --- Кнопка закриття форми --- */
+.adrCRD_btn_close, .Meters_btn_close, .Tasks_btn_close {
+  display: block;
+  margin: 5px auto;
+  border-radius: 4px;
+  background-color: #8A99A6;
+  border: none;
+  color: #F2F2F2;
+  text-align: center;
+  width: 200px;
+}
+.adrCRD_btn_close span, .Meters_btn_close span, .Tasks_btn_close span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.adrCRD_btn_close span:after, .Meters_btn_close span:after, .Tasks_btn_close span:after {
+  content: "|X|";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.adrCRD_btn_close:hover span, .Meters_btn_close:hover span, .Tasks_btn_close:hover span {
+  padding-right: 25px;
+  letter-spacing: 6px;
+}
+.adrCRD_btn_close:hover span:after, .Meters_btn_close:hover span:after, .Tasks_btn_close:hover span:after {
+  opacity: 1;
+}
+/* --- Кінець блоків карток --- */
+/* --- Блок підвалу --- */
+/* Блок устоти, яка перекриваэться пыдвалом */
+.footer_div_before {
+  height: 65px;
+}
+/* Блок підвалу */
+.footer_div {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(var(--color-dark1)) 15%, rgb(var(--color-dark1)));
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Текст підвалу */
+.footer_text {
+  color: rgb(var(--color-light1));
+  padding: 1px;
+  margin: 5px;
+}
+/* --- Кінець блоку підвалу --- */

@@ -18,7 +18,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>AQUAPRYLAD CRM</title>
             <link rel="shortcut icon" href="../icons/favicon.png" type="image/png">
-            <link rel="stylesheet" href="css/auth.scss">
+            <link rel="stylesheet" href="css/auth.css">
             <link rel="preconnect" href="https://fonts.googleapis.com"> 
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
             <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">

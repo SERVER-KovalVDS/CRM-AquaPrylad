@@ -1,7 +1,7 @@
 <?php
   $title = "Звіти";
   $styles = "
-    <link rel='stylesheet' href='css/reports.scss'>
+    <link rel='stylesheet' href='css/reports.css'>
   ";
   $page = 'REPORTS';
 

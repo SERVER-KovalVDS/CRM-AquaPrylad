@@ -1,6 +1,6 @@
 <?php
     $title = "Логи";
-    $styles = " <link rel='stylesheet' href='css/logs.scss'>
+    $styles = " <link rel='stylesheet' href='css/logs.css'>
                 <script type='module' src='scripts/logs_common.js'></script>
   
             ";

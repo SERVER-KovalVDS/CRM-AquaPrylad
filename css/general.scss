@@ -18,7 +18,7 @@ body {
 .info-modal_field,
 .warning-modal_field,
 .alert-modal_field {
-    width:              100% - 20px;
+    width:              calc(100% - 20px);
     margin:             10px auto;
     padding:            10px 5px 0 5px;
     border-radius:      10px;

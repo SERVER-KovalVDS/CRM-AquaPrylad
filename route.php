@@ -1,7 +1,7 @@
 <?php
     $title = "Маршрути";
     $styles = " 
-                <link rel='stylesheet' href='css/route.scss'>
+                <link rel='stylesheet' href='css/route.css'>
     ";
     $page = 'ROUTE';
     $nav_filter = true;

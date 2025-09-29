@@ -1,0 +1,185 @@
+@charset "UTF-8";
+:root {
+  /*  ======= C O L O R S ======= */
+  /* Main colors */
+  --color-dark1:          115, 115, 115;
+  /* Темний колір 1 */
+  --color-dark2:          93, 105, 115;
+  /* Темний колір 2 */
+  --color-middle1:        190, 189, 191;
+  /* Середній колір 1 */
+  --color-middle2:        151, 159, 166;
+  /* Середній колір 2 */
+  --color-middle3:        217, 217, 217;
+  /* Другий середій колір 2 */
+  --color-light1:         255, 250, 205;
+  /* Світлий колір 1 */
+  --color-light2:         239, 242, 216;
+  /* Світлий колір 2 */
+  /* Text */
+  --highlite_text:        blue;
+  /* Колір підсвітки тексту */
+  /* Shadows */
+  --color-swadow1:        64, 64, 64;
+  /* Колір для тіней і рамок */
+  /* Notifications */
+  --color-info:           40, 165, 109;
+  /* Колір інформацій */
+  --color-warning:        189, 114, 39;
+  /* Колір попереджень */
+  --color-alert:          166, 50, 50;
+  /* Колір аварій */
+  --color-cancel:         54, 117, 176;
+  /* Основний відміни */
+  /*  ======= O P A C I T I E S ======= */
+  /* Filter textfields background */
+  --filter-bg-opacity:    0.2;
+  /* Прозорість кольору фону для полів воду форми фільтрації */
+  /* NEW data textfields background */
+  --newdata-bg-opacity:    0.2;
+  /* Прозорість кольору фону для полів воду форми фільтрації */
+}
+.route-container {
+  display: grid;
+  grid-template-areas: "top-bar top-bar" "personal-content date-bar" "common-content date-bar";
+  grid-template-columns: calc(70% - 3px) calc(30% - 3px);
+  grid-template-rows: auto auto;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 5px;
+}
+.route-container .route-top-bar {
+  grid-area: top-bar;
+  width: 100%;
+  border-bottom: 3px solid rgb(var(--color-dark1));
+  display: flex;
+  justify-content: space-around;
+}
+.route-container .route-top-bar .route-worker-button {
+  width: 100px;
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-light2));
+  border: 2px solid rgb(var(--color-dark1));
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+.route-container .route-top-bar .route-worker-button.active {
+  background-color: rgb(var(--color-dark1));
+}
+.route-container .route-top-bar .route-worker-button.active:hover {
+  background-color: rgb(var(--color-dark1));
+  color: rgb(var(--color-light2));
+}
+.route-container .route-top-bar .route-worker-button:hover {
+  background-color: rgb(var(--color-light2));
+  color: rgb(var(--color-dark1));
+}
+.route-container .route-top-bar .route-worker-button::selection {
+  background: none;
+}
+.route-container .route-content.route-personal {
+  display: none;
+  grid-area: personal-content;
+  background-color: rgba(var(--color-middle1), 0.5);
+}
+.route-container .route-content.route-common {
+  grid-area: common-content;
+  background-color: rgba(var(--color-middle1), 0.8);
+}
+.route-container .route-content.route-personal, .route-container .route-content.route-common {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid rgb(var(--color-dark1));
+  align-items: flex-start;
+}
+.route-container .route-content.route-personal .no_data, .route-container .route-content.route-common .no_data {
+  margin: 5px auto;
+  padding: 15px;
+  background-color: rgba(var(--color-warning), 0.8);
+  color: rgb(var(--color-light2));
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.route-container .dragging-container {
+  background-color: rgba(var(--color-alert), 0.3) !important;
+  transition: background-color 0.5s;
+}
+.route-container .target-container {
+  background-color: rgba(var(--color-info), 0.3) !important;
+  transition: background-color 0.5s;
+}
+.route-container .route-date-bar {
+  grid-area: date-bar;
+  background-color: rgba(var(--color-middle1), 0.8);
+  border: 2px solid rgb(var(--color-dark1));
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.route-container .route-date-bar .no-worker-selected {
+  margin: 5px auto;
+  padding: 15px;
+  background-color: rgba(var(--color-warning), 0.8);
+  color: rgb(var(--color-light2));
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.route-container .route-date-bar .current-date-block, .route-container .route-date-bar .statistic-block {
+  width: 300px;
+  height: 30px;
+  margin: 5px auto;
+  padding: 4px;
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-dark1));
+  border: 2px solid rgb(var(--color-dark1));
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  position: sticky;
+  top: 100px;
+}
+.route-container .route-date-bar .current-date-block {
+  position: sticky;
+  top: 50px;
+}
+.route-container .route-date-bar .statistic-block {
+  position: sticky;
+  top: 90px;
+}
+.route-container .route-date-bar #route-calendar-hr-line {
+  border: none;
+  height: 2px;
+  background-color: rgb(var(--color-dark1));
+}
+.route-container .route-content.route-personal.hidden {
+  display: none;
+}
+.route-container .route-content.route-personal.hidden + .route-content.route-common {
+  grid-area: personal-content;
+}
+.no-small-screen {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(var(--color-alert));
+  color: rgb(var(--color-light2));
+}
+.dragging {
+  cursor: grabbing !important;
+}
+@media (max-width: 1200px) {
+  .route-container {
+    display: none;
+  }
+  .no-small-screen {
+    display: block;
+  }
+}

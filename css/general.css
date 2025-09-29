@@ -1,0 +1,1882 @@
+@charset "UTF-8";
+:root {
+  /*  ======= C O L O R S ======= */
+  /* Main colors */
+  --color-dark1:          115, 115, 115;
+  /* Темний колір 1 */
+  --color-dark2:          93, 105, 115;
+  /* Темний колір 2 */
+  --color-middle1:        190, 189, 191;
+  /* Середній колір 1 */
+  --color-middle2:        151, 159, 166;
+  /* Середній колір 2 */
+  --color-middle3:        217, 217, 217;
+  /* Другий середій колір 2 */
+  --color-light1:         255, 250, 205;
+  /* Світлий колір 1 */
+  --color-light2:         239, 242, 216;
+  /* Світлий колір 2 */
+  /* Text */
+  --highlite_text:        blue;
+  /* Колір підсвітки тексту */
+  /* Shadows */
+  --color-swadow1:        64, 64, 64;
+  /* Колір для тіней і рамок */
+  /* Notifications */
+  --color-info:           40, 165, 109;
+  /* Колір інформацій */
+  --color-warning:        189, 114, 39;
+  /* Колір попереджень */
+  --color-alert:          166, 50, 50;
+  /* Колір аварій */
+  --color-cancel:         54, 117, 176;
+  /* Основний відміни */
+  /*  ======= O P A C I T I E S ======= */
+  /* Filter textfields background */
+  --filter-bg-opacity:    0.2;
+  /* Прозорість кольору фону для полів воду форми фільтрації */
+  /* NEW data textfields background */
+  --newdata-bg-opacity:    0.2;
+  /* Прозорість кольору фону для полів воду форми фільтрації */
+}
+/* --- Загальні блоки --- */
+body {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  margin: 0px;
+  background-color: rgb(var(--color-light2));
+}
+.no-data {
+  color: gray;
+}
+.highlight {
+  color: var(--highlite_text);
+}
+.info-modal_field, .warning-modal_field, .alert-modal_field {
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px 5px 0 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(var(--color-light1));
+}
+.info-modal_field hr, .warning-modal_field hr, .alert-modal_field hr {
+  margin-bottom: 0;
+}
+.info-modal_field .countdown_modal_text, .warning-modal_field .countdown_modal_text, .alert-modal_field .countdown_modal_text {
+  margin: 0;
+  padding: 0;
+  font-size: 80%;
+  color: rgb(var(--color-middle3));
+}
+.info-modal_field {
+  background-color: rgba(var(--color-info), 0.5);
+}
+.warning-modal_field {
+  background-color: rgba(var(--color-warning), 0.5);
+}
+.alert-modal_field {
+  background-color: rgba(var(--color-alert), 0.5);
+}
+/* --- Кінець загальних блоків --- */
+/* --- Блок календаря --- */
+.calendar-container {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(var(--color-dark1));
+  background-color: rgb(var(--color-middle1));
+  padding: 10px;
+  width: 280px;
+  display: none;
+}
+.calendar-container .calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.calendar-container .calendar-controls button {
+  background-color: rgb(var(--color-dark1));
+  color: rgb(var(--color-light1));
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.calendar-container .calendar-controls button:hover {
+  transform: scale(1.3);
+}
+.calendar-container .calendar-controls button:active {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+}
+.calendar-container .calendar-controls .month-display {
+  color: rgb(var(--color-light1));
+}
+.calendar-container .days-of-week, .calendar-container .days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  grid-gap: 5px;
+  margin-bottom: 5px;
+}
+.calendar-container .days-of-week {
+  font-weight: bold;
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-light1));
+  padding: 5px 0;
+}
+.calendar-container .days-of-week span {
+  padding: 5px 0;
+}
+.calendar-container .days-container button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
+}
+.calendar-container .days-container button:hover {
+  transform: scale(1.3);
+}
+.calendar-container .days-container button.hover, .calendar-container .days-container button.calendar-day-green {
+  background-color: rgba(var(--color-info), 0.5);
+  color: rgb(var(--color-light1));
+}
+.calendar-container .days-container button.calendar-day-orange {
+  background-color: rgba(var(--color-warning), 0.5);
+  color: rgb(var(--color-light1));
+}
+.calendar-container .days-container button.calendar-day-red {
+  background-color: rgba(var(--color-alert), 0.5);
+  color: rgb(var(--color-light1));
+}
+.calendar-container .days-container button.calendar-day-grey {
+  background-color: rgba(var(--color-dark1), 0.5);
+  color: rgb(var(--color-light1));
+}
+.calendar-container .days-container button.inactive {
+  color: rgb(var(--color-light1));
+  cursor: not-allowed;
+}
+.calendar-container .days-container button.inactive:hover {
+  background-color: transparent;
+  transform: none;
+}
+/* --- Кінець блоку календаря --- */
+/* --- Блок заголовку --- */
+.header_title {
+  background: linear-gradient(rgb(var(--color-dark1)) 90%, rgb(var(--color-middle1)));
+  color: rgb(var(--color-light2));
+  padding: 1px;
+}
+.header_div {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  width: 100%;
+  font-size: 150%;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .header_div {
+    display: block;
+    font-size: 120%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .left_block {
+    display: none;
+  }
+}
+.db_error_report {
+  font-size: 150%;
+  color: rgb(var(--color-alert));
+}
+/* --- Кінець блоку заголову --- */
+/* --- Блок іконок --- */
+.div_pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.div_pages .icon-link {
+  text-decoration: none;
+  color: inherit;
+}
+.div_pages .icon-link .icon_pages {
+  margin: 20px;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--color-middle1));
+  box-shadow: 0 4px 8px rgb(var(--color-dark1));
+  border-radius: 10px;
+  color: rgb(var(--color-light2));
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.div_pages .icon-link .icon_pages:hover {
+  box-shadow: inset 0 4px 8px rgb(var(--color-dark1));
+  background-color: rgb(var(--color-light2));
+  color: rgb(var(--color-dark1));
+}
+.div_pages .icon-link .icon_pages:hover svg {
+  fill: rgb(var(--color-dark1));
+}
+.div_pages .icon-link .icon_pages svg {
+  fill: rgb(var(--color-light2));
+  width: 120px;
+  height: 120px;
+}
+.div_pages .icon-link .icon_pages p {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+/* --- Кінець блоку іконок --- */
+/* --- Полоси віводу повідомлень --- */
+.alert, .warning, .info {
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: none;
+  align-items: center;
+}
+.alert #alertMessage, .alert #warningMessage, .alert #infoMessage, .warning #alertMessage, .warning #warningMessage, .warning #infoMessage, .info #alertMessage, .info #warningMessage, .info #infoMessage {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+}
+.alert #alertMessage div, .alert #warningMessage div, .alert #infoMessage div, .warning #alertMessage div, .warning #warningMessage div, .warning #infoMessage div, .info #alertMessage div, .info #warningMessage div, .info #infoMessage div {
+  color: rgb(var(--color-light2));
+}
+.alert .closebtn, .warning .closebtn, .info .closebtn {
+  margin-left: 15px;
+  color: rgb(var(--color-light2));
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.alert .closebtn:hover, .warning .closebtn:hover, .info .closebtn:hover {
+  transform: scale(2) rotate(90deg);
+}
+.alert .server_alert_title, .alert .server_alert_text, .warning .server_alert_title, .warning .server_alert_text, .info .server_alert_title, .info .server_alert_text {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  color: rgb(var(--color-light2));
+}
+.alert .server_alert_title, .warning .server_alert_title, .info .server_alert_title {
+  font-size: 150%;
+}
+.alert .server_alert_text, .warning .server_alert_text, .info .server_alert_text {
+  font-size: 110%;
+}
+.alert {
+  background-color: rgb(var(--color-alert));
+}
+.warning {
+  background-color: rgb(var(--color-warning));
+}
+.info {
+  background-color: rgb(var(--color-info));
+}
+/* --- Кінець полос виводу повідомлень --- */
+/* --- Блок прелоадеру --- */
+.animation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.animation .an-container {
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 450px) {
+  .animation .an-container {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* --- Кінець блоку прелоадеру --- */
+/* --- Кнопка прокрутки сторінки вгору --- */
+#BtnOnTop {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 100;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(var(--color-dark1));
+  color: rgb(var(--color-light1));
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+#BtnOnTop:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+}
+/* --- Кінець кнопка прокрутки сторінки вгору --- */
+/* --- Блок елементів сторінки --- */
+/* --- Плаваючі блоки --- */
+.page_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  /* Зменшений розмір колонок - 4 у ряду - для зменшеного екрану */
+  /* Зменшений розмір колонок - 3 у ряду - для зменшеного екрану */
+  /* Зменшений розмір колонок - 2 у ряду - для зменшеного екрану */
+  /* Зменшений розмір колонок - 1 у ряду - для мобільного формату */
+}
+.page_row .alert {
+  width: 100%;
+}
+.page_row .page_column {
+  padding: 0;
+  display: flex;
+  flex: 1 0 20%;
+  min-width: 240px;
+  max-width: 20%;
+  box-sizing: border-box;
+}
+.page_row .page_column .page_card {
+  margin: 5px;
+  border: 2px solid rgb(var(--color-dark2));
+  background-color: rgb(var(--color-middle2));
+  -webkit-box-shadow: 2px 4px 4px 0px rgb(var(--color-dark2));
+  -moz-box-shadow: 2px 4px 4px 0px rgb(var(--color-dark2));
+  box-shadow: 2px 4px 4px 0px rgb(var(--color-dark2));
+  overflow: auto;
+  user-select: none;
+  pointer-events: auto;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  transition: transform 0.3s ease-in-out;
+}
+.page_row .page_column .page_card:hover {
+  border: 4px solid rgb(var(--color-light2));
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+.page_row .page_column .page_card::selection {
+  background: none;
+}
+.page_row .page_column .page_card .page_card_title {
+  background-color: rgb(var(--color-dark2));
+  padding-top: 15px;
+  padding-bottom: 8px;
+  margin-bottom: 7px;
+  color: rgb(var(--color-light1));
+}
+.page_row .page_column .page_card .page_card_value, .page_row .page_column .page_card .page_card_value_route {
+  border-bottom: 1px solid rgb(var(--color-dark2));
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.page_row .page_column .page_card .page_card_value {
+  text-align: right;
+}
+.page_row .page_column .page_card .page_card_value:before {
+  content: attr(data-label);
+  float: left;
+  vertical-align: middle;
+}
+.page_row .page_column .page_card .page_card_value_route {
+  text-align: center;
+}
+.page_row .page_column .on-route {
+  border: 3px solid rgb(var(--color-warning));
+}
+.page_row .page_column .not-route {
+  border: 3px solid rgb(var(--color-info));
+}
+@media screen and (max-width: 1200px) {
+  .page_row .page_column {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .page_row .page_column {
+    flex: 1 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page_row .page_column {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page_row .page_column {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+/* --- Кінець блоку елементів сторінки --- */
+/* --- Блок сторінки звітів --- */
+.report_date_field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 290px;
+  text-align: center;
+  padding: 4px 0px;
+  border: 1px solid rgb(var(--color-middle1));
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+  font-size: 14px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+/* --- Кінець блоку сторінки звітів --- */
+/* --- Блок випадаючих вікон --- */
+.autocomplete-list {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 300px;
+  background-color: rgb(var(--color-middle1));
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border: 1px solid rgb(var(--color-dark1));
+  padding: 5px;
+  text-align: center;
+}
+.autocomplete-list div {
+  text-align: center;
+}
+.autocomplete-list .autocomplete-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: rgb(var(--color-light1));
+}
+.autocomplete-list .autocomplete-item:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+}
+.autocomplete-list .not-selectable {
+  pointer-events: none;
+  color: grey;
+  font-style: italic;
+}
+/* --- Кінець блоку випадаючих вікон --- */
+/* --- Блоки карток, Пошуку, Фільтрації та додавання нових обʼєктів --- */
+/* --- Оформлення підкладки фону для всіх блоків --- */
+.backgroundOverlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+.backgroundOverlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+/* --- Блоки карток --- */
+/* --- Фон --- */
+.CardForm {
+  transform: rotate(-360deg) scale(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  transform-origin: top;
+  display: flex;
+  align-items: center;
+  /* --- Головний блок --- */
+}
+.CardForm.show {
+  transform: rotate(0deg) scale(1);
+}
+.CardForm .CardFormDiv {
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(var(--color-middle3));
+  border: 10px solid rgb(var(--color-dark2));
+  /* --- Вміст картки --- */
+  /* --- Кнопка закриття форми --- */
+}
+.CardForm .CardFormDiv .CardFormTitle {
+  background-color: rgb(var(--color-dark2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  font-size: 160%;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+.CardForm .CardFormDiv .CardFormContent {
+  padding: 10px;
+}
+.CardForm .CardFormDiv .CardFormContent table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.CardForm .CardFormDiv .CardFormContent table tr {
+  border-bottom: 1px solid rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td {
+  padding: 8px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container {
+  display: flex;
+  align-items: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .edit-icon {
+  cursor: pointer;
+  margin-right: 15px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .edit-icon svg {
+  height: 24px;
+  width: 24px;
+  fill: rgb(var(--color-warning));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .address-meter-field {
+  cursor: pointer;
+  width: 150px;
+  margin: 2px 0px 2px 15px;
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(var(--color-dark2));
+  box-shadow: 2px 2px 5px rgb(var(--color-swadow1)), -2px -2px 5px rgb(var(--color-swadow1));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .address-meter-field.cold {
+  color: rgb(var(--color-cancel));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .address-meter-field.hot {
+  color: rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .address-meter-field.unknown {
+  color: rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .address-meter-field:hover {
+  background-color: rgb(var(--color-light2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .address-meter-field.hiden {
+  display: none;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-input {
+  width: 150px;
+  padding: 2px;
+  border: 2px solid rgb(var(--color-dark2));
+  border-radius: 5px;
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+  text-align: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-input::placeholder {
+  text-align: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field {
+  max-height: 100px;
+  width: 150px;
+  padding: 2px;
+  border: 2px solid rgb(var(--color-dark2));
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark2));
+  text-align: center;
+  overflow-x: auto;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field div {
+  cursor: pointer;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field div:hover {
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field div[data-addresses-add-meter="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field div[data-meters-add-address="NEW"] {
+  background-color: rgba(var(--color-warning), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field div[data-addresses-add-meter="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .value-container .value-text .tasks-identify_meters-block .tasks-identify_meters-field div[data-meters-add-address="NEW"]:hover {
+  background-color: rgb(var(--color-warning));
+  color: rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form {
+  display: none;
+  align-items: stretch;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .phone-edit-field {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 6px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .phone-edit-field select, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .phone-edit-field input {
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgb(var(--color-dark2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .phone-edit-field select::placeholder, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .phone-edit-field input::placeholder {
+  text-align: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field {
+  cursor: pointer;
+  margin: 2px 0px 2px 20px;
+  padding: 0 5px 0 20px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid rgb(var(--color-dark2));
+  border-radius: 10px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field.cold {
+  color: rgb(var(--color-cancel));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field.hot {
+  color: rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field.unknown {
+  color: rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field .dell_btn svg {
+  margin-left: 25px;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  fill: rgba(var(--color-alert), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field:hover {
+  background-color: rgb(var(--color-light2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-meter-field:hover svg {
+  fill: rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-input, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-input, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-input, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-input {
+  padding: 2px;
+  border: 2px solid rgb(var(--color-dark2));
+  border-radius: 5px;
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+  text-align: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-input::placeholder, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-input::placeholder, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-input::placeholder, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-input::placeholder {
+  text-align: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field {
+  padding: 2px;
+  border: 2px solid rgb(var(--color-dark2));
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark2));
+  text-align: center;
+  overflow-x: auto;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field div, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field div, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field div, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field div {
+  cursor: pointer;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field div:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field div:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field div:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field div:hover {
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field div[data-addresses-add-meter="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field div[data-meters-add-address="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field div[data-addresses-add-meter="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field div[data-meters-add-address="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field div[data-addresses-add-meter="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field div[data-meters-add-address="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field div[data-addresses-add-meter="NEW"], .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field div[data-meters-add-address="NEW"] {
+  background-color: rgba(var(--color-warning), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field div[data-addresses-add-meter="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field div[data-meters-add-address="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field div[data-addresses-add-meter="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field div[data-meters-add-address="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field div[data-addresses-add-meter="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field div[data-meters-add-address="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field div[data-addresses-add-meter="NEW"]:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field div[data-meters-add-address="NEW"]:hover {
+  background-color: rgb(var(--color-warning));
+  color: rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-input, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-input {
+  width: 150px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #address-new-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #address-new-meter-field {
+  max-height: 100px;
+  width: 150px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-input, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-input {
+  width: 160px;
+  height: 50px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter #meters-new-adress-field, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address #meters-new-adress-field {
+  max-height: 200px;
+  width: 160px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter svg, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(var(--color-info), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter svg:hover, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-new-address svg:hover {
+  fill: rgb(var(--color-info));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .address-new-meter {
+  margin: 10px 0 0 20px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .meters-servisetype-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .meters-location-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .meters-balanser-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .tasks-brigade-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .tasks-pay_methods-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .meters-servisetype-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .meters-location-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .meters-balanser-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .tasks-brigade-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .tasks-pay_methods-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .meters-servisetype-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .meters-location-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .meters-balanser-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .tasks-brigade-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .tasks-pay_methods-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .meters-servisetype-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .meters-location-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .meters-balanser-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .tasks-brigade-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .tasks-pay_methods-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .meters-servisetype-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .meters-location-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .meters-balanser-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .tasks-brigade-value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .tasks-pay_methods-value {
+  margin: 2px 0px 2px 20px;
+  width: 100px;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .meters-servisetype-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .meters-location-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .meters-balanser-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .tasks-brigade-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-servisetype-field .tasks-pay_methods-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .meters-servisetype-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .meters-location-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .meters-balanser-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .tasks-brigade-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-location-field .tasks-pay_methods-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .meters-servisetype-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .meters-location-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .meters-balanser-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .tasks-brigade-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .meters-balanser-field .tasks-pay_methods-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .meters-servisetype-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .meters-location-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .meters-balanser-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .tasks-brigade-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-brigade-field .tasks-pay_methods-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .meters-servisetype-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .meters-location-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .meters-balanser-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .tasks-brigade-value.active, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .tasks-pay_methods-field .tasks-pay_methods-value.active {
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-middle3));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .button-container .add-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-info), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .button-container .add-button svg:hover {
+  fill: rgb(var(--color-info));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .button-container .remove-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-alert), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .button-container .remove-button svg:hover {
+  fill: rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields .button-container #removePhoneButton {
+  display: inline-block;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields textarea, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields #meters_edit_value, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields #tasks_edit_cost {
+  width: calc(100% - 26px);
+  padding: 8px;
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(var(--color-dark2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields textarea::placeholder, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields #meters_edit_value::placeholder, .CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-fields #tasks_edit_cost::placeholder {
+  text-align: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 15px;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-buttons div {
+  cursor: pointer;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-buttons div[class = "save"] svg {
+  height: 24px;
+  width: 24px;
+  fill: rgba(var(--color-info), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-buttons div[class = "save"] svg:hover {
+  fill: rgb(var(--color-info));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-buttons div[class = "cancel"] svg {
+  height: 24px;
+  width: 24px;
+  fill: rgba(var(--color-alert), 0.5);
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .edit-form .edit-buttons div[class = "cancel"] svg:hover {
+  fill: rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .address-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .meters-address-field, .CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .meters-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .address-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .meters-address-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .meters-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .address-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .meters-address-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .meters-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .address-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .meters-address-field, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .meters-task-field, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field {
+  cursor: pointer;
+  width: 140px;
+  margin: 2px 0px 2px 5px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgb(var(--color-dark2));
+  box-shadow: 2px 2px 5px rgb(var(--color-swadow1)), -2px -2px 5px rgb(var(--color-swadow1));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .address-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .meters-address-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .meters-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .address-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .meters-address-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .meters-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .address-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .meters-address-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .meters-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .address-task-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .meters-address-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .meters-task-field:hover {
+  cursor: pointer;
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field {
+  font-weight: bold;
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field.cold, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field.cold, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field.cold, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field.cold {
+  color: rgb(var(--color-cancel));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field.hot, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field.hot, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field.hot, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field.hot {
+  color: rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field.unknown, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field.unknown, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field.unknown, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field.unknown {
+  color: rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field:hover, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field:hover {
+  background-color: rgb(var(--color-light2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent table tr td .address-task-container .tasks-meter-field.hiden, .CardForm .CardFormDiv .CardFormContent table tr td .meters-address-container .tasks-meter-field.hiden, .CardForm .CardFormDiv .CardFormContent table tr td .meters-task-container .tasks-meter-field.hiden, .CardForm .CardFormDiv .CardFormContent table tr td .tasks-meters-container .tasks-meter-field.hiden {
+  display: none;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: rgb(var(--color-middle2));
+  border-radius: 5px;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs .tablinks {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  flex-grow: 1;
+  text-align: center;
+  color: rgb(var(--color-light1));
+  font-weight: bold;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs .tablinks:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent .tabs .tablinks.active {
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks {
+  display: flex;
+  justify-content: center;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks .tabcontent {
+  width: 350px;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-left: 1px solid rgb(var(--color-dark2));
+  border-right: 1px solid rgb(var(--color-dark2));
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks .tabcontent .object_history_container {
+  max-height: 500px;
+  padding: 15px 10px;
+  overflow-y: auto;
+  user-select: none;
+  pointer-events: auto;
+  background-color: rgb(var(--color-dark2));
+  color: rgb(var(--color-light1));
+  border: 2px solid rgb(var(--color-middle2));
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgb(var(--color-middle2)), inset -2px -2px 5px rgb(var(--color-middle2));
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks .tabcontent .object_history_container::selection {
+  background: none;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks .tabcontent .object_history_container .object_history_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks .tabcontent .object_history_container .object_history_value {
+  font-size: 90%;
+  font-family: "Courier New", Courier, monospace;
+}
+.CardForm .CardFormDiv .CardFormContent .tabs_blocks .tabcontent.active {
+  display: block;
+}
+.CardForm .CardFormDiv .adrCRD_btn_close, .CardForm .CardFormDiv .Meters_btn_close, .CardForm .CardFormDiv .Tasks_btn_close {
+  margin: 5px auto;
+  border-radius: 4px;
+  background-color: rgb(var(--color-middle2));
+  border: 2px solid rgb(var(--color-dark2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.CardForm .CardFormDiv .adrCRD_btn_close:hover, .CardForm .CardFormDiv .Meters_btn_close:hover, .CardForm .CardFormDiv .Tasks_btn_close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(var(--color-dark2));
+  border: 2px solid rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer {
+  display: flex;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_apply, .CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_cancel, .CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_back {
+  margin: 5px auto;
+  border-radius: 4px;
+  border: none;
+  color: rgb(var(--color-light1));
+  text-align: center;
+  width: 90px;
+  transition: transform 0.3s ease;
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_apply:hover, .CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_cancel:hover, .CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_back:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_apply {
+  background-color: rgba(var(--color-info), 0.5);
+  border: 2px solid rgb(var(--color-info));
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_apply:hover {
+  background-color: rgb(var(--color-info));
+  border-color: rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_cancel {
+  background-color: rgba(var(--color-alert), 0.5);
+  border: 2px solid rgb(var(--color-alert));
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_cancel:hover {
+  background-color: rgb(var(--color-alert));
+  border-color: rgb(var(--color-light1));
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_back {
+  background-color: rgba(var(--color-warning), 0.5);
+  border: 2px solid rgb(var(--color-warning));
+}
+.CardForm .CardFormDiv .TasksApplyCancelContainer .Tasks_btn_back:hover {
+  background-color: rgb(var(--color-warning));
+  border-color: rgb(var(--color-light1));
+}
+.CardForm #TasksApplyCancelDiv {
+  width: 350px;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-apply_cancel-text {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-apply_cancel-text .title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 120%;
+  color: rgb(var(--color-alert));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-apply_cancel-text .text {
+  margin: 5px 0;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-switch-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-switch-container .tasks-switch-button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-switch-container .tasks-switch-button:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark2));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-switch-container .active {
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-switch-container .active:hover {
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-separate-block {
+  margin-bottom: 10px;
+  max-height: 280px;
+  overflow-y: auto;
+  background-color: rgb(var(--color-middle2));
+  border-radius: 5px;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-separate-block .task-meter-separate {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(var(--color-middle3));
+  border: 2px solid rgb(var(--color-middle2));
+  border-radius: 5px;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-separate-block .task-meter-separate .meter-number {
+  margin-bottom: 5px;
+  color: rgb(var(--color-dark2));
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+  font-family: "Courier New", Courier, monospace;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-separate-block .task-meter-separate .meter-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-separate-block .task-meter-separate .meter-actions .action-item {
+  margin: 3px;
+  width: 120px;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent .tasks-separate-block .task-meter-separate .meter-actions .action-item.active {
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-middle3));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent textarea {
+  width: 100%;
+  background-color: rgb(var(--color-middle2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(var(--color-dark2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-dark2)), inset -2px -2px 5px rgb(var(--color-dark2));
+}
+.CardForm #TasksApplyCancelDiv #TasksApplyCancelContent textarea::placeholder {
+  text-align: center;
+}
+/* --- Кінець блоків карток --- */
+/* --- Оформлення блоку пошуку --- */
+/* --- Затемнений фон --- */
+.SearchForm {
+  transform: scale(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.5s ease-in-out;
+  transform-origin: top left;
+  z-index: 20;
+  /* --- Головний блок --- */
+}
+.SearchForm.show {
+  transform: scale(1);
+}
+.SearchForm .search_div {
+  width: 350px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding: 5px;
+  background-color: rgb(var(--color-middle1));
+  border: 2px solid rgb(var(--color-swadow1));
+}
+.SearchForm .search_div .search_div_discr {
+  text-align: center;
+  font-weight: 900;
+  font-size: 120%;
+  color: rgb(var(--color-swadow1));
+  text-shadow: 4px 4px 10px rgb(var(--color-swadow1));
+}
+.SearchForm .search_div .search_btn_close {
+  margin: 5px auto;
+  border-radius: 4px;
+  background-color: rgba(var(--color-dark1), 0.5);
+  border: 2px solid rgb(var(--color-dark1));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.SearchForm .search_div .search_btn_close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(var(--color-dark1));
+  border: 2px solid rgb(var(--color-light1));
+}
+.SearchForm .search_div .search_block, .SearchForm .search_div .search_div .tabcontent .search_block {
+  display: block;
+  margin: 15px auto;
+  width: 320px;
+  background-color: rgb(var(--color-light1));
+  outline-color: rgb(var(--color-dark1));
+  outline-width: 1px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.SearchForm .search_div .result_div, .SearchForm .search_div .search_div .result_div, .SearchForm .search_div .search_div .tabcontent .result_div {
+  padding: 1px 20px;
+  overflow: scroll;
+  max-height: 400px;
+  text-align: center;
+  border: 2px solid rgb(var(--color-dark1));
+  border-radius: 10px;
+}
+.SearchForm .search_div .result_div .result_val, .SearchForm .search_div .search_div .result_div .result_val, .SearchForm .search_div .search_div .tabcontent .result_div .result_val {
+  padding: 0px 10px;
+  transition: 0.5s;
+  color: rgb(var(--color-light1));
+}
+.SearchForm .search_div .result_div .result_val:hover, .SearchForm .search_div .search_div .result_div .result_val:hover, .SearchForm .search_div .search_div .tabcontent .result_div .result_val:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+  cursor: pointer;
+}
+.SearchForm .search_div .result_val_no, .SearchForm .search_div .search_div .result_val_no, .SearchForm .search_div .search_div .tabcontent .result_val_no {
+  background-color: rgb(var(--color-alert));
+  color: rgb(var(--color-light1));
+  cursor: pointer;
+  padding: 15px 10px;
+  text-align: center;
+}
+.SearchForm .search_div .tabs {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.SearchForm .search_div .tabs .tablinks {
+  background-color: rgba(var(--color-dark1), 0.5);
+  color: rgb(var(--color-light1));
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.SearchForm .search_div .tabs .tablinks:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+}
+.SearchForm .search_div .tabs .tablinks:focus, .SearchForm .search_div .tabs .tablinks.active {
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-dark1));
+}
+.SearchForm .search_div .tabs_blocks {
+  display: flex;
+  justify-content: center;
+}
+.SearchForm .search_div .tabs_blocks .tabcontent {
+  width: 350px;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-left: 1px solid rgb(var(--color-dark2));
+  border-right: 1px solid rgb(var(--color-dark2));
+}
+.SearchForm .search_div .tabs_blocks .tabcontent.active {
+  display: block;
+}
+/* --- Кінець оформлення блоку пошуку --- */
+/* --- Оформлення блоку фільтру --- */
+/* --- Затемнений фон --- */
+.FilterForm {
+  transform: scale(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.5s ease-in-out;
+  transform-origin: top left;
+  z-index: 20;
+  /* --- Головний блок --- */
+}
+.FilterForm.show {
+  transform: scale(1);
+}
+.FilterForm .filter_div {
+  width: 350px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding: 5px;
+  background-color: rgb(var(--color-middle1));
+  border: 2px solid rgb(var(--color-swadow1));
+}
+.FilterForm .filter_div .filter_div_discr {
+  text-align: center;
+  font-weight: 900;
+  font-size: 120%;
+  color: rgb(var(--color-swadow1));
+  text-shadow: 4px 4px 10px rgb(var(--color-swadow1));
+}
+.FilterForm .filter_div .filter_btn_close, .FilterForm .filter_div .filter_btn {
+  margin: 5px auto;
+  border-radius: 4px;
+  background-color: rgba(var(--color-dark1), 0.5);
+  border: 2px solid rgb(var(--color-dark1));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.FilterForm .filter_div .filter_btn_close:hover, .FilterForm .filter_div .filter_btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(var(--color-dark1));
+  border: 2px solid rgb(var(--color-light1));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete textarea, .FilterForm .filter_div #FilterBlock #filterForm .autocomplete input, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete textarea, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete input {
+  width: 300px;
+  text-align: center;
+  background-color: rgb(var(--color-light1));
+  border: none;
+  border-radius: 5px;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete textarea::placeholder, .FilterForm .filter_div #FilterBlock #filterForm .autocomplete input::placeholder, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete textarea::placeholder, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete input::placeholder {
+  color: rgb(var(--color-middle1));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete textarea:not(:placeholder-shown), .FilterForm .filter_div #FilterBlock #filterForm .autocomplete input:not(:placeholder-shown), .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete textarea:not(:placeholder-shown), .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete input:not(:placeholder-shown) {
+  background-color: rgba(var(--color-info), var(--filter-bg-opacity));
+  color: rgb(var(--color-dark1));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .autocomplete-list, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .autocomplete-list {
+  border-radius: 10px;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterButtons, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterButtons {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterButtons .filterBtn, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterButtons .filterBtn {
+  width: 60px;
+  margin: 5px;
+  padding: 0px 5px;
+  background-color: rgba(var(--color-dark1), 0.5);
+  border-radius: 5px;
+  color: rgb(var(--color-light1));
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterButtons .filterBtn.active, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterButtons .filterBtn.active {
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-dark1));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterButtons .filterBtn.active:hover, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterButtons .filterBtn.active:hover {
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-dark1));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterButtons .filterBtn:hover, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterButtons .filterBtn:hover {
+  cursor: pointer;
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaArray, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaArray {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaArray textarea, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaArray textarea {
+  margin-top: 5px;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaRange, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaRange {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaRange div, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaRange div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaRange div input, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaRange div input {
+  width: 100px;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaRange div .spFilterRangeStartList, .FilterForm .filter_div #FilterBlock #filterForm .autocomplete .filterCriteria .filterCriteriaRange div .spFilterRangeEndList, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaRange div .spFilterRangeStartList, .FilterForm .filter_div #FilterBlock #filterForm .TaskTypeAutocomplete .filterCriteria .filterCriteriaRange div .spFilterRangeEndList {
+  width: 100px;
+  text-align: center;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .controlButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.FilterForm .filter_div #FilterBlock #filterForm .controlButtons .add-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-info), 0.5);
+}
+.FilterForm .filter_div #FilterBlock #filterForm .controlButtons .add-button svg:hover {
+  fill: rgb(var(--color-info));
+}
+.FilterForm .filter_div #FilterBlock #filterForm .controlButtons .remove-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-alert), 0.5);
+}
+.FilterForm .filter_div #FilterBlock #filterForm .controlButtons .remove-button svg:hover {
+  fill: rgb(var(--color-alert));
+}
+.FilterForm .filter_div #FilterBlock .filter_btn {
+  margin-top: 15px;
+}
+.FilterForm .filter_div #FilterBlock .filter_btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(var(--color-dark1));
+  border: 2px solid rgb(var(--color-light1));
+}
+.FilterForm .filter_div #FilterBlock .tabs {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.FilterForm .filter_div #FilterBlock .tabs .tablinks {
+  background-color: rgba(var(--color-dark1), 0.5);
+  color: rgb(var(--color-light1));
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.FilterForm .filter_div #FilterBlock .tabs .tablinks:hover {
+  background-color: rgb(var(--color-light1));
+  color: rgb(var(--color-dark1));
+}
+.FilterForm .filter_div #FilterBlock .tabs .tablinks:focus, .FilterForm .filter_div #FilterBlock .tabs .tablinks.active {
+  background-color: rgb(var(--color-middle1));
+  color: rgb(var(--color-dark1));
+}
+.FilterForm .filter_div #FilterBlock .tabs_blocks {
+  display: flex;
+  justify-content: center;
+}
+.FilterForm .filter_div #FilterBlock .tabs_blocks .tabcontent {
+  width: 350px;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-left: 1px solid rgb(var(--color-dark2));
+  border-right: 1px solid rgb(var(--color-dark2));
+}
+.FilterForm .filter_div #FilterBlock .tabs_blocks .tabcontent.active {
+  display: block;
+}
+.FilterForm .filter_div #FilterBlock .tasks_filter_button_container {
+  display: flex;
+  justify-content: space-around;
+}
+/* --- Кінець оформлення блоку фільтру --- */
+/* --- Оформлення вікна додавання нового елементу --- */
+/* --- Затемнений фон --- */
+.AddNewForm {
+  transform: scale(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.5s ease-in-out;
+  transform-origin: top left;
+  /* --- Головний блок --- */
+}
+.AddNewForm.show {
+  transform: scale(1);
+}
+.AddNewForm .add_new_div {
+  width: 350px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding: 5px;
+  background-color: rgb(var(--color-middle3));
+  border: 10px solid #556273;
+  /* --- Вміст картки --- */
+  /* --- Таблиця вмісту полів додавання нового лічильника --- */
+  /* --- Кнопки збереження та закриття форми --- */
+}
+.AddNewForm .add_new_div .add_new_title {
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+  color: rgb(var(--color-dark2));
+  text-shadow: 4px 4px 10px rgb(var(--color-dark2));
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.AddNewForm .add_new_div #meterFormTable, .AddNewForm .add_new_div #addressFormTable, .AddNewForm .add_new_div #tasksFormTableRequired, .AddNewForm .add_new_div #tasksFormTableOptional {
+  width: 100%;
+  border-collapse: collapse;
+}
+.AddNewForm .add_new_div #meterFormTable tr, .AddNewForm .add_new_div #addressFormTable tr, .AddNewForm .add_new_div #tasksFormTableRequired tr, .AddNewForm .add_new_div #tasksFormTableOptional tr {
+  display: flex;
+  justify-content: center;
+}
+.AddNewForm .add_new_div #meterFormTable td, .AddNewForm .add_new_div #addressFormTable td, .AddNewForm .add_new_div #tasksFormTableRequired td, .AddNewForm .add_new_div #tasksFormTableOptional td {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.AddNewForm .add_new_div #meterFormTable td .optional, .AddNewForm .add_new_div #addressFormTable td .optional, .AddNewForm .add_new_div #tasksFormTableRequired td .optional, .AddNewForm .add_new_div #tasksFormTableOptional td .optional {
+  background-color: rgba(var(--color-warning), var(--newdata-bg-opacity));
+}
+.AddNewForm .add_new_div #meterFormTable td .required, .AddNewForm .add_new_div #addressFormTable td .required, .AddNewForm .add_new_div #tasksFormTableRequired td .required, .AddNewForm .add_new_div #tasksFormTableOptional td .required {
+  background-color: rgba(var(--color-alert), var(--newdata-bg-opacity));
+}
+.AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block, .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block, .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block, .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+}
+.AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block input[type="checkbox"], .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block input[type="checkbox"], .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block input[type="checkbox"], .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block input[type="checkbox"] {
+  width: auto;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgb(var(--color-middle3));
+  border: 2px solid rgb(var(--color-dark2));
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block input[type="checkbox"]:checked::before, .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block input[type="checkbox"]:checked::before, .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block input[type="checkbox"]:checked::before, .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block input[type="checkbox"]:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  left: 2px;
+  border-radius: 4px;
+}
+.AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block input[type="checkbox"]::before, .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block input[type="checkbox"]::before {
+  content: "✖";
+  color: rgba(var(--color-alert), 0.6);
+}
+.AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block input[type="checkbox"]:checked::before, .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block input[type="checkbox"]:checked::before, .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block input[type="checkbox"]:checked::before, .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block input[type="checkbox"]:checked::before {
+  content: "✔";
+  color: rgba(var(--color-info), 0.8);
+}
+.AddNewForm .add_new_div #meterFormTable td .newADRnoflat_block label, .AddNewForm .add_new_div #addressFormTable td .newADRnoflat_block label, .AddNewForm .add_new_div #tasksFormTableRequired td .newADRnoflat_block label, .AddNewForm .add_new_div #tasksFormTableOptional td .newADRnoflat_block label {
+  color: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #meterFormTable td input, .AddNewForm .add_new_div #addressFormTable td input, .AddNewForm .add_new_div #tasksFormTableRequired td input, .AddNewForm .add_new_div #tasksFormTableOptional td input {
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+}
+.AddNewForm .add_new_div #meterFormTable td input:not(:placeholder-shown), .AddNewForm .add_new_div #addressFormTable td input:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableRequired td input:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableOptional td input:not(:placeholder-shown) {
+  background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+  color: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #meterFormTable td .phone-field-container .phoneField .optional, .AddNewForm .add_new_div #addressFormTable td .phone-field-container .phoneField .optional, .AddNewForm .add_new_div #tasksFormTableRequired td .phone-field-container .phoneField .optional, .AddNewForm .add_new_div #tasksFormTableOptional td .phone-field-container .phoneField .optional {
+  background-color: rgba(var(--color-warning), var(--newdata-bg-opacity));
+}
+.AddNewForm .add_new_div #meterFormTable td .phone-field-container .phoneField .required, .AddNewForm .add_new_div #addressFormTable td .phone-field-container .phoneField .required, .AddNewForm .add_new_div #tasksFormTableRequired td .phone-field-container .phoneField .required, .AddNewForm .add_new_div #tasksFormTableOptional td .phone-field-container .phoneField .required {
+  background-color: rgba(var(--color-alert), var(--newdata-bg-opacity));
+}
+.AddNewForm .add_new_div #meterFormTable td .phone-field-container .phoneField select, .AddNewForm .add_new_div #addressFormTable td .phone-field-container .phoneField select, .AddNewForm .add_new_div #tasksFormTableRequired td .phone-field-container .phoneField select, .AddNewForm .add_new_div #tasksFormTableOptional td .phone-field-container .phoneField select {
+  border: 1px solid transparent;
+  background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+}
+.AddNewForm .add_new_div #meterFormTable td .phone-field-container .phoneField input:not(:placeholder-shown), .AddNewForm .add_new_div #meterFormTable td .phone-field-container .phoneField select:not(:placeholder-shown), .AddNewForm .add_new_div #addressFormTable td .phone-field-container .phoneField input:not(:placeholder-shown), .AddNewForm .add_new_div #addressFormTable td .phone-field-container .phoneField select:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableRequired td .phone-field-container .phoneField input:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableRequired td .phone-field-container .phoneField select:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableOptional td .phone-field-container .phoneField input:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableOptional td .phone-field-container .phoneField select:not(:placeholder-shown) {
+  background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+  color: rgb(var(--color-dark1));
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection {
+  width: calc(100% - 30px);
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+  border: 2px solid rgb(var(--color-dark2));
+  border-radius: 10px;
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection .meter-block, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection .meter-block {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid rgb(var(--color-middle2));
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection .meter-block.selected, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection .meter-block.selected {
+  border: 2px solid rgb(var(--color-info));
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection .meter-block.neutral, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection .meter-block.neutral {
+  border: 2px solid rgb(var(--color-alert));
+  cursor: not-allowed;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection .meter-block.cold, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection .meter-block.cold {
+  color: rgb(var(--color-cancel));
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection .meter-block.hot, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection .meter-block.hot {
+  color: rgb(var(--color-alert));
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .meters-selection .meter-block.unknown, .AddNewForm .add_new_div #tasksFormTableOptional td .meters-selection .meter-block.unknown {
+  color: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td .phones-selection, .AddNewForm .add_new_div #tasksFormTableOptional td .phones-selection {
+  width: calc(100% - 30px);
+  min-height: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border: 2px solid rgb(var(--color-dark2));
+  border-radius: 10px;
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td #note, .AddNewForm .add_new_div #tasksFormTableOptional td #note {
+  width: calc(100% - 26px);
+  height: 150px;
+  padding: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td #note:not(:placeholder-shown), .AddNewForm .add_new_div #tasksFormTableOptional td #note:not(:placeholder-shown) {
+  background-color: rgba(var(--color-info), var(--newdata-bg-opacity));
+  color: rgb(var(--color-dark1));
+}
+.AddNewForm .add_new_div #tasksFormTableRequired td #note::placeholder, .AddNewForm .add_new_div #tasksFormTableOptional td #note::placeholder {
+  text-align: center;
+  line-height: normal;
+}
+.AddNewForm .add_new_div #NewMeteraddNewAddressBtn, .AddNewForm .add_new_div #NewTaskaddNewAddressBtn, .AddNewForm .add_new_div #NewTaskaddNewMeterBtn {
+  width: 160px;
+  border: 1px solid rgb(var(--color-dark2));
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AddNewForm .add_new_div #NewMeteraddNewAddressBtn svg, .AddNewForm .add_new_div #NewTaskaddNewAddressBtn svg, .AddNewForm .add_new_div #NewTaskaddNewMeterBtn svg {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  fill: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #NewMeteraddNewAddressBtn span, .AddNewForm .add_new_div #NewTaskaddNewAddressBtn span, .AddNewForm .add_new_div #NewTaskaddNewMeterBtn span {
+  margin: 10px;
+  color: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #NewMeteraddNewAddressBtn:hover, .AddNewForm .add_new_div #NewTaskaddNewAddressBtn:hover, .AddNewForm .add_new_div #NewTaskaddNewMeterBtn:hover {
+  border: 1px solid rgb(var(--color-middle2));
+}
+.AddNewForm .add_new_div #NewMeteraddNewAddressBtn:hover svg, .AddNewForm .add_new_div #NewTaskaddNewAddressBtn:hover svg, .AddNewForm .add_new_div #NewTaskaddNewMeterBtn:hover svg {
+  fill: rgb(var(--color-middle2));
+}
+.AddNewForm .add_new_div #NewMeteraddNewAddressBtn:hover span, .AddNewForm .add_new_div #NewTaskaddNewAddressBtn:hover span, .AddNewForm .add_new_div #NewTaskaddNewMeterBtn:hover span {
+  color: rgb(var(--color-middle2));
+}
+.AddNewForm .add_new_div #phoneFields {
+  width: 100%;
+}
+.AddNewForm .add_new_div #phoneFields .phone-field-container {
+  width: 100%;
+}
+.AddNewForm .add_new_div #phoneFields .phone-field-container .phoneField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.AddNewForm .add_new_div #phoneFields .phone-field-container .phoneField select {
+  width: 20%;
+  margin-right: 10px;
+}
+.AddNewForm .add_new_div #phoneFields .phone-field-container .phoneField input {
+  width: 60%;
+}
+.AddNewForm .add_new_div #phoneFields .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AddNewForm .add_new_div #phoneFields .button-container .add-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-info), 0.5);
+}
+.AddNewForm .add_new_div #phoneFields .button-container .add-button svg:hover {
+  fill: rgb(var(--color-info));
+}
+.AddNewForm .add_new_div #phoneFields .button-container .remove-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-alert), 0.5);
+}
+.AddNewForm .add_new_div #phoneFields .button-container .remove-button svg:hover {
+  fill: rgb(var(--color-alert));
+}
+.AddNewForm .add_new_div #phoneFields .button-container #removePhoneButton {
+  display: inline-block;
+}
+.AddNewForm .add_new_div .add_new_btn_save, .AddNewForm .add_new_div .add_new_btn_close {
+  margin: 5px auto;
+  border-radius: 4px;
+  background-color: rgb(var(--color-middle2));
+  border: 2px solid rgb(var(--color-dark2));
+  color: rgb(var(--color-light1));
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.AddNewForm .add_new_div .add_new_btn_save:hover, .AddNewForm .add_new_div .add_new_btn_close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(var(--color-dark2));
+  border: 2px solid rgb(var(--color-light1));
+}
+.AddNewForm .add_new_div .autocomplete-container {
+  position: relative;
+}
+.AddNewForm .add_new_div #add_task_content .tabs {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.AddNewForm .add_new_div #add_task_content .tabs .tablinks {
+  background-color: rgba(var(--color-dark2), 0.5);
+  color: rgb(var(--color-light2));
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.AddNewForm .add_new_div #add_task_content .tabs .tablinks:hover {
+  background-color: rgb(var(--color-light2));
+  color: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #add_task_content .tabs .tablinks:focus, .AddNewForm .add_new_div #add_task_content .tabs .tablinks.active {
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks {
+  display: flex;
+  justify-content: center;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent {
+  width: 350px;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-left: 1px solid rgb(var(--color-dark2));
+  border-right: 1px solid rgb(var(--color-dark2));
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 6px;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field select, .AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field input {
+  background-color: rgb(var(--color-middle3));
+  color: rgb(var(--color-dark2));
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgb(var(--color-middle2));
+  box-shadow: inset 2px 2px 5px rgb(var(--color-middle2)), inset -2px -2px 5px rgb(var(--color-middle2));
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field select::placeholder, .AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field input::placeholder {
+  text-align: center;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field select {
+  width: 20%;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .phone-edit-field input {
+  width: 50%;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container .add-button {
+  width: 30px;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container .add-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-info), 0.5);
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container .add-button svg:hover {
+  fill: rgb(var(--color-info));
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container .remove-button {
+  width: 30px;
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container .remove-button svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  fill: rgba(var(--color-alert), 0.5);
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent table tr td .phones-selection .button-container .remove-button svg:hover {
+  fill: rgb(var(--color-alert));
+}
+.AddNewForm .add_new_div #add_task_content .tabs_blocks .tabcontent.active {
+  display: block;
+}
+/* --- Інше форматування --- */
+.street-autocomplete-item {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.street-autocomplete-item:hover {
+  background-color: #d0d0d0;
+  color: #000;
+}
+.old-street-name {
+  font-style: italic;
+}
+.normal-field {
+  border: 1px solid transparent;
+}
+.error-field {
+  border: 2px solid rgb(var(--color-alert));
+}
+.error-message {
+  color: rgb(var(--color-alert));
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+.new_task_add_meter-popup {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(var(--color-middle2));
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(var(--color-swadow1), 0.1);
+  border: 2px solid rgb(var(--color-dark2));
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.new_task_add_meter-popup hr {
+  width: 100%;
+  border: 1px solid rgb(var(--color-dark2));
+}
+.new_task_add_meter-popup .new_meter-kitchen_title {
+  margin-bottom: 5px;
+  color: rgb(var(--color-dark2));
+  font-weight: bold;
+  font-size: 150%;
+}
+.new_task_add_meter-popup .new_meter-kitchen_elements {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.new_task_add_meter-popup .new_meter-bath_title {
+  margin-bottom: 5px;
+  color: rgb(var(--color-dark2));
+  font-weight: bold;
+  font-size: 150%;
+}
+.new_task_add_meter-popup .new_meter-bath_elements {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.new_task_add_meter-popup .new_meter-kitchen_cold svg, .new_task_add_meter-popup .new_meter-bath_cold svg {
+  fill: rgb(var(--color-cancel));
+}
+.new_task_add_meter-popup .new_meter-kitchen_hot svg, .new_task_add_meter-popup .new_meter-bath_hot svg {
+  fill: rgb(var(--color-alert));
+}
+.new_task_add_meter-popup .new_meter-kitchen_unknown svg, .new_task_add_meter-popup .new_meter-bath_unknown svg {
+  fill: rgb(var(--color-dark2));
+}
+.new_task_add_meter-popup .new_meter-kitchen_cold, .new_task_add_meter-popup .new_meter-kitchen_hot, .new_task_add_meter-popup .new_meter-kitchen_unknown, .new_task_add_meter-popup .new_meter-bath_cold, .new_task_add_meter-popup .new_meter-bath_hot, .new_task_add_meter-popup .new_meter-bath_unknown {
+  cursor: copy;
+}
+.new_task_add_meter-popup .new_meter-kitchen_cold svg, .new_task_add_meter-popup .new_meter-kitchen_hot svg, .new_task_add_meter-popup .new_meter-kitchen_unknown svg, .new_task_add_meter-popup .new_meter-bath_cold svg, .new_task_add_meter-popup .new_meter-bath_hot svg, .new_task_add_meter-popup .new_meter-bath_unknown svg {
+  width: 48px;
+  height: 48px;
+}
+.new_task_add_meter-popup .new_meter-kitchen_cold svg:hover, .new_task_add_meter-popup .new_meter-kitchen_hot svg:hover, .new_task_add_meter-popup .new_meter-kitchen_unknown svg:hover, .new_task_add_meter-popup .new_meter-bath_cold svg:hover, .new_task_add_meter-popup .new_meter-bath_hot svg:hover, .new_task_add_meter-popup .new_meter-bath_unknown svg:hover {
+  filter: drop-shadow(2px 2px 2px rgb(var(--color-light1)));
+}
+/* --- Кінець оформлення вікна додавання нового елемнту --- */
+/* --- Кінець блоків карток, Пошуку, Фільтрації та додавання нових обʼєктів --- */
