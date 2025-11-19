@@ -187,8 +187,8 @@ const handlers = {
 }
 
 const credentials = {
-  key: fs.readFileSync('/home/R145j7/conf/web/crm.aquaprylad.in.ua/ssl/crm.aquaprylad.in.ua.key'),
-  cert: fs.readFileSync('/home/R145j7/conf/web/crm.aquaprylad.in.ua/ssl/crm.aquaprylad.in.ua.crt')
+  key: fs.readFileSync('/etc/letsencrypt/live/crm.aquaprylad.in.ua/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/crm.aquaprylad.in.ua/fullchain.pem')
 };
 
 const server = https.createServer(credentials, (req, res) => {
