@@ -175,24 +175,78 @@ function iCheckIP($status, $user_ip, $user_agent, $user_country, $user_city, $us
     }
     $stmt->close();
 
-    list($ip1, $ip2, $ip3, $ip4) = explode('.', $user_ip);
-    $query = "SELECT ip4 FROM blocked_IPs WHERE ip1 = ? AND ip2 = ? AND ip3 = ?";
-    $stmt = $mysqli->prepare($query);
-    $stmt->bind_param("iii", $ip1, $ip2, $ip3);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    list($ip1, $ip2, $ip3, $ip4) = array_map('intval', explode('.', $user_ip));
     $is_blocked = false;
-    while ($row = $result->fetch_assoc()) {
-        if (is_null($row['ip4'])) {
-            $is_blocked = true;
-            break;
-        }
-        if ((int)$row['ip4'] === (int)$ip4) {
-            $is_blocked = true;
-            break;
-        }
+
+    // ==== /8: ip1.*.*.* ====
+    $query = "SELECT 1 FROM blocked_IPs 
+              WHERE ip1 = ? 
+                AND ip2 IS NULL 
+                AND ip3 IS NULL 
+                AND ip4 IS NULL 
+              LIMIT 1";
+    $stmt = $mysqli->prepare($query);
+    $stmt->bind_param("i", $ip1);
+    $stmt->execute();
+    $stmt->store_result();
+    if ($stmt->num_rows > 0) {
+        $is_blocked = true;
     }
     $stmt->close();
+
+    // ==== /16: ip1.ip2.*.* ====
+    if (!$is_blocked) {
+        $query = "SELECT 1 FROM blocked_IPs 
+                  WHERE ip1 = ? 
+                    AND ip2 = ? 
+                    AND ip3 IS NULL 
+                    AND ip4 IS NULL 
+                  LIMIT 1";
+        $stmt = $mysqli->prepare($query);
+        $stmt->bind_param("ii", $ip1, $ip2);
+        $stmt->execute();
+        $stmt->store_result();
+        if ($stmt->num_rows > 0) {
+            $is_blocked = true;
+        }
+        $stmt->close();
+    }
+
+    // ==== /24: ip1.ip2.ip3.* ====
+    if (!$is_blocked) {
+        $query = "SELECT 1 FROM blocked_IPs 
+                  WHERE ip1 = ? 
+                    AND ip2 = ? 
+                    AND ip3 = ? 
+                    AND ip4 IS NULL 
+                  LIMIT 1";
+        $stmt = $mysqli->prepare($query);
+        $stmt->bind_param("iii", $ip1, $ip2, $ip3);
+        $stmt->execute();
+        $stmt->store_result();
+        if ($stmt->num_rows > 0) {
+            $is_blocked = true;
+        }
+        $stmt->close();
+    }
+
+    // ==== /32: точный IP ====
+    if (!$is_blocked) {
+        $query = "SELECT 1 FROM blocked_IPs 
+                  WHERE ip1 = ? 
+                    AND ip2 = ? 
+                    AND ip3 = ? 
+                    AND ip4 = ? 
+                  LIMIT 1";
+        $stmt = $mysqli->prepare($query);
+        $stmt->bind_param("iiii", $ip1, $ip2, $ip3, $ip4);
+        $stmt->execute();
+        $stmt->store_result();
+        if ($stmt->num_rows > 0) {
+            $is_blocked = true;
+        }
+        $stmt->close();
+    }
 
     if ($is_blocked) {
         $mysqli->close();
