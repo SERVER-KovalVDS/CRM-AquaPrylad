@@ -5,7 +5,7 @@ function connectWebSocket(token, page, callback, onCloseCallback) {
     messageCallback = callback;
 
     return new Promise((resolve, reject) => {
-        ws = new WebSocket(`wss://crm.aquaprylad.in.ua:8348?token=${encodeURIComponent(token)}&page=[${page}]`);
+        ws = new WebSocket(`wss://crm.aquaprylad.in.ua/ws/?token=${encodeURIComponent(token)}&page=[${page}]`);
 
         ws.onopen = () => {
             console.log('WebSocket connection opened');
