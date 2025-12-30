@@ -10,7 +10,7 @@
     }
 
     // Поточна дата і час.
-    date_default_timezone_set('Europe/Kiev');
+    date_default_timezone_set('Europe/Kyiv');
     $now = date("| j F Y | H:i:s |");
 
     // Перевірка, чи авторизований користувач
