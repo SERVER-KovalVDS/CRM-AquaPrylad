@@ -16,18 +16,21 @@
     "MySQL": {
         "R145j7_aqua_crm": {
             "host":     "localhost",
+            "socketPath": "/var/run/mysqld/mysqld.sock",
             "user":     "smart_monitoring",
             "password": "7@QxH$D!K8mZ9Y6#R2PWF",
             "database": "R145j7_aqua_crm"
         },
         "R145j7_bases": {
             "host":     "localhost",
+            "socketPath": "/var/run/mysqld/mysqld.sock",
             "user":     "smart_monitoring",
             "password": "7@QxH$D!K8mZ9Y6#R2PWF",
             "database": "R145j7_bases"
         },
         "R145j7_aqua_crm_chernigiv": {
             "host":     "localhost",
+            "socketPath": "/var/run/mysqld/mysqld.sock",
             "user":     "smart_monitoring",
             "password": "7@QxH$D!K8mZ9Y6#R2PWF",
             "database": "R145j7_aqua_crm_chernigiv"
