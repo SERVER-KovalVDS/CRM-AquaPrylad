@@ -16,20 +16,20 @@
     "MySQL": {
         "R145j7_aqua_crm": {
             "host":     "localhost",
-            "user":     "R145j7_R145j7",
-            "password": "Go4s90ol99RB$4#toR",
+            "user":     "smart_monitoring",
+            "password": "7@QxH$D!K8mZ9Y6#R2PWF",
             "database": "R145j7_aqua_crm"
         },
         "R145j7_bases": {
             "host":     "localhost",
-            "user":     "R145j7_R145j7",
-            "password": "Go4s90ol99RB$4#toR",
+            "user":     "smart_monitoring",
+            "password": "7@QxH$D!K8mZ9Y6#R2PWF",
             "database": "R145j7_bases"
         },
         "R145j7_aqua_crm_chernigiv": {
             "host":     "localhost",
-            "user":     "R145j7_R145j7",
-            "password": "Go4s90ol99RB$4#toR",
+            "user":     "smart_monitoring",
+            "password": "7@QxH$D!K8mZ9Y6#R2PWF",
             "database": "R145j7_aqua_crm_chernigiv"
         }
     }
