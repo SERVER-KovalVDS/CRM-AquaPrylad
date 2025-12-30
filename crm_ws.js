@@ -187,10 +187,9 @@ const handlers = {
 }
 
 const credentials = {
-  key: fs.readFileSync('/etc/letsencrypt/live/crm.aquaprylad.in.ua/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/crm.aquaprylad.in.ua/fullchain.pem')
+  key: fs.readFileSync('/etc/letsencrypt/live/aquaprylad.in.ua/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/aquaprylad.in.ua/fullchain.pem')
 };
-
 const server = https.createServer(credentials, (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('WebSocket server is running.\n');
