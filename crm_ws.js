@@ -426,7 +426,7 @@ function manageUserConnection(action, connectionNumber, login, loginName, page, 
     }
 }
 
-const PORT = 8889;
+const PORT = 8348;
 server.listen(PORT, () => {
   logger_websocket.info(`WebSocket server listening on port ${PORT} (HTTPS)`);
 });
