@@ -2,10 +2,12 @@ const mysql = require('mysql2/promise');
 const config = require('config');
 
 async function AllAdresses_sumy() {
+    let con;
+    let conBases;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm'));
         const [addresses] = await con.query('SELECT * FROM adresses');
-        const conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
+        conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
 
         for (const address of addresses) {
             const [streetData] = await conBases.query('SELECT * FROM street_base WHERE ID = ?', [address.adr_street_id]);
@@ -27,19 +29,24 @@ async function AllAdresses_sumy() {
                 address.tasks = tasksData.map(task => ({ date: task.date, type: task.type }));
             }
         }
-        await con.end();
-        await conBases.end();
-
         return addresses;
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
+        if (conBases) {
+            await conBases.end();
+        }
     }
 }
 
 async function AllStreets_sumy() {
+    let conBases;
     try {
-        const conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
+        conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
         const [streetsData] = await conBases.query('SELECT ID, new_name, old_name FROM street_base');
 
         const streets = streetsData.map(street => {
@@ -53,17 +60,21 @@ async function AllStreets_sumy() {
             };
         });
 
-        await conBases.end();
         return streets;
     } catch (error) {
         console.error('Error fetching streets from DB: ', error);
         throw error;
+    } finally {
+        if (conBases) {
+            await conBases.end();
+        }
     }
 }
 
 async function AllAdresses_chernigiv(criteria = {}, limit = 100, offset = 0) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const countQuery = `SELECT COUNT(*) as total FROM addresses`;
         const [countResult] = await con.query(countQuery);
         const totalRecords = countResult[0].total;
@@ -135,7 +146,6 @@ async function AllAdresses_chernigiv(criteria = {}, limit = 100, offset = 0) {
             };
         });
         const addressesWithFullTasks = await Promise.all(addressesWithTasksPromises);
-        await con.end();
         const sortedAddresses = addressesWithFullTasks.sort((a, b) => {
             if (a.tasks > 0 && b.tasks === 0) {
                 return -1;
@@ -154,12 +164,17 @@ async function AllAdresses_chernigiv(criteria = {}, limit = 100, offset = 0) {
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function AllStreets_chernigiv() {
+    let conBases;
     try {
-        const conBases = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        conBases = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const [streetsData] = await conBases.query('SELECT ID, name, type FROM street_base');
 
         const streets = streetsData.map(street => {
@@ -170,17 +185,21 @@ async function AllStreets_chernigiv() {
             };
         });
 
-        await conBases.end();
         return streets;
     } catch (error) {
         console.error('Error fetching streets from DB: ', error);
         throw error;
+    } finally {
+        if (conBases) {
+            await conBases.end();
+        }
     }
 }
 
 async function SearchAddresses_chernigiv(searchQuery) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const criteria = searchQuery.split(' ').filter(term => term.length > 0).slice(0, 4);
         let query = `
             SELECT a.ID, 
@@ -220,17 +239,21 @@ async function SearchAddresses_chernigiv(searchQuery) {
         query += ` GROUP BY a.ID LIMIT 100;`;
 
         const [finalResults] = await con.query(query);
-        await con.end();
         return finalResults;
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function ObjectAddresses_chernigiv(addressId) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const addressQuery = `
             SELECT a.*,
                    CONCAT(sb.type, " ", sb.name) AS street
@@ -240,7 +263,6 @@ async function ObjectAddresses_chernigiv(addressId) {
         `;
         const [addressResult] = await con.query(addressQuery, [addressId]);
         if (addressResult.length === 0) {
-            await con.end();
             return null;
         }
         const address = addressResult[0];
@@ -277,17 +299,21 @@ async function ObjectAddresses_chernigiv(addressId) {
         delete address.adr_building2;
         delete address.adr_fl_of;
         delete address.street;
-        await con.end();
         return address;
     } catch (error) {
         console.error('Error DataBase request for |ObjectAddresses_chernigiv|: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function FilterAddresses_chernigiv(criteria, list) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         let query;
         let countQuery;
 
@@ -388,17 +414,21 @@ async function FilterAddresses_chernigiv(criteria, list) {
                 }
             });
         }
-        await con.end();
         return { data: values, totalRecords, filteredRecords: filterRecords, displayedRecords: values.length };
     } catch (error) {
         console.error('Error in FilterAddresses database request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function MetersArrAddresses_chernigiv(criteria) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         let query = `SELECT ID, number, service_type, location FROM meters`;
         let parameters = [];
 
@@ -410,8 +440,6 @@ async function MetersArrAddresses_chernigiv(criteria) {
         query += ` LIMIT 100`;
 
         const [results] = await con.query(query, parameters);
-        await con.end();
-
         // Сортировка результатов по полю number
         results.sort((a, b) => a.number.localeCompare(b.number));
 
@@ -425,6 +453,10 @@ async function MetersArrAddresses_chernigiv(criteria) {
     } catch (error) {
         console.error('Error in MetersArrAddresses_chernigiv database request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 

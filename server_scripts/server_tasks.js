@@ -3,9 +3,11 @@ const config = require('config');
 const fs = require('fs').promises;
 
 async function AllTasks() {
+    let conAquaCrm;
+    let conBases;
     try {
-        const conAquaCrm = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm'));
-        const conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
+        conAquaCrm = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm'));
+        conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
         const [tasks] = await conAquaCrm.query('SELECT * FROM tasks');
 
         for (const task of tasks) {
@@ -26,17 +28,22 @@ async function AllTasks() {
             delete task.adress_id;
         }
 
-        await conAquaCrm.end();
-        await conBases.end();
-
         return tasks;
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (conAquaCrm) {
+            await conAquaCrm.end();
+        }
+        if (conBases) {
+            await conBases.end();
+        }
     }
 }
 
 async function AllTasks_chernigiv(criteria = {}) {
+    let con;
     try {
         let statusOrder = [];
         try {
@@ -47,7 +54,7 @@ async function AllTasks_chernigiv(criteria = {}) {
             console.error('Error loading status order from vocabulary.json:', error);
         }
 
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const countQuery = `SELECT COUNT(*) as total FROM tasks_archive`;
         const [countResult] = await con.query(countQuery);
         const totalRecords = countResult[0].total;
@@ -137,7 +144,6 @@ async function AllTasks_chernigiv(criteria = {}) {
             tasks.sort((a, b) => new Date(b.work_date) - new Date(a.work_date)); // Сортировка только по work_date
         }
 
-        await con.end();
         return {
             data: tasks,
             totalRecords: totalRecords,
@@ -147,12 +153,17 @@ async function AllTasks_chernigiv(criteria = {}) {
     } catch (error) {
         console.error('Error DataBase request for |AllTasks_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function AddressesSearchTasks_chernigiv(searchQuery) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const [tasks] = await con.query(`
             SELECT t.ID, 
                    CONVERT_TZ(t.date, '+00:00', @@session.time_zone) as date, 
@@ -189,17 +200,21 @@ async function AddressesSearchTasks_chernigiv(searchQuery) {
             }
         }
 
-        await con.end();
         return matchingTasks.slice(0, 100);
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function MetersSearchTasks_chernigiv(searchQuery) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const [tasks] = await con.query(`
             SELECT t.ID, 
                    CONVERT_TZ(t.date, '+00:00', @@session.time_zone) as date, 
@@ -233,17 +248,21 @@ async function MetersSearchTasks_chernigiv(searchQuery) {
                 }
             }
         }
-        await con.end();
         return matchingTasks.slice(0, 100);
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function ObjectTasks_chernigiv(taskId, tableType) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         
         // Определяем название таблицы в зависимости от значения tableType
         const tableName = tableType === 'archive' ? 'tasks_archive' : 'tasks';
@@ -263,7 +282,6 @@ async function ObjectTasks_chernigiv(taskId, tableType) {
         `;
         const [tasks] = await con.query(query, [taskId]);
         if (tasks.length === 0) {
-            await con.end();
             return null;
         }
         const task = tasks[0];
@@ -315,17 +333,21 @@ async function ObjectTasks_chernigiv(taskId, tableType) {
         delete task.adr_building2;
         delete task.adr_fl_of;
         delete task.meters_id;
-        await con.end();
         return task;
     } catch (error) {
         console.error('Error DataBase request for |ObjectTasks_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function FilterTasks_chernigiv(criteria, list) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         let query;
         let countQuery;
 
@@ -378,7 +400,6 @@ async function FilterTasks_chernigiv(criteria, list) {
             results = results.filter(item => item.work_date !== null && item.work_date !== '');
         }
         if (list === 'all') {
-            await con.end();
             return { data: results, totalRecords, filteredRecords: filterRecords, displayedRecords: results.length };
         } else {
             let values;
@@ -407,12 +428,15 @@ async function FilterTasks_chernigiv(criteria, list) {
             } else {
                 values = results.map(item => item[list] ? item[list] : null);
             }
-            await con.end();
             return { data: values, totalRecords, filteredRecords: filterRecords, displayedRecords: values.length };
         }
     } catch (error) {
         console.error('Error in FilterTasks database request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 

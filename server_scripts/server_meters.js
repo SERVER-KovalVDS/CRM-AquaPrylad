@@ -2,9 +2,11 @@ const mysql = require('mysql2/promise');
 const config = require('config');
 
 async function AllMeters() {
+    let conAquaCrm;
+    let conBases;
     try {
-        const conAquaCrm = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm'));
-        const conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
+        conAquaCrm = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm'));
+        conBases = await mysql.createConnection(config.get('MySQL.R145j7_bases'));
         const [meters] = await conAquaCrm.query('SELECT * FROM meters');
 
         for (const meter of meters) {
@@ -30,19 +32,24 @@ async function AllMeters() {
             }
         }
 
-        await conAquaCrm.end();
-        await conBases.end();
-
         return meters;
     } catch (error) {
         console.error('Error DataBase request: ', error);
         throw error;
+    } finally {
+        if (conAquaCrm) {
+            await conAquaCrm.end();
+        }
+        if (conBases) {
+            await conBases.end();
+        }
     }
 }
 
 async function AllMeters_chernigiv(criteria = {}) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const countQuery = `SELECT COUNT(*) as total FROM meters`;
         const [countResult] = await con.query(countQuery);
         const totalRecords = countResult[0].total;
@@ -177,7 +184,6 @@ async function AllMeters_chernigiv(criteria = {}) {
             meters = [];
         }
 
-        await con.end();
         return {
             data: meters,
             totalRecords: totalRecords,
@@ -187,30 +193,39 @@ async function AllMeters_chernigiv(criteria = {}) {
     } catch (error) {
         console.error('Error DataBase request for |AllMeters_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function SearchMeters_chernigiv(searchData) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const query = `
             SELECT ID, number 
             FROM meters 
             WHERE number LIKE ? 
             LIMIT 100`;
         const [meters] = await con.query(query, [`%${searchData}%`]);
-        await con.end();
         return meters;
     } catch (error) {
         console.error('Error DataBase request for |SearchMeters_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 
 async function ObjectMeters_chernigiv(meterId) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         
         const meterQuery = `
             SELECT m.ID, m.number, mb.name AS type_id, m.prod_date, m.service_type, m.value, m.location, m.balanser, m.result, m.status, 
@@ -228,7 +243,6 @@ async function ObjectMeters_chernigiv(meterId) {
         const [meterResult] = await con.query(meterQuery, [meterId]);
 
         if (meterResult.length === 0) {
-            await con.end();
             return null;
         }
 
@@ -262,17 +276,21 @@ async function ObjectMeters_chernigiv(meterId) {
         delete meter.adr_fl_of;
         delete meter.street;
 
-        await con.end();
         return meter;
     } catch (error) {
         console.error('Error DataBase request for |ObjectMeters_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }  
 }
 
 async function FetchMeterTypes_chernigiv() {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const query = `
                         SELECT ID, CONCAT(name, ' => DN ', dn) AS meter_type
                         FROM meters_base`;
@@ -285,17 +303,21 @@ async function FetchMeterTypes_chernigiv() {
             };
         });
 
-        await con.end();
         return formattedMeterTypes;
     } catch (error) {
         console.error('Error DataBase request for |FetchMeterTypes_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function FilterMeters_chernigiv(criteria, list) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         let query;
         let countQuery;
 
@@ -352,7 +374,6 @@ async function FilterMeters_chernigiv(criteria, list) {
                 };
                 meter.type_id = meter.meter_type_name;
             }
-            await con.end();
             return { data: results.filter(item => item[list] !== null), totalRecords, filteredRecords: totalRecords, displayedRecords: results.length };
         } else {
             let values;
@@ -386,18 +407,22 @@ async function FilterMeters_chernigiv(criteria, list) {
                 values = results.length > 0 ? results.map(item => item[list]).filter(value => value !== null) : [null];
             }
 
-            await con.end();
             return { data: values, totalRecords, displayedRecords: values.length };
         }
     } catch (error) {
         console.error('Error in FilterMeters database request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function FetchMeterAddresses_chernigiv(criteria = '') {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
 
         let query = `
             SELECT 
@@ -440,11 +465,14 @@ async function FetchMeterAddresses_chernigiv(criteria = '') {
                 address: fullAddress 
             };
         });
-        await con.end();
         return formattedAddresses;
     } catch (error) {
         console.error('Error DataBase request for |FetchMeterAddresses_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 

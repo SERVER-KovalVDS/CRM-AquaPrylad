@@ -8,6 +8,7 @@ log4js.configure(config.get('log4js'));
 const logger_database = log4js.getLogger("DataBase");
 
 async function Route_chernigiv(criteria) {
+    let con;
     try {
         let statusOrder = [];
         try {
@@ -18,7 +19,7 @@ async function Route_chernigiv(criteria) {
             console.error('Error loading status order from vocabulary.json:', error);
         }
 
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const TaskType = criteria.address?.[0]?.task_type ? `AND t.tasks_type = '${criteria.address?.[0]?.task_type}'` : '';
         const buildComplexCondition = (addressCriteria) => {
             let subConditionParts = [];
@@ -213,16 +214,20 @@ async function Route_chernigiv(criteria) {
             responseData.data.calendar_dates = uniqueCalendarDates;
         }
 
-        await con.end();
         return responseData;
 
     } catch (error) {
         console.error('Error DataBase request for |Route_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function FilterRoute_chernigiv(full_criteria, filter_list) {
+    let con;
     try {
         if (filter_list === 'all') {
             const result = await Route_chernigiv(full_criteria);
@@ -232,7 +237,7 @@ async function FilterRoute_chernigiv(full_criteria, filter_list) {
         const criteria = full_criteria.address;
         const TaskType = criteria.task_type ? `AND tasks_type = '${criteria.task_type}'` : '';
         const list = filter_list.substring(1);
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
 
         // Шаг 1: Получаем уникальные идентификаторы адресов из таблицы заявок
         let query = `SELECT DISTINCT address_id FROM tasks WHERE brigade IS NULL ${TaskType}`;
@@ -375,7 +380,6 @@ async function FilterRoute_chernigiv(full_criteria, filter_list) {
                 throw new Error(`Unknown special list type: ${list}`);
         }
 
-        await con.end();
         return {
             action: "routeFilterResponse",
             field: filter_list,
@@ -385,13 +389,18 @@ async function FilterRoute_chernigiv(full_criteria, filter_list) {
     } catch (error) {
         console.error('Error in SpesialFilterTasks_chernigiv database request: ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function RouteChange_chernigiv(full_criteria) {
+    let con;
     try {
         const criteria = full_criteria.worker;
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const { id, worker, work_date, user: username } = criteria;
 
         if (!id) {
@@ -527,12 +536,17 @@ async function RouteChange_chernigiv(full_criteria) {
     } catch (error) {
         console.error('Error updating task in RouteChange_chernigiv:', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function FetchTasksAddresses_chernigiv(criteria = '') {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         let query = `
             SELECT 
                 a.ID,
@@ -583,7 +597,6 @@ async function FetchTasksAddresses_chernigiv(criteria = '') {
         query += ' LIMIT 100';
         const [addresses] = await con.query(query, queryParams);
         if (addresses.length === 0) {
-            await con.end();
             return [];
         }
 
@@ -641,17 +654,21 @@ async function FetchTasksAddresses_chernigiv(criteria = '') {
             };
         });
 
-        await con.end();
         return formattedAddresses;
     } catch (error) {
         console.error('Error DataBase request for |FetchTasksAddresses_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function RoutePrint_chernigiv(criteria) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const query = `
             SELECT 
                 t.address_id, 
@@ -690,7 +707,6 @@ async function RoutePrint_chernigiv(criteria) {
             delete task.address_id;
             delete task.meters_id;
         }
-        await con.end();
         return {
             action: "routePrintResponse",
             data: tasks
@@ -698,12 +714,17 @@ async function RoutePrint_chernigiv(criteria) {
     } catch (error) {
         console.error('Error DataBase request for |RoutePrint_chernigiv| : ', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function RouteExcel_chernigiv(criteria) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const query = `
             SELECT 
                 t.address_id, 
@@ -1005,8 +1026,6 @@ async function RouteExcel_chernigiv(criteria) {
         const buffer = await workbook.xlsx.writeBuffer();
         const base64File = buffer.toString('base64');
 
-        await con.end();
-
         return {
             action: "routeExcelResponse",
             status: "success",
@@ -1021,6 +1040,10 @@ async function RouteExcel_chernigiv(criteria) {
             status: "error",
             message: 'Error generating report',
         };
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 

@@ -6,8 +6,9 @@ const fs = require('fs');
 const path = require('path');
 
 async function getCalendarDates_chernigiv(criteria) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         const sql = `   SELECT DISTINCT CONVERT_TZ(certificate_date, '+00:00', @@session.time_zone) as availableDate 
                         FROM meters 
                         WHERE balanser = ? 
@@ -25,8 +26,6 @@ async function getCalendarDates_chernigiv(criteria) {
 
         const availableDates = rows.map(row => row.availableDate);
 
-        await con.end();
-
         return { 
             action: "CalendarDatesResponse",
             calendar_dates: availableDates
@@ -34,12 +33,17 @@ async function getCalendarDates_chernigiv(criteria) {
     } catch (error) {
         console.error('Error fetching available dates:', error);
         throw error;
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
 async function GenerateReportCSV_chernigiv(criteria, ws) {
+    let con;
     try {
-        const con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
+        con = await mysql.createConnection(config.get('MySQL.R145j7_aqua_crm_chernigiv'));
         let sql = '';
         let filterParameters = [];
         
@@ -65,7 +69,6 @@ async function GenerateReportCSV_chernigiv(criteria, ws) {
         const [rows] = await con.execute(sql, filterParameters);
 
         if (rows.length === 0) {
-            await con.end();
             ws.send(JSON.stringify({ action: "reportResponse", status: 'progress', progress: 100 }));
             ws.send(JSON.stringify({ action: "reportResponse", status: 'warning', message: 'Лічильники з датою повірки у обраному діапазоні для обраного постачальника послуг не знайдено.' }));
             return;
@@ -181,8 +184,6 @@ async function GenerateReportCSV_chernigiv(criteria, ws) {
         const win1251Content = iconv.encode(utf8Content, 'win1251');
         fs.writeFileSync(filepath, win1251Content);
 
-        await con.end();
-
         const base64Content = Buffer.from(win1251Content).toString('base64');
         ws.send(JSON.stringify({ action: "reportResponse", status: 'progress', progress: 100 }));
         ws.send(JSON.stringify({
@@ -204,6 +205,10 @@ async function GenerateReportCSV_chernigiv(criteria, ws) {
         console.error('Error DataBase request for Genration reports : ', error);
         ws.send(JSON.stringify({ action: "reportResponse", status: 'progress', progress: 100 }));
         ws.send(JSON.stringify({ action: "reportResponse", status: 'error', message: `Помилка формування звіту: ${error.message}` }));
+    } finally {
+        if (con) {
+            await con.end();
+        }
     }
 }
 
