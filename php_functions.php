@@ -167,7 +167,7 @@ function iCheckIP($status, $user_ip, $user_agent, $user_country, $user_city, $us
 
     if ($stmt->num_rows > 0) {
         logger("system", $page, "[WARN]", $log_message);
-        telegram_BOT($tg_message_allowed);
+        // telegram_BOT($tg_message_allowed);
         $stmt->close();
         $mysqli->close();
         header("Location: ../auth.php");
@@ -263,7 +263,7 @@ function iCheckIP($status, $user_ip, $user_agent, $user_country, $user_city, $us
         $stmt->close();
 
         logger("system", $page, "[WARN]", $log_message);
-        telegram_BOT($tg_message_blocked);
+        // telegram_BOT($tg_message_blocked);
         $mysqli->close();
         header("Location: ../auth.php");
         exit();
